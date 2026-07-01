@@ -1,4 +1,10 @@
 # 재외공관 민원 RAG 데이터셋
+scrap_md : 중요하지 xx 걍 처음에 영사민원 내용 복붙한 거
+step1_json : 중요하지 xx 위 스크랩한 거 각각 json 변환한 
+integrated : 원본 통합 JSON, 백업·검증용
+rag : 중요!! 실제 RAG 검색에 넣을 JSONL 파일
+testset : AI Agent 테스트 질문 세트
+docs : 데이터 검증 리포트
 
 ## 1. 프로젝트 개요
 
