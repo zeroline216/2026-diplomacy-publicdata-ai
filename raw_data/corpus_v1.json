@@ -1,0 +1,1700 @@
+{
+  "schema_version": "1.0",
+  "note": "영사민원24(g4k.go.kr) 영사민원사무안내 페이지를 수동으로 옮긴 코퍼스. 국가/공관 무관 공통 콘텐츠 (사전조사 페이지의 국가/공관 드롭다운은 보조정보일 뿐 본문 내용은 동일).",
+  "total_items": 55,
+  "categories_covered": [
+    "가족관계",
+    "공증·영사확인",
+    "국적",
+    "기타",
+    "병역,국가보훈",
+    "여권",
+    "인증서",
+    "재외국민등록",
+    "해외이주"
+  ],
+  "items": [
+    {
+      "id": "overseas_registration_apply",
+      "category": "재외국민등록",
+      "title": "재외국민등록 신청",
+      "summary": "외국의 일정한 지역에 계속하여 90일을 초과하여 거주하거나 체류할 의사를 가지고 그 지역에 체류하는 대한민국 국민(등록대상자)이 재외국민등록법에 따른 등록사항의 등록을 신청하는 민원. 재외국민 소급 등록 불가 - 현재 국내로 귀국했거나 제3국에 체류중인 경우 과거에 거주했던 국가에 소급하여 재외국민등록을 신청할 수 없음",
+      "apply_method": [
+        "방문",
+        "온라인"
+      ],
+      "applicant": [
+        "본인",
+        "배우자",
+        "배우자의직계혈족",
+        "직계혈족",
+        "직계혈족의배우자"
+      ],
+      "documents": [
+        {
+          "name": "재외국민등록 신청서 (재외국민등록법 시행규칙, 별지 제1호서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "재외동포청",
+      "related_law": [
+        "재외국민등록법",
+        "재외국민등록법 시행령",
+        "재외국민등록법 시행규칙"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "overseas_registration_change",
+      "category": "재외국민등록",
+      "title": "재외국민등록 변경·이동 신고",
+      "summary": "재외국민등록을 한 후 등록사항이 변경되었거나, 등록자의 주소나 거소가 변경되어 등록공관이 달라진 경우 이를 신고하는 민원",
+      "apply_method": [
+        "온라인",
+        "방문"
+      ],
+      "applicant": [
+        "본인",
+        "배우자",
+        "배우자의직계혈족",
+        "직계혈족",
+        "직계혈족의배우자"
+      ],
+      "documents": [
+        {
+          "name": "재외국민등록 변경이동 신고서 (재외국민등록법 시행규칙, 별지 제5호 서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "재외동포청",
+      "related_law": [
+        "재외국민등록법",
+        "재외국민등록법 시행령",
+        "재외국민등록법 시행규칙"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "overseas_registration_copy",
+      "category": "재외국민등록",
+      "title": "재외국민등록부등본 발급",
+      "summary": "재외국민등록부 등본의 교부를 신청하는 민원",
+      "apply_method": [
+        "온라인",
+        "우편",
+        "방문"
+      ],
+      "applicant": [
+        "본인",
+        "대리인"
+      ],
+      "documents": [
+        {
+          "name": "재외국민등록부등본 교부신청서 (재외국민등록법 시행규칙, 별지 제4호서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "재외동포청",
+      "related_law": [
+        "재외국민등록법",
+        "재외국민등록법 시행령",
+        "재외국민등록법 시행규칙"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "overseas_return_report",
+      "category": "재외국민등록",
+      "title": "귀국신고",
+      "summary": "재외국민으로 등록된 사람이 국내에 90일을 초과하여 거주 또는 체류하려는 의사를 가지고 귀국한 경우 귀국일로부터 90일 이내에 외교부장관에 그 사실을 신고하는 민원. 등록자의 편의를 위해 귀국 전에 재외공관에서도 신고 가능 (2019.12.25부터 귀국신고제도 신설)",
+      "apply_method": [
+        "온라인",
+        "방문"
+      ],
+      "applicant": [
+        "본인",
+        "배우자",
+        "배우자의직계혈족",
+        "직계혈족",
+        "직계혈족의배우자"
+      ],
+      "documents": [
+        {
+          "name": "귀국신고서 (재외국민등록법 시행규칙, 별지 제6호 서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "재외동포청",
+      "related_law": [
+        "재외국민등록법",
+        "재외국민등록법 시행령 제7조의2",
+        "재외국민등록법 시행규칙"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "overseas_migration_report",
+      "category": "해외이주",
+      "title": "해외이주신고",
+      "summary": "생업에 종사하기 위하여 외국에 이주하는 사람과 그 가족, 또는 외국인과의 혼인 및 연고 관계로 인하여 이주하려는 사람이 신고하는 민원. 연고이주자(혼인/약혼/친족관계 기초 이주), 무연고이주자(취업이주 등), 현지이주자(외국체재 중 영주권 취득 등)로 구분. 주재/유학/연수/공무상 장기체류는 제외",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인"
+      ],
+      "documents": [
+        {
+          "name": "해외이주신고서 (해외이주법 시행규칙, 별지 제1호서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "재외동포청",
+      "related_law": [
+        "해외이주법",
+        "해외이주법 시행령",
+        "해외이주법 시행규칙"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "overseas_migration_confirm_reissue",
+      "category": "해외이주",
+      "title": "해외이주신고확인서 발급",
+      "summary": "해외이주신고 후 해외이주신고확인서를 재발급 받기 위한 민원",
+      "apply_method": [
+        "온라인",
+        "방문"
+      ],
+      "applicant": [
+        "본인"
+      ],
+      "documents": [
+        {
+          "name": "해외이주법 시행규칙 별지 제2호의2서식",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "재외동포청",
+      "related_law": [
+        "해외이주법 제6조",
+        "해외이주법 시행령 제5조",
+        "해외이주법 시행규칙 제55조",
+        "지방세징수법 제5조 제1항"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "overseas_migration_fund_source_cert",
+      "category": "해외이주",
+      "title": "해외이주 자금출처 확인서 안내",
+      "summary": "해외 반출되는 국내 재산의 자금출처와 관련된 국세의 신고·납부 여부 및 체납 여부 등을 확인하여 자금출처 확인서를 발급하는 절차. 3종 서식 존재: (1)해외이주비 등 자금출처 확인서 - 지정거래 외국환은행 통해 해외이주비를 지급하려는 해외이주자 대상, (2)부동산 매각자금 확인서 - 비거주자인 재외동포/외국인거주자/비거주자 중 국내 부동산 처분대금을 국외 반출하려는 자 대상, (3)예금 등 자금출처 확인서 - 비거주자인 재외동포 중 본인 명의 국내예금을 국외 반출하려는 자 대상. 발급관서는 종류별로 최종 주소지/부동산 소재지/지정거래은행 소재지 관할 세무서. 발급기한은 접수일로부터 10일 이내(실지조사 필요시 1회 20일 연장 가능), 발급관서 직접 방문 필요",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인"
+      ],
+      "documents": [],
+      "competent_authority": "국세청(관할 세무서)",
+      "related_law": [
+        "상속세 및 증여세 사무처리규정",
+        "외국환거래법",
+        "외국환 거래규정",
+        "외국환 거래업무 취급 절차",
+        "외국환 거래업무 취급지침"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "military_overseas_travel_permit",
+      "category": "병역,국가보훈",
+      "title": "병역의무자 국외여행(기간연장) 허가 신청",
+      "summary": "병역의무자로서 국외에서 출생했거나 24세 이전부터 국외에 체류 중인 사람이 25세가 되는 해 1월 15일까지 국외 체류의 허가를 신청하는 민원. 또는 국외여행허가를 받은 사람이 허가기간 종료 15일 전까지 기간 연장을 신청하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인",
+        "대리인"
+      ],
+      "documents": [
+        {
+          "name": "병역의무자 국외여행(기간연장)허가신청서 (병역법 시행규칙, 별지 제132호서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "병무청",
+      "related_law": [
+        "병역법 제70조",
+        "병역법 시행령 제145,147조",
+        "병역법 시행규칙 제108~111조의2",
+        "병역의무자 국외여행 업무처리 규정 제7~12,32조"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "overseas_korean_2nd_gen_confirm",
+      "category": "병역,국가보훈",
+      "title": "재외국민 2세 확인 신청",
+      "summary": "외국에서 출생하였거나 6세 이전에 부모와 외국으로 이주한 후 17세까지 계속 국외에서 거주한 사람이 여권상에 '재외국민 2세 확인' 날인을 요청하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인",
+        "대리인"
+      ],
+      "documents": [
+        {
+          "name": "재외국민2세 확인신청서",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "병무청",
+      "related_law": [
+        "병역법 시행령",
+        "병역의무자 국외여행업무처리 규정 제14조의2"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "overseas_veteran_family_status_report",
+      "category": "병역,국가보훈",
+      "title": "국외거주 국가유공자(유족) 신상신고",
+      "summary": "국외거주자로 보훈급여금 등을 수령 중이거나 신청하려는 분에 대한 생존여부 등 신상변동을 확인하는 민원. 신청자: 국가(독립)유공자 및 그 선순위유족, 고엽제후유의증환자. 가급적 계좌송금으로 신청 권장(수표송금은 국제항공우편 제한으로 지연 가능)",
+      "apply_method": [
+        "방문",
+        "우편"
+      ],
+      "applicant": [
+        "본인"
+      ],
+      "documents": [
+        {
+          "name": "국외거주 국가유공자(유족) 신상신고서",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "국가보훈부",
+      "related_law": [
+        "국가유공자 등 예우 및 지원에 관한 법률 제11,12조",
+        "재외동포의 출입국과 법적 지위에 관한 법률 제16조",
+        "보훈급여금 등 지급업무처리 지침 제41조"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "overseas_war_veteran_status_report",
+      "category": "병역,국가보훈",
+      "title": "국외거주 참전유공자 신상신고",
+      "summary": "국외거주 참전유공자로 참전명예수당을 수령 중이거나 신청하려는 분에 대한 생존여부 등 신상변동을 확인하는 민원. 신청자: 참전유공자 본인",
+      "apply_method": [
+        "우편",
+        "방문"
+      ],
+      "applicant": [
+        "본인"
+      ],
+      "documents": [
+        {
+          "name": "국외거주 참전유공자 신상신고서",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "국가보훈부",
+      "related_law": [
+        "참전유공자 예우 및 단체설립에 관한 법률 제6조",
+        "보훈급여금 등 지급업무처리 지침 제41조"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "nationality_retention_report",
+      "category": "국적",
+      "title": "국적보유신고",
+      "summary": "외국인과의 혼인·외국인에게로의 입양·외국인인 부 또는 모에게로의 인지·외국 국적 취득으로 대한민국 국적을 상실하게 된 자의 배우자 또는 미성년의 자로서 그 외국 법률에 의해 외국 국적을 취득하게 된 자가, 외국 국적 취득 후 6개월 내에 법무부장관에게 대한민국 국적을 보유하겠다고 신고하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인",
+        "대리인"
+      ],
+      "documents": [
+        {
+          "name": "국적보유신고서 (국적법 시행규칙, 별지 제9호서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법무부",
+      "related_law": [
+        "국적법 제15조 제2항",
+        "국적법 시행령 제19조",
+        "국적법 시행규칙 제13조"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "nationality_loss_report",
+      "category": "국적",
+      "title": "국적상실신고",
+      "summary": "대한민국의 국적을 상실한 자가 법무부장관에게 신고하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인",
+        "대리인"
+      ],
+      "documents": [
+        {
+          "name": "국적상실신고서 (국적법 시행규칙, 별지 제10호서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법무부",
+      "related_law": [
+        "국적법 제15,16,18조",
+        "국적법 시행령 제20,21,29조",
+        "국적법 시행규칙 제14조"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "nationality_selection_report",
+      "category": "국적",
+      "title": "국적선택신고",
+      "summary": "복수국적자가 규정된 기간 내에 외국 국적을 포기하거나 외국국적불행사서약서를 제출하면서 법무부장관에게 대한민국 국적을 선택하겠다는 뜻을 신고하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인",
+        "대리인"
+      ],
+      "documents": [
+        {
+          "name": "국적선택신고서 (국적법 시행규칙, 별지 제7호서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법무부",
+      "related_law": [
+        "국적법 제12,13조",
+        "국적법 시행령 제17,29조",
+        "국적법 시행규칙 제11조"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "nationality_renunciation_report",
+      "category": "국적",
+      "title": "국적이탈신고",
+      "summary": "복수국적자가 규정된 기간 내에 주소지 관할 재외공관의 장을 거쳐 대한민국 국적을 이탈하겠다는 뜻을 법무부장관에게 신고하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인",
+        "대리인"
+      ],
+      "documents": [
+        {
+          "name": "국적이탈신고서 (국적법 시행규칙, 별지 제8호서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법무부",
+      "related_law": [
+        "국적법 제14조",
+        "국적법 시행령 제18조",
+        "국적법 시행규칙 제12조"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "nationality_acquisition_report",
+      "category": "국적",
+      "title": "국적취득신고",
+      "summary": "대한민국 국적을 취득하고자 하는 사람이 법무부장관에게 신고하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인",
+        "대리인"
+      ],
+      "documents": [
+        {
+          "name": "국적취득신고서 (국적법 시행규칙, 별지 제1호서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법무부",
+      "related_law": [
+        "국적법 제3,11조",
+        "국적법 시행령 제2,10조",
+        "국적법 시행규칙 제2,15,29조"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "cert_joint_certificate",
+      "category": "인증서",
+      "title": "재외공관 공동인증서 신청서비스",
+      "summary": "온라인 민원서류 발급, 본인 신원확인 등에 사용하는 공동인증서 발급 안내. 대상: 주민등록번호 보유 재외국민(실명인증 가능자, 국내주민등록 말소자/외국국적취득자/단기체류자는 신청불가). 절차: 대면 신원확인(비대면·대리신청 불가) → 신청서 작성 → 이메일 수신 → 발급기관 홈페이지에서 코드입력·비밀번호 설정 → 다운로드. 19세 미만은 법정대리인 동행 및 동의서 필요. 유효기간 1년. 국내 귀국 후 사용 불가",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인"
+      ],
+      "documents": [
+        {
+          "name": "재외국민 공동인증서 서비스 신청서식 + 개인정보 수집·이용 동의서",
+          "format": [
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "재외동포청 (발급기관: 한국전자인증)",
+      "related_law": [
+        "전자정부법"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "cert_financial_certificate",
+      "category": "인증서",
+      "title": "재외공관 금융인증서 신청서비스",
+      "summary": "온라인 민원서류 발급, 본인 신원확인 등에 사용하는 금융인증서 발급 안내. 대상은 공동인증서와 동일. 절차: 대면 신원확인 → 신청서 작성 → 이메일 코드입력 → 신원확인 → 비밀번호 설정 → 클라우드 발급. 19세 미만은 법정대리인 동행 필요. 유효기간 3년. 귀국 전 현지에서 반드시 폐지 필요(국내 귀국 후 사용 불가)",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인"
+      ],
+      "documents": [
+        {
+          "name": "재외국민 금융인증서 서비스 신청서식 + 개인정보 수집·이용 동의서",
+          "format": [
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "재외동포청 (발급기관: 금융결제원)",
+      "related_law": [
+        "전자정부법"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "cert_simple_certificate",
+      "category": "인증서",
+      "title": "재외국민 간편인증서 발급 서비스",
+      "summary": "본인 신원확인, 인터넷뱅킹, 일부 온라인 민원서류 발급에 사용하는 간편인증서(모바일 앱 기반) 안내. 대상: 만 14세 이상 주민등록번호 보유 재외국민(재외국민등록 완료자, 유효한 한국 전자여권 소지자). 발급기관: 토스/신한/국민/우리/하나/NICE평가정보(아이핀). 절차: 민간 앱 설치 → 재외국민 인증서 신청 → 개인정보 입력 → 전자여권·안면인식 → 발급완료. 유효기간 최대 3년(기관별 상이)",
+      "apply_method": [
+        "온라인"
+      ],
+      "applicant": [
+        "본인"
+      ],
+      "documents": [],
+      "competent_authority": "재외동포청 (발급기관: 토스·신한·국민·우리·하나·NICE평가정보)",
+      "related_law": [
+        "전자정부법"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "cert_mobile_id",
+      "category": "인증서",
+      "title": "모바일 재외국민 신원확인증 발급신청(시범서비스)",
+      "summary": "정부24, 재외동포 365 민원포털, e아포스티유 시스템에서 휴대전화 인증 없이 사용 가능한 모바일 신원확인증 발급 안내(시범서비스). 대상: 재외국민등록자(말소자 제외, 183일 이상 미거주시 말소되므로 재등록 필요), 만 14세 이상, 유효한 전자여권 소지자, 대리신청 불가. 절차: 재외공관 방문(여권+휴대전화 지참) → 신청서 작성 → 휴대전화 인증 → PIN코드 등록 → '대한민국 모바일 신분증' 앱에서 본인인증 → 발급완료. 유효기간 발급일로부터 3년. 발급 가능 공관은 52개로 제한(미국/중국/일본/베트남/독일/캐나다 등 주요국 포함, 전체 목록은 별도 PDF)",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인"
+      ],
+      "documents": [
+        {
+          "name": "모바일 재외국민 신원확인증 신청서(시범서비스)",
+          "format": [
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "행정안전부",
+      "related_law": [
+        "전자정부법 제10조 (정식 서비스 위한 법제정 추진 중)"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "english_driving_record_cert",
+      "category": "기타",
+      "title": "영문 운전경력증명서 발급 신청",
+      "summary": "영문 운전경력에 관한 정보를 기재한 증명서의 발급을 신청하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인",
+        "대리인"
+      ],
+      "documents": [
+        {
+          "name": "영문 운전경력증명서 발급신청서 (도로교통법 시행규칙, 별지 제144호의2서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "경찰청",
+      "related_law": [
+        "도로교통법 시행규칙 제129조의2",
+        "민원 처리에 관한 법률 제14조"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "driver_license_renewal_reissue",
+      "category": "기타",
+      "title": "자동차운전면허증 갱신·재발급 신청",
+      "summary": "10년마다 운전면허증을 갱신하기 위해 신청하는 민원, 또는 운전면허증을 분실했거나 훼손되어 다시 교부받기 위해 신청하는 민원. 갱신은 2종만 해당, 재발급은 1·2종 모두 해당",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인"
+      ],
+      "documents": [
+        {
+          "name": "자동차운전면허증 갱신/재발급 신청서 (도로교통법 시행규칙, 별지 제59호서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "경찰청",
+      "related_law": [
+        "도로교통법 제87조",
+        "도로교통법 시행령 제54조",
+        "도로교통법 시행규칙 제82조"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "criminal_record_check_cert",
+      "category": "기타",
+      "title": "범죄·경력회보서((구)신원조사증명서) 신청",
+      "summary": "해외에 거주하려는 우리 국민이 장기체류 또는 영주권 취득 등을 위해 과거 국내 범죄사실에 대한 기록의 증명을 신청하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인"
+      ],
+      "documents": [
+        {
+          "name": "범죄·경력회보서 신청서 (외사관계 신원조사업무 처리규칙, 별지 제1-1호서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "경찰청",
+      "related_law": [
+        "보안업무규정",
+        "외사관계 신원조사업무 처리규칙",
+        "지문 및 수사자료표 등에 관한 규칙"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "passport_reissue_online",
+      "category": "여권",
+      "title": "온라인 여권 재발급 신청",
+      "summary": "여권의 재발급을 신청하는 민원",
+      "apply_method": [
+        "온라인",
+        "방문"
+      ],
+      "applicant": [
+        "본인",
+        "대리인"
+      ],
+      "documents": [
+        {
+          "name": "여권발급신청서 (여권법 시행규칙, 별지 제1호 서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "외교부",
+      "related_law": [
+        "여권법 제11조의1",
+        "여권법 시행령 제5조 제2항,제3항",
+        "여권법 시행규칙"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "passport_fact_certification",
+      "category": "여권",
+      "title": "여권 사실증명 신청",
+      "summary": "여권 발급기록의 증명, 발급 신청시 제출 서류 내용의 증명, 여권 사본의 유효성 증명, 여권 명의인의 신원확인에 필요한 정보의 증명을 신청하는 민원",
+      "apply_method": [
+        "온라인",
+        "방문"
+      ],
+      "applicant": [
+        "본인",
+        "대리인"
+      ],
+      "documents": [
+        {
+          "name": "여권사실증명신청서 (여권법 시행규칙, 별지 제4호)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "외교부",
+      "related_law": [
+        "여권법 시행규칙"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "passport_status_check",
+      "category": "여권",
+      "title": "여권 발급 상태 조회",
+      "summary": "신청한 여권의 현재 발급 상태를 안내해 주는 서비스",
+      "apply_method": [
+        "온라인"
+      ],
+      "applicant": [
+        "본인"
+      ],
+      "documents": [],
+      "competent_authority": "외교부",
+      "related_law": [
+        "여권법 제9조의1"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "passport_authenticity_check",
+      "category": "여권",
+      "title": "여권 정보 진위 확인",
+      "summary": "여권이 국내에서 신분 증명서로 활용될 수 있도록 여권번호를 바탕으로 한 여권의 진위확인",
+      "apply_method": [
+        "온라인"
+      ],
+      "applicant": [
+        "본인"
+      ],
+      "documents": [],
+      "competent_authority": "외교부",
+      "related_law": [
+        "여권법 제23조의2"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "passport_issuance_history",
+      "category": "여권",
+      "title": "여권 발급 이력 조회",
+      "summary": "과거 발급 및 현재 보유 여권에 대한 발급 이력 및 유효기간 등 상세 정보 조회 서비스",
+      "apply_method": [
+        "온라인"
+      ],
+      "applicant": [
+        "본인"
+      ],
+      "documents": [],
+      "competent_authority": "외교부",
+      "related_law": [
+        "여권법 제23조의2"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "passport_found_check",
+      "category": "여권",
+      "title": "습득 여권 조회",
+      "summary": "여권 사무대행기관 및 경찰서 등에 습득 신고된 여권을 조회하는 서비스. 분실된 여권이 보관되어 있는지 조회 가능",
+      "apply_method": [
+        "온라인"
+      ],
+      "applicant": [
+        "본인"
+      ],
+      "documents": [],
+      "competent_authority": "외교부",
+      "related_law": [
+        "여권법 제16조 제2항"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "passport_lost_report",
+      "category": "여권",
+      "title": "여권 분실 신고",
+      "summary": "분실된 여권을 다른 사람이 사용하는 것을 방지하기 위한 대국민 서비스",
+      "apply_method": [
+        "온라인"
+      ],
+      "applicant": [
+        "본인"
+      ],
+      "documents": [
+        {
+          "name": "여권 분실 신고서 (여권법 시행규칙, 별지 제2호서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "외교부",
+      "related_law": [
+        "여권법 제13조의1",
+        "여권법 제13조의3항"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "passport_exceptional_use",
+      "category": "여권",
+      "title": "예외적 여권사용 허가 신청",
+      "summary": "여행이 금지된 국가에 대해 예외적으로 입국 허가를 신청하는 민원",
+      "apply_method": [
+        "온라인"
+      ],
+      "applicant": [
+        "본인",
+        "대리인"
+      ],
+      "documents": [
+        {
+          "name": "예외적 여권사용등 허가 신청서 (여권법 시행규칙, 별지 제6호서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "외교부",
+      "related_law": [
+        "여권법 제17조 제1항",
+        "여권법 시행령 제29조",
+        "여권법 시행규칙 제15조"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "notary_private_document",
+      "category": "공증·영사확인",
+      "title": "일반 사서증서(계약서,위임장,진술서,확인서)의 인증",
+      "summary": "공증담당영사가 당사자를 대면하여 사문서에 기재된 서명날인이 본인의 것임을 인증하는 사무",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인",
+        "대리인"
+      ],
+      "documents": [
+        {
+          "name": "공증촉탁서 (재외공관 공증법 시행령, 별지 제10호서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "재외동포청",
+      "related_law": [
+        "재외공관 공증법",
+        "재외공관 공증법 시행령"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "notary_foreign_document",
+      "category": "공증·영사확인",
+      "title": "주재국 공문서 등의 확인",
+      "summary": "주재국 공무원이 발행하였거나 주재국 공증인이 공증한 문서에 찍힌 서명날인의 진위 여부와 그 공무원이나 공증인의 직위를 확인하는 사무",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인",
+        "대리인"
+      ],
+      "documents": [
+        {
+          "name": "공증촉탁서 (재외공관 공증법 시행령, 별지 제10호서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "재외동포청",
+      "related_law": [
+        "재외공관 공증법",
+        "재외공관 공증법 시행령"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "notary_translation",
+      "category": "공증·영사확인",
+      "title": "번역문의 인증",
+      "summary": "당사자로 하여금 공증담당영사 앞에서 번역문이 원문과 다르지 아니함을 서약하고 서명날인하게 한 후 그 사실을 인증하는 사무",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인",
+        "대리인",
+        "모두"
+      ],
+      "documents": [
+        {
+          "name": "공증촉탁서 (재외공관 공증법 시행령, 별지 제10호서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "재외동포청",
+      "related_law": [
+        "재외공관 공증법",
+        "재외공관 공증법 시행령"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "notary_for_korean_agency",
+      "category": "공증·영사확인",
+      "title": "행정기관 제출용 문서의 확인",
+      "summary": "대한민국 행정기관에 제출하기 위한 문서에 대하여 공증담당영사의 관할지역에서 발행되었거나 관련 법령에 따라 공관을 거쳤다는 사실을 확인하는 사무",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인",
+        "대리인"
+      ],
+      "documents": [
+        {
+          "name": "공증촉탁서 (재외공관 공증법 시행령, 별지 제10호서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "재외동포청",
+      "related_law": [
+        "재외공관 공증법",
+        "재외공관 공증법 시행령"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "notary_copy_certification",
+      "category": "공증·영사확인",
+      "title": "사서증서의 등본에 대한 인증",
+      "summary": "사서증서의 원본과 등본을 대조하여 서로 일치함을 인증하는 사무",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인",
+        "대리인",
+        "모두"
+      ],
+      "documents": [
+        {
+          "name": "공증촉탁서 (재외공관 공증법 시행령, 별지 제10호서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "재외동포청",
+      "related_law": [
+        "재외공관 공증법",
+        "재외공관 공증법 시행령"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "notary_digital_financial_poa",
+      "category": "공증·영사확인",
+      "title": "디지털 영사인증 금융위임장",
+      "summary": "공증담당영사가 당사자를 대면하여 사문서에 기재된 서명날인이 본인의 것임을 인증하는 사무 (금융위임장, 사전작성 가능)",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인"
+      ],
+      "documents": [
+        {
+          "name": "공증촉탁서 (재외공관 공증법 시행령, 별지 제10호서식)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "재외동포청",
+      "related_law": [
+        "재외공관 공증법",
+        "전자문서 및 전자거래 기본법"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "family_cert_issuance",
+      "category": "가족관계",
+      "title": "가족관계등록부 등의 증명서 교부 등 신청",
+      "summary": "가족관계등록 제신고를 할 때 수리하였다는 내용의 증명을 시·구·읍·면의 장에게 신청하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "모두"
+      ],
+      "documents": [
+        {
+          "name": "가족관계등록부 등의 증명서 교부 등 신청서 (가족관계등록사무의 문서 양식에 관한 예규, 별지 제11호)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법원행정처",
+      "related_law": [
+        "가족관계의 등록 등에 관한 법률 제14조",
+        "가족관계의 등록 등에 관한 규칙",
+        "가족관계등록예규"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "family_english_cert",
+      "category": "가족관계",
+      "title": "가족관계에 관한 영문증명서 발급 신청",
+      "summary": "가족관계에 관한 영문증명서 발급 신청",
+      "apply_method": [
+        "방문",
+        "온라인"
+      ],
+      "applicant": [
+        "본인",
+        "대리인"
+      ],
+      "documents": [
+        {
+          "name": "가족관계에 관한 영문증명서 발급 신청서",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법원행정처",
+      "related_law": [
+        "가족관계의 등록 등에 관한 법률 제14조",
+        "가족관계의 등록 등에 관한 규칙",
+        "가족관계등록예규"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "family_birth_report",
+      "category": "가족관계",
+      "title": "출생신고",
+      "summary": "신생아 출생시 가족관계등록부 및 주민등록에 등록하기 위하여 시·구·읍·면의 장에게 신고하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "모두"
+      ],
+      "documents": [
+        {
+          "name": "출생신고서 (가족관계등록사무의 문서 양식에 관한 예규, 양식 제1호)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법원행정처",
+      "related_law": [
+        "가족관계의 등록 등에 관한 법률 제44~54조,제57조",
+        "가족관계의 등록 등에 관한 규칙 제36조의2,제38조 등",
+        "가족관계등록예규"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "family_marriage_report",
+      "category": "가족관계",
+      "title": "혼인신고",
+      "summary": "혼인의 사실을 시·구·읍·면의 장에게 신고하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "모두"
+      ],
+      "documents": [
+        {
+          "name": "혼인신고서 (가족관계등록사무의 문서 양식에 관한 예규, 양식 제10호)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법원행정처",
+      "related_law": [
+        "민법",
+        "가족관계의 등록 등에 관한 법률 제71조",
+        "가족관계의 등록 등에 관한 규칙",
+        "가족관계등록예규"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "family_death_report",
+      "category": "가족관계",
+      "title": "사망신고",
+      "summary": "사람이 사망하였을 시 주민등록에서 삭제(사망처리)하고자 시·구·읍·면의 장에게 신고하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "모두"
+      ],
+      "documents": [
+        {
+          "name": "사망신고서 (가족관계등록사무의 문서 양식에 관한 예규, 양식 제19호)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법원행정처",
+      "related_law": [
+        "가족관계의 등록 등에 관한 법률 제84조 제1항",
+        "가족관계의 등록 등에 관한 규칙",
+        "가족관계등록예규"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "family_divorce_custody_report",
+      "category": "가족관계",
+      "title": "이혼(친권자지정)신고",
+      "summary": "부부의 생존 중에 혼인관계를 해소시키기 위하여 시·구·읍·면의 장에게 신고하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "모두"
+      ],
+      "documents": [
+        {
+          "name": "이혼(친권자지정)신고서 (가족관계등록사무의 문서 양식에 관한 예규, 양식 제11호)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법원행정처",
+      "related_law": [
+        "민법",
+        "가족관계의 등록 등에 관한 법률 제74,75조",
+        "가족관계의 등록 등에 관한 규칙",
+        "가족관계등록예규"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "family_custody_designation_report",
+      "category": "가족관계",
+      "title": "친권자(지정,변경)신고",
+      "summary": "혼인외의 자의 인지·부모의 이혼 등으로 미성년자인 자녀의 친권자가 지정 또는 변경된 경우 시·구·읍·면의 장에게 신고하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "모두"
+      ],
+      "documents": [
+        {
+          "name": "친권자(지정,변경) 신고서 (가족관계등록사무의 문서 양식에 관한 예규, 양식 제13호)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법원행정처",
+      "related_law": [
+        "민법",
+        "가족관계의 등록 등에 관한 법률 제79조",
+        "가족관계의 등록 등에 관한 규칙",
+        "가족관계등록예규"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "family_mutual_divorce_confirmation",
+      "category": "가족관계",
+      "title": "협의이혼의사확인신청",
+      "summary": "부부가 협의상 이혼을 하려는 경우 이혼하기로 합의되었음을 확인해 달라고 신청하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "본인"
+      ],
+      "documents": [
+        {
+          "name": "협의이혼의사확인신청서(법원제출용)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법원행정처",
+      "related_law": [
+        "가족관계의 등록 등에 관한 법률",
+        "가족관계의 등록 등에 관한 규칙",
+        "가족관계등록예규",
+        "협의이혼의 의사확인사무 및 가족관계등록사무 처리지침"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "family_registry_correction",
+      "category": "가족관계",
+      "title": "등록부정정신청",
+      "summary": "가족관계등록부의 기재가 법률상 무효인 것 또는 기재에 착오·오류가 있을 때 진정한 신분관계와 일치시키기 위해 시·구·읍·면의 장에게 신청하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "모두"
+      ],
+      "documents": [
+        {
+          "name": "등록부정정신청서 (가족관계등록사무의 문서 양식에 관한 예규, 양식 제30호)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법원행정처",
+      "related_law": [
+        "가족관계의 등록 등에 관한 법률 제104조",
+        "가족관계의 등록 등에 관한 규칙",
+        "가족관계등록예규"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "family_acknowledgement_report",
+      "category": "가족관계",
+      "title": "인지(친권자지정)신고",
+      "summary": "생부모가 혼인외의 출생자를 친생자로 인정하여 시·읍·면의 장에게 신고하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "모두"
+      ],
+      "documents": [
+        {
+          "name": "인지(친권자지정)신고서 (가족관계등록사무의 문서 양식에 관한 예규, 양식 제2호)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법원행정처",
+      "related_law": [
+        "민법",
+        "가족관계의 등록 등에 관한 법률 제55~60조",
+        "가족관계의 등록 등에 관한 규칙",
+        "가족관계등록예규"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "family_name_change_report",
+      "category": "가족관계",
+      "title": "개명신고",
+      "summary": "이름을 바꾸고자 할 때 법원의 허가를 받고 그 허가서의 등본을 받은 날부터 1개월 이내에 시·구·읍·면의 장에게 신고하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "모두"
+      ],
+      "documents": [
+        {
+          "name": "개명신고서 (가족관계등록사무의 문서 양식에 관한 예규, 양식 제27호)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법원행정처",
+      "related_law": [
+        "가족관계의 등록 등에 관한 법률 제99조 제1항",
+        "가족관계의 등록 등에 관한 규칙",
+        "가족관계등록예규"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "family_adoption_report",
+      "category": "가족관계",
+      "title": "입양신고",
+      "summary": "혈연이 없는 자에 대해 혼인 중의 출생자와 동일한 신분관계를 성립시키기 위하여 시·구·읍·면의 장에게 신고하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "모두"
+      ],
+      "documents": [
+        {
+          "name": "입양신고서 (가족관계등록사무의 문서 양식에 관한 예규, 양식 제4호)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법원행정처",
+      "related_law": [
+        "민법",
+        "가족관계의 등록 등에 관한 법률 제61,62조",
+        "가족관계의 등록 등에 관한 규칙",
+        "가족관계등록예규"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "family_adoption_dissolution_report",
+      "category": "가족관계",
+      "title": "파양신고",
+      "summary": "입양으로 인한 친족관계를 소멸시키기 위해 시·구·읍·면의 장에게 신고하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "모두"
+      ],
+      "documents": [
+        {
+          "name": "파양신고서 (가족관계등록사무의 문서 양식에 관한 예규, 양식 제6호)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법원행정처",
+      "related_law": [
+        "민법",
+        "가족관계의 등록 등에 관한 법률 제63,65,66조",
+        "가족관계의 등록 등에 관한 규칙",
+        "가족관계등록예규"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "family_marriage_annulment_report",
+      "category": "가족관계",
+      "title": "혼인취소신고",
+      "summary": "혼인취소를 원하는 자가 법원의 재판이 확정된 때 시·구·읍·면의 장에게 신고하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "모두"
+      ],
+      "documents": [
+        {
+          "name": "혼인취소신고서 (가족관계등록사무의 문서 양식에 관한 예규, 양식 제12호)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법원행정처",
+      "related_law": [
+        "민법",
+        "가족관계의 등록 등에 관한 법률 제58,73조",
+        "가족관계의 등록 등에 관한 규칙",
+        "가족관계등록예규"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "family_surname_change_report",
+      "category": "가족관계",
+      "title": "성∙본변경신고",
+      "summary": "자의 복리를 위하여 가정법원의 허가를 얻어 자녀의 성·본을 변경하고자 하는 자가 재판확정일부터 1개월 이내에 시·구·읍·면의 장에게 신고하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "모두"
+      ],
+      "documents": [
+        {
+          "name": "성본변경신고서 (가족관계등록사무의 문서 양식에 관한 예규, 양식 제34호)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법원행정처",
+      "related_law": [
+        "민법",
+        "가족관계의 등록 등에 관한 법률 제100조 제1항",
+        "가족관계의 등록 등에 관한 규칙",
+        "가족관계등록예규"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "family_naturalization_surname_creation",
+      "category": "가족관계",
+      "title": "국적취득자의 성본 창설신고",
+      "summary": "귀화 등으로 국적을 취득한 자가 종전의 성을 쓰지 아니하고 새로운 성과 본을 정하고자 하는 경우 법원의 허가를 받아 시·구·읍·면의 장에게 신고하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "모두"
+      ],
+      "documents": [
+        {
+          "name": "국적취득자 성본 창설허가 신청서 (가족관계등록사무의 문서 양식에 관한 예규, 양식 제33호)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법원행정처",
+      "related_law": [
+        "가족관계의 등록 등에 관한 법률 제96조",
+        "가족관계의 등록 등에 관한 규칙",
+        "가족관계등록예규"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "family_registry_creation",
+      "category": "가족관계",
+      "title": "가족관계등록창설신고",
+      "summary": "가족관계등록부를 가지지 아니한 자가 법원의 허가를 얻어 가족관계등록을 가지고자 시·구·읍·면의 장에게 신고하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "모두"
+      ],
+      "documents": [
+        {
+          "name": "가족관계등록창설신고서 (가족관계등록사무의 문서 양식에 관한 예규, 양식 제29호)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법원행정처",
+      "related_law": [
+        "가족관계의 등록 등에 관한 법률 제101조 제1항",
+        "가족관계의 등록 등에 관한 규칙",
+        "가족관계등록예규"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    },
+    {
+      "id": "family_supplementary_report",
+      "category": "가족관계",
+      "title": "추후보완신고",
+      "summary": "수리된 신고에 흠결이 있는 경우 그 흠결을 보완하기 위하여 신고의무자가 시·구·읍·면의 장에게 신고하는 민원",
+      "apply_method": [
+        "방문"
+      ],
+      "applicant": [
+        "모두"
+      ],
+      "documents": [
+        {
+          "name": "추후보완신고서 (가족관계등록사무의 문서 양식에 관한 예규, 양식 제32호)",
+          "format": [
+            "hwp",
+            "pdf"
+          ]
+        }
+      ],
+      "competent_authority": "법원행정처",
+      "related_law": [
+        "가족관계의 등록 등에 관한 법률 제39조",
+        "가족관계의 등록 등에 관한 규칙",
+        "가족관계등록예규"
+      ],
+      "source_url": "https://www.g4k.go.kr (영사민원사무안내)",
+      "country_specific": false,
+      "additional_notes_by_consulate": null,
+      "collected_date": "2026-06-30"
+    }
+  ]
+}
