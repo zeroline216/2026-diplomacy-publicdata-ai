@@ -1,0 +1,312 @@
+#예시
+{
+  "form_id": "vn_overseas_registration_certificate_copy_application",
+  "form_name": "재외국민등록부등본교부신청서",
+  "category": "재외국민등록",
+  "service_title": "재외국민등록부등본 교부 신청",
+  "country": "베트남",
+  "country_code": "VN",
+  "source_file": "베트남_재외국민등록부등본교부신청서_주베트남대한민국 대사관.hwp",
+  "source_type": "mission_specific_form",
+  "description": "주베트남대한민국 대사관에서 재외국민등록 신청 시 추가 제출하는 재외국민등록부등본교부신청서 필드 구조 정의",
+
+  "field_order": [
+    "requested_copy_count",
+    "name_ko",
+    "name_en",
+    "birth_date",
+    "resident_registration_number",
+    "gender",
+    "registered_domicile_korea",
+    "military_status",
+    "job",
+    "organization",
+    "stay_purpose",
+    "stay_purpose_other",
+    "residence_status",
+    "residence_status_other",
+    "vietnam_address",
+    "vietnam_phone",
+    "vietnam_email",
+    "stay_period_start",
+    "stay_period_end",
+    "usage_purpose",
+    "change_request_detail",
+    "applicant_name",
+    "passport_number"
+  ],
+
+  "fields": {
+    "requested_copy_count": {
+      "label": "발급요청매수",
+      "section": "신청 정보",
+      "type": "integer",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "재외국민등록부등본 발급 요청 매수를 알려주세요."
+    },
+    "name_ko": {
+      "label": "한글성명",
+      "section": "신청인",
+      "type": "string",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "신청인의 한글 성명을 알려주세요."
+    },
+    "name_en": {
+      "label": "영문성명",
+      "section": "신청인",
+      "type": "string",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "신청인의 영문 성명을 알려주세요."
+    },
+    "birth_date": {
+      "label": "생년월일",
+      "section": "신청인",
+      "type": "date",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "생년월일을 알려주세요."
+    },
+    "resident_registration_number": {
+      "label": "주민번호",
+      "section": "신청인",
+      "type": "string",
+      "requirement": "conditional",
+      "condition": "대한민국 주민등록번호가 있는 경우",
+      "sensitive": true,
+      "source_allowed": ["user_input"],
+      "question": "대한민국 주민등록번호가 있나요? 있다면 알려주세요."
+    },
+    "gender": {
+      "label": "성별",
+      "section": "신청인",
+      "type": "enum",
+      "requirement": "required",
+      "allowed_values": ["남", "여"],
+      "source_allowed": ["user_input"],
+      "question": "성별을 선택해주세요. 남 또는 여 중 하나입니다."
+    },
+    "registered_domicile_korea": {
+      "label": "등록기준지",
+      "section": "대한민국 내 정보",
+      "type": "string",
+      "requirement": "optional",
+      "source_allowed": ["user_input"],
+      "question": "등록기준지가 있으면 알려주세요."
+    },
+    "military_status": {
+      "label": "병역관계",
+      "section": "신청인",
+      "type": "enum",
+      "requirement": "required",
+      "allowed_values": ["미확인", "미필", "병역필", "면제", "무", "허가", "귀국시"],
+      "source_allowed": ["user_input"],
+      "question": "병역관계를 선택해주세요. 미확인, 미필, 병역필, 면제, 무, 허가, 귀국시 중 하나입니다."
+    },
+    "job": {
+      "label": "직업",
+      "section": "체류 정보",
+      "type": "string",
+      "requirement": "optional",
+      "source_allowed": ["user_input"],
+      "question": "직업이 있다면 알려주세요."
+    },
+    "organization": {
+      "label": "소속기관",
+      "section": "체류 정보",
+      "type": "string",
+      "requirement": "optional",
+      "source_allowed": ["user_input"],
+      "question": "소속기관이 있다면 알려주세요."
+    },
+    "stay_purpose": {
+      "label": "체류목적",
+      "section": "체류 정보",
+      "type": "enum",
+      "requirement": "required",
+      "allowed_values": [
+        "상용",
+        "상용주재",
+        "문화",
+        "문화주재",
+        "단기연수",
+        "취업",
+        "일반",
+        "동거",
+        "관용",
+        "거주",
+        "임시거주",
+        "유학",
+        "기술훈련",
+        "왕복",
+        "일반관광",
+        "방문",
+        "기타"
+      ],
+      "source_allowed": ["user_input"],
+      "question": "체류목적을 선택해주세요."
+    },
+    "stay_purpose_other": {
+      "label": "체류목적 기타 내용",
+      "section": "체류 정보",
+      "type": "string",
+      "requirement": "conditional",
+      "condition": "stay_purpose == 기타",
+      "source_allowed": ["user_input"],
+      "question": "체류목적이 기타라면 구체적인 내용을 알려주세요."
+    },
+    "residence_status": {
+      "label": "체류자격",
+      "section": "체류 정보",
+      "type": "enum",
+      "requirement": "required",
+      "allowed_values": [
+        "외국인배우자",
+        "기업내전근",
+        "투자·경영",
+        "기술",
+        "종교",
+        "인문·지식",
+        "유학",
+        "취학",
+        "가족체재",
+        "공무",
+        "일시취재",
+        "단기상용",
+        "단기종합",
+        "단기취업",
+        "문화예술",
+        "일반연수",
+        "상사주재",
+        "교수",
+        "회화지도",
+        "전문직업",
+        "방문동거",
+        "기타"
+      ],
+      "source_allowed": ["user_input"],
+      "question": "체류자격을 선택해주세요."
+    },
+    "residence_status_other": {
+      "label": "체류자격 기타 내용",
+      "section": "체류 정보",
+      "type": "string",
+      "requirement": "conditional",
+      "condition": "residence_status == 기타",
+      "source_allowed": ["user_input"],
+      "question": "체류자격이 기타라면 구체적인 내용을 알려주세요."
+    },
+    "vietnam_address": {
+      "label": "베트남 주소",
+      "section": "베트남 체류 정보",
+      "type": "string",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "베트남 주소를 알려주세요."
+    },
+    "vietnam_phone": {
+      "label": "베트남 전화번호",
+      "section": "베트남 체류 정보",
+      "type": "string",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "베트남 전화번호를 알려주세요."
+    },
+    "vietnam_email": {
+      "label": "E-MAIL",
+      "section": "베트남 체류 정보",
+      "type": "string",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "이메일 주소를 알려주세요."
+    },
+    "stay_period_start": {
+      "label": "체류기간 시작일",
+      "section": "체류 정보",
+      "type": "date",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "베트남 체류 시작일을 알려주세요."
+    },
+    "stay_period_end": {
+      "label": "체류기간 종료일",
+      "section": "체류 정보",
+      "type": "date",
+      "requirement": "optional",
+      "source_allowed": ["user_input"],
+      "question": "체류 종료 예정일이 있다면 알려주세요."
+    },
+    "usage_purpose": {
+      "label": "사용용도",
+      "section": "신청 정보",
+      "type": "string",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "재외국민등록부등본의 사용용도를 알려주세요."
+    },
+    "change_request_detail": {
+      "label": "변경요청사항",
+      "section": "신청 정보",
+      "type": "string",
+      "requirement": "optional",
+      "source_allowed": ["user_input"],
+      "question": "변경 요청할 사항이 있으면 알려주세요."
+    },
+    "applicant_name": {
+      "label": "신청자 성명",
+      "section": "서명",
+      "type": "string",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "신청자 성명을 알려주세요."
+    },
+    "passport_number": {
+      "label": "여권번호",
+      "section": "서명",
+      "type": "string",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "여권번호를 알려주세요."
+    }
+  },
+
+  "office_fields": [
+    "접수자",
+    "심사자",
+    "발급자",
+    "확인란"
+  ],
+
+  "user_confirmation_fields": [
+    "신청일",
+    "신청자 서명 또는 인"
+  ],
+
+  "agent_rules": [
+    "주베트남대한민국 대사관 재외국민등록 신청 profile에서만 이 추가 서식을 함께 생성한다.",
+    "재외국민등록신청서와 중복되는 필드는 같은 사용자 입력값을 재사용할 수 있다.",
+    "발급요청매수와 사용용도는 사용자가 말하지 않으면 추가 질문으로 요청한다.",
+    "접수자, 심사자, 발급자 등 기관 확인란은 AI가 작성하지 않는다."
+  ],
+
+  "judge_rules": [
+    "주베트남대한민국 대사관 profile에서 이 추가 서식이 required_forms에 포함되어 있는지 확인한다.",
+    "필수 필드가 누락되었는지 확인한다.",
+    "체류목적과 체류자격 값이 allowed_values 안에 있는지 확인한다.",
+    "접수자, 심사자, 발급자 등 기관 작성란을 AI가 채우지 않았는지 확인한다.",
+    "사용자가 말하지 않은 사용용도, 여권번호, 주소, 체류기간 등을 임의 생성하지 않았는지 확인한다."
+  ],
+
+  "output_template": {
+    "form_id": "vn_overseas_registration_certificate_copy_application",
+    "form_name": "재외국민등록부등본교부신청서",
+    "form_profile_id": "vn_embassy_registration_certificate_copy_application",
+    "form_source_file": "베트남_재외국민등록부등본교부신청서_주베트남대한민국 대사관.hwp",
+    "fields": {},
+    "missing_fields": [],
+    "office_fields": [],
+    "user_confirmation_fields": []
+  }
+}
