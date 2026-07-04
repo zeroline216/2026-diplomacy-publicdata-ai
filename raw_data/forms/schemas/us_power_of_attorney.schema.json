@@ -1,0 +1,108 @@
+#예시
+{
+  "form_id": "us_power_of_attorney",
+  "form_name": "위임장",
+  "category": "재외국민등록",
+  "service_title": "재외국민등록부등본 교부 신청 위임",
+  "country": "미국",
+  "country_code": "US",
+  "source_file": "미국_위임장_주뉴욕대한민국총영사관.pdf",
+  "source_type": "mission_specific_form",
+  "description": "주뉴욕대한민국총영사관 재외국민등록부등본 교부신청 및 수령 위임장 필드 구조 정의",
+
+  "field_order": [
+    "authorized_person_name",
+    "authorized_person_resident_registration_number",
+    "authorized_person_birth_date",
+    "authorized_person_address",
+    "delegation_date",
+    "delegator_name"
+  ],
+
+  "fields": {
+    "authorized_person_name": {
+      "label": "위임받은 사람의 성명",
+      "section": "위임받은 사람",
+      "type": "string",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "위임받은 사람의 성명을 알려주세요."
+    },
+    "authorized_person_resident_registration_number": {
+      "label": "위임받은 사람의 주민등록번호",
+      "section": "위임받은 사람",
+      "type": "string",
+      "requirement": "conditional",
+      "condition": "위임받은 사람의 주민등록번호가 있는 경우",
+      "sensitive": true,
+      "source_allowed": ["user_input"],
+      "question": "위임받은 사람의 주민등록번호가 있나요? 없다면 생년월일을 알려주세요."
+    },
+    "authorized_person_birth_date": {
+      "label": "위임받은 사람의 생년월일",
+      "section": "위임받은 사람",
+      "type": "date",
+      "requirement": "conditional",
+      "condition": "위임받은 사람의 주민등록번호가 없는 경우",
+      "source_allowed": ["user_input"],
+      "question": "위임받은 사람의 생년월일을 알려주세요."
+    },
+    "authorized_person_address": {
+      "label": "위임받은 사람의 주소",
+      "section": "위임받은 사람",
+      "type": "string",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "위임받은 사람의 주소를 알려주세요."
+    },
+    "delegation_date": {
+      "label": "위임일",
+      "section": "서명",
+      "type": "date",
+      "requirement": "user_confirmation",
+      "source_allowed": ["user_input"],
+      "question": "위임장에 적을 날짜를 알려주세요."
+    },
+    "delegator_name": {
+      "label": "위임자 성명",
+      "section": "서명",
+      "type": "string",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "위임자 성명을 알려주세요."
+    }
+  },
+
+  "office_fields": [],
+
+  "user_confirmation_fields": [
+    "위임받은 사람 서명 또는 인",
+    "위임자 서명 또는 인",
+    "위임일"
+  ],
+
+  "agent_rules": [
+    "주뉴욕대한민국총영사관 재외국민등록 신청 profile에서만 이 위임장을 함께 생성한다.",
+    "위임받은 사람 정보는 사용자가 말하지 않으면 반드시 추가 질문으로 요청한다.",
+    "서명 또는 인은 AI가 작성하지 않고 사용자 확인 대상으로 둔다."
+  ],
+
+  "judge_rules": [
+    "주뉴욕대한민국총영사관 profile에서 위임장이 required_forms에 포함되어 있는지 확인한다.",
+    "위임받은 사람의 성명, 주소, 주민등록번호 또는 생년월일이 누락되었는지 확인한다.",
+    "위임자 성명이 누락되었는지 확인한다.",
+    "사용자가 말하지 않은 위임받은 사람 정보를 임의 생성하지 않았는지 확인한다.",
+    "서명란을 AI가 작성하지 않았는지 확인한다."
+  ],
+
+  "output_template": {
+    "form_id": "us_power_of_attorney",
+    "form_name": "위임장",
+    "form_profile_id": "us_ny_power_of_attorney",
+    "form_source_file": "미국_위임장_주뉴욕대한민국총영사관.pdf",
+    "fields": {},
+    "missing_fields": [],
+    "office_fields": [],
+    "user_confirmation_fields": []
+  }
+}
