@@ -1,0 +1,2130 @@
+{
+  "test_set_name": "재외공관 민원·사건사고 RAG 테스트 질문 세트",
+  "version": "1.0.0",
+  "language": "ko",
+  "generated_at": "2026-07-01T21:48:27.062525+09:00",
+  "based_on": {
+    "rag_jsonl_file": "재외공관_민원_사건사고_RAG_JSONL_카테고리통일.jsonl",
+    "description": "카테고리 라벨이 통일된 RAG용 JSONL을 기준으로, 민원유형 분류 Agent·RAG 검색·초안 생성·Judge LLM 검증을 테스트하기 위한 입력/정답 세트입니다."
+  },
+  "label_set": [
+    "여권",
+    "재외국민등록",
+    "공증·영사확인",
+    "가족관계",
+    "병역",
+    "사건사고"
+  ],
+  "schema": {
+    "user_query": "테스트에 넣을 사용자 발화",
+    "expected.route": "civil_service, emergency_manual, needs_clarification 중 하나",
+    "expected.category": "통일된 카테고리 라벨",
+    "expected.country": "기대 국가. 불명확하면 null",
+    "expected.mission": "기대 공관. 불명확하면 null",
+    "expected.title": "기대 민원명 또는 사건사고 매뉴얼 제목",
+    "expected.record_id": "RAG JSONL 원본 레코드 ID. needs_clarification이면 null일 수 있음",
+    "expected.needs_draft": "신청서·사유서·경위서 초안 생성이 필요한지 여부",
+    "expected.draft_template": "필요한 초안 템플릿 이름",
+    "expected.should_ask_followup": "답변 전 추가 질문이 필요한 항목",
+    "acceptable_retrieval_keywords": "검색 결과 또는 답변에 포함되면 좋은 핵심 키워드"
+  },
+  "summary": {
+    "case_count": 62,
+    "category_counts": {
+      "여권": 12,
+      "재외국민등록": 8,
+      "공증·영사확인": 9,
+      "가족관계": 11,
+      "병역": 6,
+      "사건사고": 16
+    },
+    "route_counts": {
+      "civil_service": 42,
+      "needs_clarification": 4,
+      "emergency_manual": 16
+    },
+    "draft_required_case_count": 18,
+    "followup_required_case_count": 34,
+    "linked_record_case_count": 58,
+    "needs_clarification_case_count": 4
+  },
+  "cases": [
+    {
+      "id": "TC_001",
+      "test_type": "classification_retrieval_draft",
+      "difficulty": "hard",
+      "user_query": "미국 시애틀에서 여권을 잃어버렸고 다음 주에 한국에 가야 해. 뭘 준비해야 해?",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "여권",
+        "country": "미국",
+        "mission": "주시애틀대한민국 총영사관",
+        "title": "여권 분실 신고",
+        "record_id": "us_08_06_ad1c584f",
+        "needs_rag": true,
+        "needs_draft": true,
+        "draft_template": "여권분실 경위서",
+        "should_ask_followup": [
+          "현지 경찰 신고 여부",
+          "긴급 출국 여부",
+          "현재 체류 도시 확인"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "미국",
+        "시애틀",
+        "여권 분실",
+        "분실 신고",
+        "경찰서",
+        "재외공관"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_002",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "일본 오사카에서 여권 재발급을 온라인으로 신청하고 싶어.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "여권",
+        "country": "일본",
+        "mission": "주오사카대한민국 총영사관",
+        "title": "온라인 여권 재발급 신청",
+        "record_id": "jp_06_02_fc8d77cc",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "일본",
+        "오사카",
+        "온라인 여권 재발급",
+        "여권"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_003",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "중국 상하이에서 여권 사실증명서를 신청해야 하는데 절차 알려줘.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "여권",
+        "country": "중국",
+        "mission": "주상하이대한민국 총영사관",
+        "title": "여권 사실증명 신청",
+        "record_id": "cn_03_05_278523a6",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "중국",
+        "상하이",
+        "여권 사실증명"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_004",
+      "test_type": "classification_retrieval_draft",
+      "difficulty": "normal",
+      "user_query": "캐나다 밴쿠버에서 여권을 분실했어. 신고 방법과 필요한 서류 알려줘.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "여권",
+        "country": "캐나다",
+        "mission": "주밴쿠버대한민국 총영사관",
+        "title": "여권 분실 신고",
+        "record_id": "ca_02_03_4d246e61",
+        "needs_rag": true,
+        "needs_draft": true,
+        "draft_template": "여권분실 경위서",
+        "should_ask_followup": [
+          "경찰 분실 확인서 보유 여부"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "캐나다",
+        "밴쿠버",
+        "여권 분실",
+        "신고"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_005",
+      "test_type": "classification_retrieval",
+      "difficulty": "easy",
+      "user_query": "베트남 호치민에서 여권 재발급 신청하려면 어디서 확인해야 해?",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "여권",
+        "country": "베트남",
+        "mission": "주호치민대한민국 총영사관",
+        "title": "온라인 여권 재발급 신청",
+        "record_id": "vn_03_02_57f3af02",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "베트남",
+        "호치민",
+        "여권 재발급"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_006",
+      "test_type": "classification_retrieval_draft",
+      "difficulty": "hard",
+      "user_query": "괌에서 여권을 잃어버렸는데 한국 공관 민원은 뭐로 봐야 해?",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "여권",
+        "country": "미국",
+        "mission": "주하갓냐대한민국 출장소",
+        "title": "여권 분실 신고",
+        "record_id": "us_12_06_843871e5",
+        "needs_rag": true,
+        "needs_draft": true,
+        "draft_template": "여권분실 경위서",
+        "should_ask_followup": [
+          "괌 체류지와 긴급 귀국 여부"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "괌",
+        "하갓냐",
+        "여권 분실"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_007",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "히로시마에서 여권 잃어버렸는데 온라인 신고만 하면 돼?",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "여권",
+        "country": "일본",
+        "mission": "주히로시마대한민국 총영사관",
+        "title": "여권 분실 신고",
+        "record_id": "jp_10_03_c2186e8c",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [
+          "재발급까지 필요한지 확인"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "일본",
+        "히로시마",
+        "여권 분실 신고"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_008",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "중국 선양에서 여권 재발급 비용이랑 준비물 알려줘.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "여권",
+        "country": "중국",
+        "mission": "주선양대한민국 총영사관",
+        "title": "온라인 여권 재발급 신청",
+        "record_id": "cn_04_04_e7a0f8b6",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "중국",
+        "선양",
+        "온라인 여권 재발급",
+        "수수료",
+        "준비물"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_009",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "미국 시카고에서 여권 관련 사실증명 신청하고 싶어.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "여권",
+        "country": "미국",
+        "mission": "주시카고대한민국 총영사관",
+        "title": "여권 사실증명 신청",
+        "record_id": "us_09_05_4033eae8",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "미국",
+        "시카고",
+        "여권 사실증명"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_010",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "뉴욕 필라델피아 쪽에서 여권 재발급 신청 가능해?",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "여권",
+        "country": "미국",
+        "mission": "주뉴욕총영사관필라델피아",
+        "title": "온라인 여권 재발급 신청",
+        "record_id": "us_02_04_c1c611b4",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "필라델피아",
+        "여권 재발급",
+        "온라인"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_011",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "캐나다 몬트리올에서 90일 넘게 체류할 예정인데 재외국민등록 해야 해?",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "재외국민등록",
+        "country": "캐나다",
+        "mission": "주몬트리올대한민국 총영사관",
+        "title": "재외국민 등록 신청",
+        "record_id": "ca_01_01_1530cb25",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "캐나다",
+        "몬트리올",
+        "90일",
+        "재외국민등록"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_012",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "미국 뉴욕에서 이사해서 주소가 바뀌었어. 재외국민등록 변경 신고는 어떻게 해?",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "재외국민등록",
+        "country": "미국",
+        "mission": "주뉴욕대한민국총영사관",
+        "title": "재외국민 등록 변경·이동 신고",
+        "record_id": "us_01_02_a30e93f1",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "미국",
+        "뉴욕",
+        "재외국민등록",
+        "변경",
+        "이동"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_013",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "중국 베이징에서 재외국민등록부등본을 발급받고 싶어.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "재외국민등록",
+        "country": "중국",
+        "mission": "주중국대한민국 대사관",
+        "title": "재외국민등록부등본 발급",
+        "record_id": "cn_07_03_858a781e",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "중국",
+        "베이징",
+        "재외국민등록부등본",
+        "발급"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_014",
+      "test_type": "classification_retrieval",
+      "difficulty": "hard",
+      "user_query": "칭다오에서 광저우로 거주지를 옮겼는데 재외국민등록도 이동 신고해야 해?",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "재외국민등록",
+        "country": "중국",
+        "mission": "주칭다오대한민국 총영사관",
+        "title": "재외국민 등록 변경·이동 신고",
+        "record_id": "cn_09_02_726e1674",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [
+          "현재 관할 공관 확인"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "칭다오",
+        "광저우",
+        "재외국민등록",
+        "이동 신고"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_015",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "일본 도쿄에 장기 체류 중인데 재외국민등록 절차 알려줘.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "재외국민등록",
+        "country": "일본",
+        "mission": "주일본대한민국 대사관",
+        "title": "재외국민 등록 신청",
+        "record_id": "jp_08_01_35e20bf6",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "일본",
+        "도쿄",
+        "장기 체류",
+        "재외국민등록"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_016",
+      "test_type": "classification_retrieval",
+      "difficulty": "easy",
+      "user_query": "베트남 다낭에서 재외국민등록 신청할 때 신청방법이 방문인지 온라인인지 알려줘.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "재외국민등록",
+        "country": "베트남",
+        "mission": "주다낭대한민국 총영사관",
+        "title": "재외국민 등록 신청",
+        "record_id": "vn_01_01_a885bd6e",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "베트남",
+        "다낭",
+        "재외국민등록",
+        "신청방법"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_017",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "미국 앵커리지에 사는데 재외국민등록을 해야 하는지 확인해줘.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "재외국민등록",
+        "country": "미국",
+        "mission": "주앵커리지대한민국 출장소",
+        "title": "재외국민 등록 신청",
+        "record_id": "us_11_01_c23ad807",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "미국",
+        "앵커리지",
+        "재외국민등록"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_018",
+      "test_type": "classification_clarification",
+      "difficulty": "easy",
+      "user_query": "재외국민등록부등본이 필요한데 어느 나라에 있는지 아직 말 안 했어.",
+      "expected": {
+        "route": "needs_clarification",
+        "data_type": null,
+        "category": "재외국민등록",
+        "country": null,
+        "mission": null,
+        "title": "재외국민등록부등본 발급",
+        "record_id": null,
+        "needs_rag": false,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [
+          "현재 국가",
+          "체류 지역 또는 관할 공관"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "재외국민등록부등본",
+        "국가 필요"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_019",
+      "test_type": "classification_retrieval_draft",
+      "difficulty": "normal",
+      "user_query": "일본 고베에서 위임장 사서증서 인증을 받고 싶어.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "공증·영사확인",
+        "country": "일본",
+        "mission": "주고베대한민국 총영사관",
+        "title": "일반 사서증서(계약서,위임장,진술서,확인서)의 인증",
+        "record_id": "jp_01_04_aac23762",
+        "needs_rag": true,
+        "needs_draft": true,
+        "draft_template": "공증 사유서",
+        "should_ask_followup": [
+          "문서 종류",
+          "본인 방문 가능 여부"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "일본",
+        "고베",
+        "위임장",
+        "사서증서",
+        "인증"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_020",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "LA 총영사관에서 한국 행정기관 제출용 문서 확인 받을 수 있어?",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "공증·영사확인",
+        "country": "미국",
+        "mission": "주로스앤젤레스대한민국 총영사관",
+        "title": "행정기관 제출용 문서의 확인",
+        "record_id": "us_04_08_b4b694c7",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "LA",
+        "행정기관 제출용 문서",
+        "확인"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_021",
+      "test_type": "classification_retrieval_draft",
+      "difficulty": "normal",
+      "user_query": "중국 우한에서 계약서 공증 비슷한 사서증서 인증을 받아야 해.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "공증·영사확인",
+        "country": "중국",
+        "mission": "주우한대한민국 총영사관",
+        "title": "일반 사서증서(계약서,위임장,진술서,확인서)의 인증",
+        "record_id": "cn_06_07_0766a076",
+        "needs_rag": true,
+        "needs_draft": true,
+        "draft_template": "공증 사유서",
+        "should_ask_followup": [
+          "계약서/위임장/진술서 중 문서 종류"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "중국",
+        "우한",
+        "계약서",
+        "공증",
+        "사서증서"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_022",
+      "test_type": "classification_retrieval_draft",
+      "difficulty": "normal",
+      "user_query": "캐나다 토론토에서 진술서 인증받으려면 뭐가 필요해?",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "공증·영사확인",
+        "country": "캐나다",
+        "mission": "주토론토대한민국 총영사관",
+        "title": "일반 사서증서(계약서,위임장,진술서,확인서)의 인증",
+        "record_id": "ca_04_04_908dfeca",
+        "needs_rag": true,
+        "needs_draft": true,
+        "draft_template": "공증 사유서",
+        "should_ask_followup": [
+          "문서 사용 목적"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "캐나다",
+        "토론토",
+        "진술서",
+        "인증"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_023",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "보스턴에서 한국 관공서에 제출할 서류 확인을 받아야 해.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "공증·영사확인",
+        "country": "미국",
+        "mission": "주보스턴대한민국 총영사관",
+        "title": "행정기관 제출용 문서의 확인",
+        "record_id": "us_06_08_51353148",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "보스턴",
+        "행정기관",
+        "문서 확인"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_024",
+      "test_type": "classification_retrieval_draft",
+      "difficulty": "normal",
+      "user_query": "중국 청두에서 위임장 인증 수수료와 준비서류 알려줘.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "공증·영사확인",
+        "country": "중국",
+        "mission": "주청두대한민국 총영사관",
+        "title": "일반 사서증서(계약서,위임장,진술서,확인서)의 인증",
+        "record_id": "cn_08_07_68ce876d",
+        "needs_rag": true,
+        "needs_draft": true,
+        "draft_template": "공증 사유서",
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "중국",
+        "청두",
+        "위임장",
+        "수수료",
+        "준비서류"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_025",
+      "test_type": "classification_retrieval_draft",
+      "difficulty": "normal",
+      "user_query": "베트남 호치민에서 확인서에 서명 인증을 받고 싶어.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "공증·영사확인",
+        "country": "베트남",
+        "mission": "주호치민대한민국 총영사관",
+        "title": "일반 사서증서(계약서,위임장,진술서,확인서)의 인증",
+        "record_id": "vn_03_04_6ff6aaa0",
+        "needs_rag": true,
+        "needs_draft": true,
+        "draft_template": "공증 사유서",
+        "should_ask_followup": [
+          "확인서 사용 목적"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "베트남",
+        "호치민",
+        "확인서",
+        "서명 인증"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_026",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "샌프란시스코에서 행정기관 제출용 문서 확인 절차 알려줘.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "공증·영사확인",
+        "country": "미국",
+        "mission": "주샌프란시스코대한민국 총영사관",
+        "title": "행정기관 제출용 문서의 확인",
+        "record_id": "us_07_08_dba267de",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "샌프란시스코",
+        "행정기관 제출용 문서"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_027",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "일본 후쿠오카에서 가족관계증명서를 발급받고 싶어.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "가족관계",
+        "country": "일본",
+        "mission": "주후쿠오카대한민국 총영사관",
+        "title": "가족관계등록부 등의 증명서 교부 등 신청",
+        "record_id": "jp_09_05_a1459d19",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "일본",
+        "후쿠오카",
+        "가족관계증명서"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_028",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "미국 댈러스에서 가족관계 영문증명서 신청해야 해.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "가족관계",
+        "country": "미국",
+        "mission": "주댈러스대한민국 출장소",
+        "title": "가족관계에 관한 영문증명서 발급 신청",
+        "record_id": "us_03_10_ec0a8979",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "미국",
+        "댈러스",
+        "가족관계",
+        "영문증명서"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_029",
+      "test_type": "classification_retrieval_draft",
+      "difficulty": "normal",
+      "user_query": "중국 상하이에서 아이 출생신고를 해야 하는데 절차 알려줘.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "가족관계",
+        "country": "중국",
+        "mission": "주상하이대한민국 총영사관",
+        "title": "출생신고",
+        "record_id": "cn_03_11_cf0be258",
+        "needs_rag": true,
+        "needs_draft": true,
+        "draft_template": "출생신고 초안",
+        "should_ask_followup": [
+          "자녀 출생일",
+          "부모 국적/혼인 여부",
+          "현지 출생증명서 보유 여부"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "중국",
+        "상하이",
+        "출생신고"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_030",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "애틀랜타에서 가족관계등록부 증명서 교부 신청하려면 준비물이 뭐야?",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "가족관계",
+        "country": "미국",
+        "mission": "주애틀랜타 대한민국 총영사관",
+        "title": "가족관계등록부 등의 증명서 교부 등 신청",
+        "record_id": "us_10_09_18b1679c",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "애틀랜타",
+        "가족관계등록부",
+        "준비물"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_031",
+      "test_type": "classification_retrieval_draft",
+      "difficulty": "normal",
+      "user_query": "광저우에서 출생신고할 때 필요한 서류 알려줘.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "가족관계",
+        "country": "중국",
+        "mission": "주광저우대한민국 총영사관",
+        "title": "출생신고",
+        "record_id": "cn_01_11_80a9786a",
+        "needs_rag": true,
+        "needs_draft": true,
+        "draft_template": "출생신고 초안",
+        "should_ask_followup": [
+          "출생 장소",
+          "부모 정보",
+          "출생증명서 여부"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "광저우",
+        "출생신고",
+        "구비서류"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_032",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "캐나다 밴쿠버에서 가족관계등록부 발급받는 방법 알려줘.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "가족관계",
+        "country": "캐나다",
+        "mission": "주밴쿠버대한민국 총영사관",
+        "title": "가족관계등록부 등의 증명서 교부 등 신청",
+        "record_id": "ca_02_05_d4554a57",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "캐나다",
+        "밴쿠버",
+        "가족관계등록부"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_033",
+      "test_type": "classification_retrieval_draft",
+      "difficulty": "normal",
+      "user_query": "시애틀에서 아기가 태어났는데 한국에 출생신고해야 해.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "가족관계",
+        "country": "미국",
+        "mission": "주시애틀대한민국 총영사관",
+        "title": "출생신고",
+        "record_id": "us_08_11_70018db6",
+        "needs_rag": true,
+        "needs_draft": true,
+        "draft_template": "출생신고 초안",
+        "should_ask_followup": [
+          "자녀 출생일",
+          "부모 혼인 여부",
+          "현지 출생증명서 여부"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "시애틀",
+        "출생신고",
+        "아기"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_034",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "중국 칭다오에서 가족관계 영문증명서 받을 수 있어?",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "가족관계",
+        "country": "중국",
+        "mission": "주칭다오대한민국 총영사관",
+        "title": "가족관계에 관한 영문증명서 발급 신청",
+        "record_id": "cn_09_10_30e3d2fb",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "칭다오",
+        "가족관계 영문증명서"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_035",
+      "test_type": "classification_retrieval_draft",
+      "difficulty": "normal",
+      "user_query": "미국 뉴욕에 유학 중인데 병역의무자 국외여행 기간연장 허가가 필요해.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "병역",
+        "country": "미국",
+        "mission": "주뉴욕대한민국총영사관",
+        "title": "병역의무자 국외여행(기간연장) 허가 신청",
+        "record_id": "us_01_12_c287a217",
+        "needs_rag": true,
+        "needs_draft": true,
+        "draft_template": "병역 국외여행 기간연장 사유서",
+        "should_ask_followup": [
+          "생년월일/병역 상태",
+          "체류 자격",
+          "현재 허가 만료일"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "미국",
+        "뉴욕",
+        "병역",
+        "국외여행",
+        "기간연장"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_036",
+      "test_type": "classification_retrieval_draft",
+      "difficulty": "normal",
+      "user_query": "중국 베이징에서 병역 국외여행 연장 신청 절차 알려줘.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "병역",
+        "country": "중국",
+        "mission": "주중국대한민국 대사관",
+        "title": "병역의무자 국외여행(기간연장) 허가 신청",
+        "record_id": "cn_07_12_cb856551",
+        "needs_rag": true,
+        "needs_draft": true,
+        "draft_template": "병역 국외여행 기간연장 사유서",
+        "should_ask_followup": [
+          "체류 목적",
+          "허가 만료일"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "중국",
+        "베이징",
+        "병역",
+        "기간연장"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_037",
+      "test_type": "classification_retrieval_draft",
+      "difficulty": "normal",
+      "user_query": "휴스턴에서 병역 기간연장 신청하려면 무슨 서류가 필요해?",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "병역",
+        "country": "미국",
+        "mission": "주휴스턴대한민국 총영사관",
+        "title": "병역의무자 국외여행(기간연장) 허가 신청",
+        "record_id": "us_14_12_ddd920ef",
+        "needs_rag": true,
+        "needs_draft": true,
+        "draft_template": "병역 국외여행 기간연장 사유서",
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "휴스턴",
+        "병역",
+        "서류"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_038",
+      "test_type": "classification_retrieval_draft",
+      "difficulty": "normal",
+      "user_query": "중국 다롄에 있는 군미필자인데 국외여행 허가 연장해야 해.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "병역",
+        "country": "중국",
+        "mission": "주다롄대한민국출장소",
+        "title": "병역의무자 국외여행(기간연장) 허가 신청",
+        "record_id": "cn_02_12_b877a274",
+        "needs_rag": true,
+        "needs_draft": true,
+        "draft_template": "병역 국외여행 기간연장 사유서",
+        "should_ask_followup": [
+          "병역 상태",
+          "체류 목적"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "다롄",
+        "군미필",
+        "국외여행 허가"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_039",
+      "test_type": "classification_retrieval",
+      "difficulty": "easy",
+      "user_query": "LA에서 유학생 병역 기간연장 민원은 어떤 유형이야?",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "병역",
+        "country": "미국",
+        "mission": "주로스앤젤레스대한민국 총영사관",
+        "title": "병역의무자 국외여행(기간연장) 허가 신청",
+        "record_id": "us_04_12_e2d13a30",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "LA",
+        "유학생",
+        "병역 기간연장"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_040",
+      "test_type": "classification_clarification",
+      "difficulty": "easy",
+      "user_query": "병역 국외여행 기간연장을 해야 하는데 내가 있는 국가는 아직 안 말했어.",
+      "expected": {
+        "route": "needs_clarification",
+        "data_type": null,
+        "category": "병역",
+        "country": null,
+        "mission": null,
+        "title": "병역의무자 국외여행(기간연장) 허가 신청",
+        "record_id": null,
+        "needs_rag": false,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [
+          "현재 국가",
+          "체류 지역 또는 관할 공관",
+          "체류 목적",
+          "허가 만료일"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "병역",
+        "국외여행",
+        "기간연장",
+        "국가 필요"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_041",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "해외에서 지갑이랑 현금을 도난당했어. 경찰 신고랑 송금 도움을 받을 수 있어?",
+      "expected": {
+        "route": "emergency_manual",
+        "data_type": "emergency_manual",
+        "category": "사건사고",
+        "country": null,
+        "mission": null,
+        "title": "분실/도난",
+        "record_id": "incident_01_fca6986e",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [
+          "현재 국가/도시",
+          "여권도 함께 분실했는지"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "분실",
+        "도난",
+        "현금",
+        "경찰",
+        "신속해외송금"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_042",
+      "test_type": "classification_retrieval",
+      "difficulty": "hard",
+      "user_query": "외국에서 체포됐는데 한국 영사관에 연락할 권리가 있어?",
+      "expected": {
+        "route": "emergency_manual",
+        "data_type": "emergency_manual",
+        "category": "사건사고",
+        "country": null,
+        "mission": null,
+        "title": "체포/구금",
+        "record_id": "incident_02_df667449",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [
+          "현재 국가",
+          "구금 기관",
+          "통역 필요 여부"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "체포",
+        "구금",
+        "영사",
+        "통역",
+        "변호사"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_043",
+      "test_type": "classification_retrieval",
+      "difficulty": "hard",
+      "user_query": "여행 중 납치된 상황이면 어떻게 행동해야 해?",
+      "expected": {
+        "route": "emergency_manual",
+        "data_type": "emergency_manual",
+        "category": "사건사고",
+        "country": null,
+        "mission": null,
+        "title": "인질/납치",
+        "record_id": "incident_03_f1919051",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [
+          "현재 위치를 말할 수 있는지",
+          "동행자 여부"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "인질",
+        "납치",
+        "피랍",
+        "구출"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_044",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "해외에서 시위가 격해지고 있는데 근처를 지나가도 될까?",
+      "expected": {
+        "route": "emergency_manual",
+        "data_type": "emergency_manual",
+        "category": "사건사고",
+        "country": null,
+        "mission": null,
+        "title": "집회/시위",
+        "record_id": "incident_04_7afc6fe8",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [
+          "현재 위치와 시위 장소와의 거리"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "집회",
+        "시위",
+        "현장",
+        "체포",
+        "촬영"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_045",
+      "test_type": "classification_retrieval",
+      "difficulty": "hard",
+      "user_query": "공습 경보가 울렸고 폭격 소리가 들려. 어디로 대피해야 해?",
+      "expected": {
+        "route": "emergency_manual",
+        "data_type": "emergency_manual",
+        "category": "사건사고",
+        "country": null,
+        "mission": null,
+        "title": "전쟁/공습/폭격",
+        "record_id": "incident_05_6c4ea695",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [
+          "실내/실외 여부",
+          "근처 지하시설 여부"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "공습",
+        "폭격",
+        "대피",
+        "지하",
+        "방공호"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_046",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "렌터카로 해외에서 교통사고가 났어. 보험 처리하려면 뭘 해야 해?",
+      "expected": {
+        "route": "emergency_manual",
+        "data_type": "emergency_manual",
+        "category": "사건사고",
+        "country": null,
+        "mission": null,
+        "title": "교통사고",
+        "record_id": "incident_06_25c013f9",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [
+          "부상자 여부",
+          "현지 경찰 신고 여부",
+          "렌터카 회사 연락 여부"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "교통사고",
+        "렌터카",
+        "보험",
+        "경찰 사고 경위서"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_047",
+      "test_type": "classification_retrieval",
+      "difficulty": "hard",
+      "user_query": "해안가에서 지진을 느꼈는데 해일이 올까 봐 무서워.",
+      "expected": {
+        "route": "emergency_manual",
+        "data_type": "emergency_manual",
+        "category": "사건사고",
+        "country": null,
+        "mission": null,
+        "title": "자연재해",
+        "record_id": "incident_07_b3ac73ad",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [
+          "현재 위치가 해안가인지",
+          "대피 가능한 고지대 여부"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "지진",
+        "해일",
+        "높은 지대",
+        "대피"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_048",
+      "test_type": "classification_retrieval",
+      "difficulty": "hard",
+      "user_query": "공항에서 총소리가 들렸어. 총기난사 테러면 어떻게 해야 해?",
+      "expected": {
+        "route": "emergency_manual",
+        "data_type": "emergency_manual",
+        "category": "사건사고",
+        "country": null,
+        "mission": null,
+        "title": "테러",
+        "record_id": "incident_08_91355320",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [
+          "현재 안전한 장소인지"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "총기난사",
+        "테러",
+        "대피",
+        "숨기"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_049",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "낯선 사람이 돈 줄 테니 가방을 대신 운반해달래. 마약범죄랑 관련 있을까?",
+      "expected": {
+        "route": "emergency_manual",
+        "data_type": "emergency_manual",
+        "category": "사건사고",
+        "country": null,
+        "mission": null,
+        "title": "마약",
+        "record_id": "incident_09_35d8a097",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "마약",
+        "가방 운반",
+        "수하물",
+        "거절"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_050",
+      "test_type": "classification_retrieval",
+      "difficulty": "hard",
+      "user_query": "가족이 해외에서 사망했다는 연락을 받았어. 공관에서 어떤 도움을 받을 수 있어?",
+      "expected": {
+        "route": "emergency_manual",
+        "data_type": "emergency_manual",
+        "category": "사건사고",
+        "country": null,
+        "mission": null,
+        "title": "가족 또는 지인의 해외 사망",
+        "record_id": "incident_10_32141abc",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [
+          "사망 발생 국가/지역",
+          "현지 경찰 신고 여부",
+          "여행자보험 여부"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "해외 사망",
+        "사망진단서",
+        "재외공관",
+        "가족 방문"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_051",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "대사관이라며 돈을 송금하라고 전화가 왔어. 보이스피싱인지 확인하고 싶어.",
+      "expected": {
+        "route": "emergency_manual",
+        "data_type": "emergency_manual",
+        "category": "사건사고",
+        "country": null,
+        "mission": null,
+        "title": "보이스 피싱",
+        "record_id": "incident_11_4918021b",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "보이스피싱",
+        "대사관 사칭",
+        "송금 요구",
+        "개인정보"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_052",
+      "test_type": "classification_retrieval",
+      "difficulty": "hard",
+      "user_query": "해외에서 드론이 액체를 뿌리는 것 같아. 어떻게 피해야 해?",
+      "expected": {
+        "route": "emergency_manual",
+        "data_type": "emergency_manual",
+        "category": "사건사고",
+        "country": null,
+        "mission": null,
+        "title": "테러",
+        "record_id": "incident_08_91355320",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [
+          "실내/실외 여부",
+          "바람 방향 확인 가능 여부"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "드론",
+        "액체",
+        "기체",
+        "테러",
+        "대피"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_053",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "복용 중인 감기약을 해외에서 한국으로 가져가도 괜찮을까? 마약 성분이 걱정돼.",
+      "expected": {
+        "route": "emergency_manual",
+        "data_type": "emergency_manual",
+        "category": "사건사고",
+        "country": null,
+        "mission": null,
+        "title": "마약",
+        "record_id": "incident_09_35d8a097",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [
+          "약 성분명",
+          "출발국/도착국"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "마약류 성분",
+        "의약품",
+        "처방전",
+        "반입"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_054",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "태풍 때문에 지하차도가 침수된 것 같은데 차로 지나가도 돼?",
+      "expected": {
+        "route": "emergency_manual",
+        "data_type": "emergency_manual",
+        "category": "사건사고",
+        "country": null,
+        "mission": null,
+        "title": "자연재해",
+        "record_id": "incident_07_b3ac73ad",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "태풍",
+        "호우",
+        "침수",
+        "지하차도",
+        "대피"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_055",
+      "test_type": "multi_intent_retrieval",
+      "difficulty": "hard",
+      "user_query": "미국 시애틀에서 여권을 잃어버렸고 현금도 도난당했어. 한 번에 안내해줘.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "여권",
+        "country": "미국",
+        "mission": "주시애틀대한민국 총영사관",
+        "title": "여권 분실 신고",
+        "record_id": "us_08_06_ad1c584f",
+        "needs_rag": true,
+        "needs_draft": true,
+        "draft_template": "여권분실 경위서",
+        "should_ask_followup": [
+          "현금 도난 경찰 신고 여부",
+          "긴급 송금 필요 여부"
+        ],
+        "secondary_targets": [
+          {
+            "data_type": "emergency_manual",
+            "category": "사건사고",
+            "title": "분실/도난",
+            "record_id": "incident_01_fca6986e"
+          }
+        ]
+      },
+      "acceptable_retrieval_keywords": [
+        "여권 분실",
+        "현금 도난",
+        "분실/도난"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_056",
+      "test_type": "classification_clarification",
+      "difficulty": "normal",
+      "user_query": "일본에서 가족관계증명서가 필요한데 어느 공관에 가야 하는지는 모르겠어.",
+      "expected": {
+        "route": "needs_clarification",
+        "data_type": null,
+        "category": "가족관계",
+        "country": "일본",
+        "mission": null,
+        "title": "가족관계등록부 등의 증명서 교부 등 신청",
+        "record_id": null,
+        "needs_rag": false,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [
+          "일본 내 체류 지역 또는 가까운 공관"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "일본",
+        "가족관계증명서",
+        "공관 확인"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_057",
+      "test_type": "classification_clarification",
+      "difficulty": "normal",
+      "user_query": "미국에서 위임장 인증받고 싶은데 도시는 아직 정하지 않았어.",
+      "expected": {
+        "route": "needs_clarification",
+        "data_type": null,
+        "category": "공증·영사확인",
+        "country": "미국",
+        "mission": null,
+        "title": "일반 사서증서(계약서,위임장,진술서,확인서)의 인증",
+        "record_id": null,
+        "needs_rag": false,
+        "needs_draft": true,
+        "draft_template": "공증 사유서",
+        "should_ask_followup": [
+          "미국 내 체류 지역 또는 관할 공관",
+          "문서 종류"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "미국",
+        "위임장",
+        "공증",
+        "관할 공관 필요"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_058",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "중국 시안에서 가족관계등록부 증명서 교부 신청 수수료 알려줘.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "가족관계",
+        "country": "중국",
+        "mission": "주시안대한민국 총영사관",
+        "title": "가족관계등록부 등의 증명서 교부 등 신청",
+        "record_id": "cn_05_09_821c504d",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "중국",
+        "시안",
+        "가족관계등록부",
+        "수수료"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_059",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "캐나다 오타와에서 가족관계등록부 증명서 신청하고 싶어.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "가족관계",
+        "country": "캐나다",
+        "mission": "주캐나다대한민국 대사관",
+        "title": "가족관계등록부 등의 증명서 교부 등 신청",
+        "record_id": "ca_03_05_f622f4f4",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "캐나다",
+        "오타와",
+        "가족관계등록부"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_060",
+      "test_type": "classification_retrieval_draft",
+      "difficulty": "normal",
+      "user_query": "베트남 대사관 관할에서 여권을 잃어버렸어. 신고 민원 알려줘.",
+      "expected": {
+        "route": "civil_service",
+        "data_type": "civil_service",
+        "category": "여권",
+        "country": "베트남",
+        "mission": "주베트남대한민국 대사관",
+        "title": "여권 분실 신고",
+        "record_id": "vn_02_03_4fd56d7b",
+        "needs_rag": true,
+        "needs_draft": true,
+        "draft_template": "여권분실 경위서",
+        "should_ask_followup": [
+          "현지 경찰 신고 여부"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "베트남",
+        "대사관",
+        "여권 분실 신고"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_061",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "사건사고 상황에서 영사안전콜센터 통역 도움을 받을 수 있는지 알고 싶어.",
+      "expected": {
+        "route": "emergency_manual",
+        "data_type": "emergency_manual",
+        "category": "사건사고",
+        "country": null,
+        "mission": null,
+        "title": "분실/도난",
+        "record_id": "incident_01_fca6986e",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [
+          "구체적 사건 유형"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "영사안전콜센터",
+        "통역",
+        "사건사고",
+        "긴급 대응"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    },
+    {
+      "id": "TC_062",
+      "test_type": "classification_retrieval",
+      "difficulty": "normal",
+      "user_query": "중국에서 전자담배를 들고 가도 되나? 처벌될 수 있어?",
+      "expected": {
+        "route": "emergency_manual",
+        "data_type": "emergency_manual",
+        "category": "사건사고",
+        "country": null,
+        "mission": null,
+        "title": "마약",
+        "record_id": "incident_09_35d8a097",
+        "needs_rag": true,
+        "needs_draft": false,
+        "draft_template": null,
+        "should_ask_followup": [
+          "방문 국가/지역",
+          "전자담배 종류"
+        ],
+        "secondary_targets": []
+      },
+      "acceptable_retrieval_keywords": [
+        "전자담배",
+        "반입",
+        "형사처벌",
+        "마약"
+      ],
+      "evaluation_points": [
+        "사용자 발화에서 민원/사건 유형을 올바르게 분류한다.",
+        "필요한 경우 국가·공관·민원명을 메타데이터 필터로 활용한다.",
+        "원문 근거가 부족한 항목은 임의 보완하지 않고 공관 확인 필요로 표시한다."
+      ],
+      "notes": ""
+    }
+  ]
+}
