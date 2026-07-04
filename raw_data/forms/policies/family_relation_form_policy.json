@@ -1,0 +1,486 @@
+{
+  "policy_id": "family_relation_form_policy",
+  "category": "가족관계",
+  "schema_file": "family_relation_forms.schema.json",
+  "raw_form_dir": "forms/raw/family_relation/",
+  "description": "재외공관별 가족관계 증명서 민원 서식 선택 정책. 국가별 schema를 만들지 않고 forms/raw/family_relation/ 폴더에서 필요한 서식을 불러온다.",
+
+  "default_forms": [
+    {
+      "form_id": "family_relation_certificate_application",
+      "form_name": "가족관계 등록사항별 증명서 교부 등 신청서",
+      "form_source_file": "가족관계 등록사항별 증명서 교부 등 신청서.pdf",
+      "form_path": "forms/raw/family_relation/가족관계 등록사항별 증명서 교부 등 신청서.pdf",
+      "condition": "기본 가족관계 등록사항별 증명서 교부 신청",
+      "form_selection_rule": "default_form"
+    }
+  ],
+
+  "default_rule": "exception_mission_forms에 없는 공관은 기본적으로 가족관계 등록사항별 증명서 교부 등 신청서를 사용한다. 대리 신청 또는 대리 수령이면 가족관계 증명서 신청 위임장을 추가한다. 우편수령을 원하는 경우 해당 공관에 우편수령 신청서가 등록되어 있으면 추가한다.",
+
+  "exception_mission_forms": {
+    "주상하이대한민국 총영사관": {
+      "required_forms": [
+        "family_relation_certificate_application_2"
+      ],
+      "checklist_note": "가족관계 등록사항별 증명서 교부 등 신청서_2를 사용한다."
+    },
+
+    "주우한대한민국 총영사관": {
+      "required_forms": [
+        "family_relation_certificate_application_2"
+      ],
+      "checklist_note": "가족관계 등록사항별 증명서 교부 등 신청서_2를 사용한다."
+    },
+
+    "주중국대한민국 대사관": {
+      "required_forms": [
+        "family_relation_certificate_application_2",
+        "family_relation_proxy_authorization"
+      ],
+      "checklist_note": "가족관계 등록사항별 증명서 교부 등 신청서_2와 가족관계 증명서 신청 위임장을 사용한다."
+    },
+
+    "주청두대한민국 총영사관": {
+      "required_forms": [
+        "family_relation_certificate_application_2"
+      ],
+      "checklist_note": "가족관계 등록사항별 증명서 교부 등 신청서_2를 사용한다."
+    },
+
+    "주니가타대한민국 총영사관": {
+      "required_forms": [
+        "family_relation_certificate_application_japan2"
+      ],
+      "checklist_note": "가족관계 등록사항별 증명서 교부 등 신청서_일본2를 사용한다."
+    },
+
+    "주삿포로대한민국 총영사관": {
+      "required_forms": [
+        "family_relation_certificate_application_japan3"
+      ],
+      "checklist_note": "가족관계 등록사항별 증명서 교부 등 신청서_일본3을 사용한다."
+    },
+
+    "주요코하마대한민국 총영사관": {
+      "required_forms": [
+        "family_relation_certificate_application_japan2"
+      ],
+      "checklist_note": "가족관계 등록사항별 증명서 교부 등 신청서_일본2를 사용한다."
+    },
+
+    "주일본대한민국 총영사관": {
+      "required_forms": [
+        "family_relation_certificate_application_japan2",
+        "family_relation_proxy_authorization"
+      ],
+      "checklist_note": "가족관계 등록사항별 증명서 교부 등 신청서_일본2와 가족관계 증명서 신청 위임장을 사용한다."
+    },
+
+    "주베트남대한민국 대사관": {
+      "required_forms": [
+        "family_relation_certificate_application_vietnam",
+        "english_family_relation_certificate_application_vietnam",
+        "family_relation_proxy_authorization_vietnam"
+      ],
+      "checklist_note": "가족관계 등록사항별 증명서 교부 등 신청서_베트남, 가족관계에 관한 영문증명서 발급 신청서_베트남, 등록사항별 증명서 발급 위임장_베트남을 사용한다."
+    },
+
+    "주호치민대한민국 총영사관": {
+      "required_forms": [
+        "family_relation_certificate_application_3"
+      ],
+      "checklist_note": "가족관계등록부 등의 증명서 교부 등 신청서_3을 사용한다."
+    },
+
+    "주뉴욕대한민국총영사관": {
+      "required_forms": [
+        "family_relation_certificate_application_2",
+        "family_relation_proxy_authorization",
+        "family_relation_mail_delivery_application_newyork"
+      ],
+      "checklist_note": "가족관계 등록사항별 증명서 교부 등 신청서_2, 가족관계 증명서 신청 위임장, 주뉴욕대한민국총영사관_가족관계증명서 우편수령 신청서를 사용한다."
+    },
+
+    "주로스앤젤레스대한민국 총영사관": {
+      "required_forms": [
+        "family_relation_certificate_application_4",
+        "family_relation_proxy_authorization"
+      ],
+      "checklist_note": "가족관계등록부등의증명서교부등신청서_4와 가족관계 증명서 신청 위임장을 사용한다."
+    },
+
+    "주보스턴대한민국 총영사관": {
+      "required_forms": [
+        "family_relation_certificate_application_3",
+        "family_relation_proxy_authorization"
+      ],
+      "checklist_note": "가족관계등록부 등의 증명서 교부 등 신청서_3과 가족관계 증명서 신청 위임장을 사용한다."
+    },
+
+    "주샌프란시스코대한민국 총영사관": {
+      "required_forms": [
+        "family_relation_certificate_application_2",
+        "family_relation_proxy_authorization"
+      ],
+      "checklist_note": "가족관계등록부등의증명서교부등신청서_2 계열 서식과 가족관계 증명서 신청 위임장을 사용한다."
+    },
+
+    "주시애틀대한민국 총영사관": {
+      "required_forms": [
+        "family_relation_certificate_application_2",
+        "family_relation_proxy_authorization"
+      ],
+      "checklist_note": "가족관계등록부등의증명서교부등신청서_2 계열 서식과 가족관계 증명서 신청 위임장을 사용한다."
+    },
+
+    "주시카고대한민국 총영사관": {
+      "required_forms": [
+        "family_relation_proxy_authorization",
+        "family_relation_certificate_application"
+      ],
+      "checklist_note": "가족관계 증명서 신청 위임장과 기본 가족관계등록부등의증명서교부등신청서를 사용한다."
+    },
+
+    "주애틀랜타 대한민국 총영사관": {
+      "required_forms": [
+        "family_relation_certificate_application_2"
+      ],
+      "checklist_note": "가족관계등록부등의증명서교부등신청서_2 계열 서식을 사용한다."
+    },
+
+    "주앵커리지대한민국 출장소": {
+      "required_forms": [
+        "family_relation_certificate_application",
+        "family_relation_mail_delivery_application_anchorage",
+        "family_relation_proxy_authorization"
+      ],
+      "checklist_note": "기본 가족관계등록부등의증명서교부등신청서, 미국_주앵커리지대한민국출장소_가족관계등록부우편수령신청서, 가족관계 증명서 신청 위임장을 사용한다."
+    },
+
+    "주호놀룰루대한민국 총영사관": {
+      "required_forms": [
+        "family_relation_certificate_application_2"
+      ],
+      "checklist_note": "가족관계등록부등의증명서교부등신청서_2 계열 서식을 사용한다."
+    },
+
+    "주몬트리올대한민국 총영사관": {
+      "required_forms": [
+        "family_relation_certificate_application_2",
+        "family_relation_proxy_authorization"
+      ],
+      "checklist_note": "가족관계등록부등의증명서교부등신청서_2 계열 서식과 가족관계 증명서 신청 위임장을 사용한다."
+    }
+  },
+
+  "mission_aliases": {
+    "상하이": "주상하이대한민국 총영사관",
+    "상해": "주상하이대한민국 총영사관",
+    "주상하이": "주상하이대한민국 총영사관",
+    "주상하이총영사관": "주상하이대한민국 총영사관",
+    "주상하이대한민국총영사관": "주상하이대한민국 총영사관",
+
+    "우한": "주우한대한민국 총영사관",
+    "무한": "주우한대한민국 총영사관",
+    "주우한": "주우한대한민국 총영사관",
+    "주우한총영사관": "주우한대한민국 총영사관",
+    "주우한대한민국총영사관": "주우한대한민국 총영사관",
+
+    "중국": "주중국대한민국 대사관",
+    "베이징": "주중국대한민국 대사관",
+    "북경": "주중국대한민국 대사관",
+    "주중국": "주중국대한민국 대사관",
+    "주중국대사관": "주중국대한민국 대사관",
+    "주중국대한민국대사관": "주중국대한민국 대사관",
+
+    "청두": "주청두대한민국 총영사관",
+    "성도": "주청두대한민국 총영사관",
+    "주청두": "주청두대한민국 총영사관",
+    "주청두총영사관": "주청두대한민국 총영사관",
+    "주청두대한민국총영사관": "주청두대한민국 총영사관",
+
+    "니가타": "주니가타대한민국 총영사관",
+    "니카타": "주니가타대한민국 총영사관",
+    "주니가타": "주니가타대한민국 총영사관",
+    "주니카타": "주니가타대한민국 총영사관",
+    "주니가타총영사관": "주니가타대한민국 총영사관",
+    "주니가타대한민국총영사관": "주니가타대한민국 총영사관",
+
+    "삿포로": "주삿포로대한민국 총영사관",
+    "주삿포로": "주삿포로대한민국 총영사관",
+    "주삿포로총영사관": "주삿포로대한민국 총영사관",
+    "주삿포로대한민국총영사관": "주삿포로대한민국 총영사관",
+
+    "요코하마": "주요코하마대한민국 총영사관",
+    "주요코하마": "주요코하마대한민국 총영사관",
+    "주요코하마총영사관": "주요코하마대한민국 총영사관",
+    "주요코하마대한민국총영사관": "주요코하마대한민국 총영사관",
+
+    "일본": "주일본대한민국 총영사관",
+    "주일본": "주일본대한민국 총영사관",
+    "주일본총영사관": "주일본대한민국 총영사관",
+    "주일본대한민국총영사관": "주일본대한민국 총영사관",
+
+    "베트남": "주베트남대한민국 대사관",
+    "하노이": "주베트남대한민국 대사관",
+    "주베트남": "주베트남대한민국 대사관",
+    "주베트남대사관": "주베트남대한민국 대사관",
+    "주베트남대한민국대사관": "주베트남대한민국 대사관",
+
+    "호치민": "주호치민대한민국 총영사관",
+    "호찌민": "주호치민대한민국 총영사관",
+    "주호치민": "주호치민대한민국 총영사관",
+    "주호치민총영사관": "주호치민대한민국 총영사관",
+    "주호치민대한민국총영사관": "주호치민대한민국 총영사관",
+
+    "뉴욕": "주뉴욕대한민국총영사관",
+    "주뉴욕": "주뉴욕대한민국총영사관",
+    "주뉴욕총영사관": "주뉴욕대한민국총영사관",
+    "주뉴욕대한민국 총영사관": "주뉴욕대한민국총영사관",
+
+    "로스앤젤레스": "주로스앤젤레스대한민국 총영사관",
+    "LA": "주로스앤젤레스대한민국 총영사관",
+    "엘에이": "주로스앤젤레스대한민국 총영사관",
+    "주LA": "주로스앤젤레스대한민국 총영사관",
+    "주로스앤젤레스": "주로스앤젤레스대한민국 총영사관",
+    "주로스앤젤레스총영사관": "주로스앤젤레스대한민국 총영사관",
+
+    "보스턴": "주보스턴대한민국 총영사관",
+    "주보스턴": "주보스턴대한민국 총영사관",
+    "주보스턴총영사관": "주보스턴대한민국 총영사관",
+
+    "샌프란시스코": "주샌프란시스코대한민국 총영사관",
+    "SF": "주샌프란시스코대한민국 총영사관",
+    "주샌프란시스코": "주샌프란시스코대한민국 총영사관",
+    "주샌프란시스코총영사관": "주샌프란시스코대한민국 총영사관",
+
+    "시애틀": "주시애틀대한민국 총영사관",
+    "주시애틀": "주시애틀대한민국 총영사관",
+    "주시애틀총영사관": "주시애틀대한민국 총영사관",
+
+    "시카고": "주시카고대한민국 총영사관",
+    "주시카고": "주시카고대한민국 총영사관",
+    "주시카고총영사관": "주시카고대한민국 총영사관",
+
+    "애틀랜타": "주애틀랜타 대한민국 총영사관",
+    "아틀란타": "주애틀랜타 대한민국 총영사관",
+    "주애틀랜타": "주애틀랜타 대한민국 총영사관",
+    "주애틀랜타총영사관": "주애틀랜타 대한민국 총영사관",
+    "주애틀랜타대한민국총영사관": "주애틀랜타 대한민국 총영사관",
+
+    "앵커리지": "주앵커리지대한민국 출장소",
+    "주앵커리지": "주앵커리지대한민국 출장소",
+    "주앵커리지출장소": "주앵커리지대한민국 출장소",
+    "주앵커리지대한민국출장소": "주앵커리지대한민국 출장소",
+
+    "호놀룰루": "주호놀룰루대한민국 총영사관",
+    "하와이": "주호놀룰루대한민국 총영사관",
+    "주호놀룰루": "주호놀룰루대한민국 총영사관",
+    "주호놀룰루총영사관": "주호놀룰루대한민국 총영사관",
+
+    "몬트리올": "주몬트리올대한민국 총영사관",
+    "몽트리올": "주몬트리올대한민국 총영사관",
+    "퀘벡": "주몬트리올대한민국 총영사관",
+    "주몬트리올": "주몬트리올대한민국 총영사관",
+    "주몬트리올총영사관": "주몬트리올대한민국 총영사관"
+  },
+
+  "intent_to_form_rules": {
+    "family_relation_certificate": [
+      "family_relation_certificate_application"
+    ],
+    "basic_certificate": [
+      "family_relation_certificate_application"
+    ],
+    "marriage_certificate": [
+      "family_relation_certificate_application"
+    ],
+    "adoption_certificate": [
+      "family_relation_certificate_application"
+    ],
+    "old_family_register": [
+      "family_relation_certificate_application"
+    ],
+    "english_family_relation_certificate": [
+      "english_family_relation_certificate_application_vietnam"
+    ],
+    "proxy_application": [
+      "family_relation_proxy_authorization"
+    ],
+    "mail_delivery": [
+      "family_relation_mail_delivery_application_newyork"
+    ]
+  },
+
+  "selection_logic": {
+    "step_1": "사용자 입력에서 국가, 도시, 공관명, 가족관계 민원 의도를 추출한다.",
+    "step_2": "공관명 또는 도시명이 mission_aliases에 있으면 표준 공관명으로 정규화한다.",
+    "step_3": "정규화된 공관명이 exception_mission_forms에 있으면 해당 공관의 required_forms 전체를 사용한다.",
+    "step_4": "정규화된 공관명이 exception_mission_forms에 없으면 default_forms를 사용한다.",
+    "step_5": "사용자가 대리 신청 또는 대리 수령을 말하면 family_relation_proxy_authorization을 추가한다.",
+    "step_6": "사용자가 영문 가족관계증명서를 요청하면 english_family_relation_certificate_application_vietnam 또는 해당 공관 policy에 등록된 영문증명서 신청서를 사용한다.",
+    "step_7": "사용자가 우편수령을 요청하면 해당 공관의 우편수령 신청서가 policy에 있을 때 추가한다.",
+    "step_8": "required_forms의 각 form_id는 family_relation_forms.schema.json의 forms에 존재해야 한다.",
+    "step_9": "각 form_id의 source_file은 forms/raw/family_relation/ 안에서 불러온다."
+  },
+
+  "agent_output_required_keys": [
+    "country",
+    "resolved_mission",
+    "category",
+    "service_title",
+    "family_relation_intent",
+    "required_forms",
+    "missing_fields"
+  ],
+
+  "agent_output_example_default": {
+    "country": "일본",
+    "resolved_mission": "주오사카대한민국 총영사관",
+    "category": "가족관계",
+    "service_title": "가족관계 등록사항별 증명서 교부 신청",
+    "family_relation_intent": "family_relation_certificate",
+    "required_forms": [
+      {
+        "form_id": "family_relation_certificate_application",
+        "form_name": "가족관계 등록사항별 증명서 교부 등 신청서",
+        "form_source_file": "가족관계 등록사항별 증명서 교부 등 신청서.pdf",
+        "form_path": "forms/raw/family_relation/가족관계 등록사항별 증명서 교부 등 신청서.pdf",
+        "form_selection_rule": "default_form"
+      }
+    ]
+  },
+
+  "agent_output_example_china_embassy": {
+    "country": "중국",
+    "resolved_mission": "주중국대한민국 대사관",
+    "category": "가족관계",
+    "service_title": "가족관계 등록사항별 증명서 교부 신청",
+    "family_relation_intent": "family_relation_certificate",
+    "required_forms": [
+      {
+        "form_id": "family_relation_certificate_application_2",
+        "form_name": "가족관계 등록사항별 증명서 교부 등 신청서_2",
+        "form_source_file": "가족관계 등록사항별 증명서 교부 등 신청서_2.pdf",
+        "form_path": "forms/raw/family_relation/가족관계 등록사항별 증명서 교부 등 신청서_2.pdf",
+        "form_selection_rule": "mission_required_form"
+      },
+      {
+        "form_id": "family_relation_proxy_authorization",
+        "form_name": "가족관계 증명서 신청 위임장",
+        "form_source_file": "가족관계 증명서 신청 위임장.pdf",
+        "form_path": "forms/raw/family_relation/가족관계 증명서 신청 위임장.pdf",
+        "form_selection_rule": "mission_required_form"
+      }
+    ]
+  },
+
+  "agent_output_example_vietnam_english": {
+    "country": "베트남",
+    "resolved_mission": "주베트남대한민국 대사관",
+    "category": "가족관계",
+    "service_title": "가족관계에 관한 영문증명서 발급 신청",
+    "family_relation_intent": "english_family_relation_certificate",
+    "required_forms": [
+      {
+        "form_id": "family_relation_certificate_application_vietnam",
+        "form_name": "가족관계 등록사항별 증명서 교부 등 신청서_베트남",
+        "form_source_file": "가족관계 등록사항별 증명서 교부 등 신청서_베트남.pdf",
+        "form_path": "forms/raw/family_relation/가족관계 등록사항별 증명서 교부 등 신청서_베트남.pdf",
+        "form_selection_rule": "mission_required_form"
+      },
+      {
+        "form_id": "english_family_relation_certificate_application_vietnam",
+        "form_name": "가족관계에 관한 영문증명서 발급 신청서_베트남",
+        "form_source_file": "가족관계에 관한 영문증명서 발급 신청서_베트남.pdf",
+        "form_path": "forms/raw/family_relation/가족관계에 관한 영문증명서 발급 신청서_베트남.pdf",
+        "form_selection_rule": "mission_required_form"
+      },
+      {
+        "form_id": "family_relation_proxy_authorization_vietnam",
+        "form_name": "등록사항별 증명서 발급 위임장_베트남",
+        "form_source_file": "등록사항별 증명서 발급 위임장_베트남.pdf",
+        "form_path": "forms/raw/family_relation/등록사항별 증명서 발급 위임장_베트남.pdf",
+        "form_selection_rule": "mission_required_form"
+      }
+    ]
+  },
+
+  "agent_output_example_newyork_mail": {
+    "country": "미국",
+    "resolved_mission": "주뉴욕대한민국총영사관",
+    "category": "가족관계",
+    "service_title": "가족관계증명서 교부 및 우편수령 신청",
+    "family_relation_intent": "mail_delivery",
+    "required_forms": [
+      {
+        "form_id": "family_relation_certificate_application_2",
+        "form_name": "가족관계 등록사항별 증명서 교부 등 신청서_2",
+        "form_source_file": "가족관계 등록사항별 증명서 교부 등 신청서_2.pdf",
+        "form_path": "forms/raw/family_relation/가족관계 등록사항별 증명서 교부 등 신청서_2.pdf",
+        "form_selection_rule": "mission_required_form"
+      },
+      {
+        "form_id": "family_relation_proxy_authorization",
+        "form_name": "가족관계 증명서 신청 위임장",
+        "form_source_file": "가족관계 증명서 신청 위임장.pdf",
+        "form_path": "forms/raw/family_relation/가족관계 증명서 신청 위임장.pdf",
+        "form_selection_rule": "mission_required_form"
+      },
+      {
+        "form_id": "family_relation_mail_delivery_application_newyork",
+        "form_name": "주뉴욕대한민국총영사관_가족관계증명서 우편수령 신청서",
+        "form_source_file": "주뉴욕대한민국총영사관_가족관계증명서 우편수령 신청서.pdf",
+        "form_path": "forms/raw/family_relation/주뉴욕대한민국총영사관_가족관계증명서 우편수령 신청서.pdf",
+        "form_selection_rule": "mission_required_form"
+      }
+    ]
+  },
+
+  "agent_output_example_anchorage_mail": {
+    "country": "미국",
+    "resolved_mission": "주앵커리지대한민국 출장소",
+    "category": "가족관계",
+    "service_title": "가족관계등록부 교부 및 우편수령 신청",
+    "family_relation_intent": "mail_delivery",
+    "required_forms": [
+      {
+        "form_id": "family_relation_certificate_application",
+        "form_name": "가족관계 등록사항별 증명서 교부 등 신청서",
+        "form_source_file": "가족관계 등록사항별 증명서 교부 등 신청서.pdf",
+        "form_path": "forms/raw/family_relation/가족관계 등록사항별 증명서 교부 등 신청서.pdf",
+        "form_selection_rule": "mission_required_form"
+      },
+      {
+        "form_id": "family_relation_mail_delivery_application_anchorage",
+        "form_name": "미국_주앵커리지대한민국출장소_가족관계등록부우편수령신청서",
+        "form_source_file": "미국_주앵커리지대한민국출장소_가족관계등록부우편수령신청서.pdf",
+        "form_path": "forms/raw/family_relation/미국_주앵커리지대한민국출장소_가족관계등록부우편수령신청서.pdf",
+        "form_selection_rule": "mission_required_form"
+      },
+      {
+        "form_id": "family_relation_proxy_authorization",
+        "form_name": "가족관계 증명서 신청 위임장",
+        "form_source_file": "가족관계 증명서 신청 위임장.pdf",
+        "form_path": "forms/raw/family_relation/가족관계 증명서 신청 위임장.pdf",
+        "form_selection_rule": "mission_required_form"
+      }
+    ]
+  },
+
+  "judge_checks": [
+    "required_forms의 form_id가 family_relation_forms.schema.json에 정의되어 있는지 확인한다.",
+    "required_forms의 form_source_file이 forms/raw/family_relation/ 안에 존재하는지 확인한다.",
+    "exception_mission_forms에 있는 공관은 해당 공관의 required_forms 전체가 포함되었는지 확인한다.",
+    "exception_mission_forms에 없는 공관은 기본적으로 가족관계 등록사항별 증명서 교부 등 신청서가 선택되었는지 확인한다.",
+    "대리 신청 또는 대리 수령이면 가족관계 증명서 신청 위임장이 포함되었는지 확인한다.",
+    "주중국대한민국 대사관이면 가족관계 등록사항별 증명서 교부 등 신청서_2와 가족관계 증명서 신청 위임장이 모두 포함되었는지 확인한다.",
+    "주베트남대한민국 대사관이면 베트남용 교부 신청서, 영문증명서 발급 신청서, 베트남용 위임장이 모두 포함되었는지 확인한다.",
+    "주뉴욕대한민국총영사관이면 신청서_2, 위임장, 우편수령 신청서가 모두 포함되었는지 확인한다.",
+    "주앵커리지대한민국 출장소이면 기본 신청서, 우편수령 신청서, 위임장이 모두 포함되었는지 확인한다.",
+    "우편수령 신청서가 없는 공관에서 우편수령을 요청한 경우 일반 안내로 처리하고 없는 파일명을 임의 생성하지 않는다.",
+    "기관 작성란은 AI가 작성하지 않았는지 확인한다.",
+    "사용자가 말하지 않은 성명, 주민등록번호, 생년월일, 등록기준지, 주소, 연락처, 청구사유, 대리인 정보를 임의 생성하지 않았는지 확인한다."
+  ]
+}
