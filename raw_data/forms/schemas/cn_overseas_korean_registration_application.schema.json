@@ -1,1 +1,327 @@
+#예시
+{
+  "form_id": "cn_overseas_korean_registration_application",
+  "form_name": "재외국민등록신청서",
+  "category": "재외국민등록",
+  "service_title": "재외국민등록 신청",
+  "country": "중국",
+  "country_code": "CN",
+  "source_file": "중국_재외국민등록신청.pdf",
+  "source_type": "official_form",
+  "description": "중국 지역 재외국민등록 신청서 기본 서식 및 공관별 변형 서식의 필드 구조 정의",
 
+  "field_order": [
+    "name_ko",
+    "name_en",
+    "resident_registration_number",
+    "birth_date",
+    "gender",
+    "passport_number",
+    "military_status",
+    "applicant_contact",
+    "registered_domicile_korea",
+    "china_address",
+    "china_phone",
+    "china_email",
+    "first_entry_date",
+    "expected_return_date",
+    "stay_purpose",
+    "stay_purpose_other",
+    "residence_status",
+    "residence_status_other",
+    "china_job",
+    "china_organization",
+    "domestic_contact_name",
+    "domestic_contact_phone",
+    "korea_address_contact",
+    "household_head_name",
+    "relationship_to_household_head"
+  ],
+
+  "fields": {
+    "name_ko": {
+      "label": "성명(한글)",
+      "section": "신청인",
+      "type": "string",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "신청인의 한글 성명을 알려주세요."
+    },
+    "name_en": {
+      "label": "성명(영문)",
+      "section": "신청인",
+      "type": "string",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "신청인의 영문 성명을 알려주세요."
+    },
+    "resident_registration_number": {
+      "label": "주민등록번호",
+      "section": "신청인",
+      "type": "string",
+      "requirement": "conditional",
+      "condition": "대한민국에서 주민등록을 한 경우",
+      "sensitive": true,
+      "source_allowed": ["user_input"],
+      "question": "대한민국 주민등록번호가 있나요? 있다면 알려주세요."
+    },
+    "birth_date": {
+      "label": "생년월일",
+      "section": "신청인",
+      "type": "date",
+      "requirement": "conditional",
+      "condition": "국내 주민등록을 하지 않아 주민등록번호가 없는 경우",
+      "source_allowed": ["user_input"],
+      "question": "주민등록번호가 없다면 생년월일을 알려주세요."
+    },
+    "gender": {
+      "label": "성별",
+      "section": "신청인",
+      "type": "enum",
+      "requirement": "conditional",
+      "condition": "국내 주민등록을 하지 않아 주민등록번호가 없는 경우",
+      "allowed_values": ["남", "여"],
+      "source_allowed": ["user_input"],
+      "question": "성별을 선택해주세요. 남 또는 여 중 하나입니다."
+    },
+    "passport_number": {
+      "label": "여권번호",
+      "section": "신청인",
+      "type": "string",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "여권번호를 알려주세요."
+    },
+    "military_status": {
+      "label": "병역관계",
+      "section": "신청인",
+      "type": "enum",
+      "requirement": "required",
+      "allowed_values": ["병역필", "미필", "해당 없음"],
+      "source_allowed": ["user_input"],
+      "question": "병역관계를 선택해주세요. 병역필, 미필, 해당 없음 중 하나입니다."
+    },
+    "applicant_contact": {
+      "label": "신청인 연락처",
+      "section": "신청인",
+      "type": "string",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "신청인의 연락처를 알려주세요."
+    },
+    "registered_domicile_korea": {
+      "label": "대한민국 내 등록기준지",
+      "section": "대한민국 내 정보",
+      "type": "string",
+      "requirement": "optional",
+      "condition": "가족관계등록이 되어 있는 경우",
+      "source_allowed": ["user_input"],
+      "question": "대한민국 내 등록기준지가 있으면 알려주세요."
+    },
+    "china_address": {
+      "label": "중국 내 주소 또는 거소",
+      "section": "중국 체류 정보",
+      "type": "string",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "중국 내 주소 또는 거소를 알려주세요."
+    },
+    "china_phone": {
+      "label": "중국 내 전화번호",
+      "section": "중국 체류 정보",
+      "type": "string",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "중국 내 전화번호를 알려주세요."
+    },
+    "china_email": {
+      "label": "중국 내 이메일",
+      "section": "중국 체류 정보",
+      "type": "string",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "이메일 주소를 알려주세요."
+    },
+    "first_entry_date": {
+      "label": "최초 입국일",
+      "section": "체류 정보",
+      "type": "date",
+      "requirement": "required",
+      "source_allowed": ["user_input"],
+      "question": "중국에 최초 입국한 날짜를 알려주세요."
+    },
+    "expected_return_date": {
+      "label": "귀국예정일",
+      "section": "체류 정보",
+      "type": "date",
+      "requirement": "optional",
+      "source_allowed": ["user_input"],
+      "question": "귀국예정일이 있다면 알려주세요."
+    },
+    "stay_purpose": {
+      "label": "체류목적",
+      "section": "체류 정보",
+      "type": "enum",
+      "requirement": "required",
+      "allowed_values": ["거주", "동거", "유학", "취업", "투자", "주재", "기타"],
+      "source_allowed": ["user_input"],
+      "question": "체류목적을 선택해주세요. 거주, 동거, 유학, 취업, 투자, 주재, 기타 중 하나입니다."
+    },
+    "stay_purpose_other": {
+      "label": "체류목적 기타 내용",
+      "section": "체류 정보",
+      "type": "string",
+      "requirement": "conditional",
+      "condition": "stay_purpose == 기타",
+      "source_allowed": ["user_input"],
+      "question": "체류목적이 기타라면 구체적인 내용을 알려주세요."
+    },
+    "residence_status": {
+      "label": "체류자격",
+      "section": "체류 정보",
+      "type": "enum",
+      "requirement": "required",
+      "allowed_values": ["영주", "가족체재", "유학", "취업", "투자", "상용", "공무", "워킹홀리데이", "기타"],
+      "source_allowed": ["user_input"],
+      "question": "체류자격을 선택해주세요. 영주, 가족체재, 유학, 취업, 투자, 상용, 공무, 워킹홀리데이, 기타 중 하나입니다."
+    },
+    "residence_status_other": {
+      "label": "체류자격 기타 내용",
+      "section": "체류 정보",
+      "type": "string",
+      "requirement": "conditional",
+      "condition": "residence_status == 기타",
+      "source_allowed": ["user_input"],
+      "question": "체류자격이 기타라면 구체적인 내용을 알려주세요."
+    },
+    "china_job": {
+      "label": "중국 내 직업",
+      "section": "추가 정보",
+      "type": "string",
+      "requirement": "optional",
+      "source_allowed": ["user_input"],
+      "question": "중국 내 직업이 있다면 알려주세요."
+    },
+    "china_organization": {
+      "label": "소속기관",
+      "section": "추가 정보",
+      "type": "string",
+      "requirement": "optional",
+      "source_allowed": ["user_input"],
+      "question": "소속기관이 있다면 알려주세요."
+    },
+    "domestic_contact_name": {
+      "label": "국내 연고자 성명",
+      "section": "추가 정보",
+      "type": "string",
+      "requirement": "optional",
+      "source_allowed": ["user_input"],
+      "question": "국내 비상연락처로 적을 사람의 성명을 알려주세요."
+    },
+    "domestic_contact_phone": {
+      "label": "국내 연고자 연락처",
+      "section": "추가 정보",
+      "type": "string",
+      "requirement": "optional",
+      "source_allowed": ["user_input"],
+      "question": "국내 비상연락처 전화번호를 알려주세요."
+    },
+    "korea_address_contact": {
+      "label": "한국 내 주소 및 연락처",
+      "section": "공관별 추가 정보",
+      "type": "string",
+      "requirement": "profile_optional",
+      "used_by_profiles": ["cn_embassy_overseas_registration_application"],
+      "source_allowed": ["user_input"],
+      "question": "한국 내 주소 및 연락처가 필요하면 알려주세요."
+    },
+    "household_head_name": {
+      "label": "세대주 성명",
+      "section": "공관별 추가 정보",
+      "type": "string",
+      "requirement": "profile_optional",
+      "used_by_profiles": ["cn_shanghai_overseas_registration_application"],
+      "source_allowed": ["user_input"],
+      "question": "세대주 성명을 알려주세요."
+    },
+    "relationship_to_household_head": {
+      "label": "세대주와의 관계",
+      "section": "공관별 추가 정보",
+      "type": "string",
+      "requirement": "profile_optional",
+      "used_by_profiles": ["cn_shanghai_overseas_registration_application"],
+      "source_allowed": ["user_input"],
+      "question": "세대주와의 관계를 알려주세요."
+    }
+  },
+
+  "office_fields": [
+    "접수번호",
+    "접수일시",
+    "심사관",
+    "담당공무원 확인사항"
+  ],
+
+  "user_confirmation_fields": [
+    "신청일",
+    "신청인 서명 또는 인",
+    "행정정보 공동이용 동의",
+    "본인정보 제공요구 및 공동이용 동의"
+  ],
+
+  "submission_documents": [
+    {
+      "name": "체류국 체류를 확인할 수 있는 서류",
+      "examples": ["중국 사증", "출입국심사 날인", "출입국 확인서", "유효비자 면 사본"],
+      "requirement": "required"
+    },
+    {
+      "name": "신원 확인 서류",
+      "examples": ["주민등록증", "그 밖의 신원 확인 서류"],
+      "requirement": "required"
+    },
+    {
+      "name": "여권 사본",
+      "examples": ["여권 인적사항란", "유효비자 면", "최초입국 스탬프 표시란"],
+      "requirement": "required"
+    },
+    {
+      "name": "가족관계기록사항에 관한 증명서 또는 제적등본",
+      "requirement": "conditional",
+      "condition": "대리신청의 경우"
+    }
+  ],
+
+  "agent_rules": [
+    "사용자 입력에서 서식 필드에 해당하는 값을 추출한다.",
+    "사용자가 말하지 않은 값은 임의로 채우지 않고 missing 상태로 둔다.",
+    "중국 내 주소, 중국 내 연락처, 최초 입국일, 여권번호는 사용자가 말하지 않으면 추가 질문으로 요청한다.",
+    "체류목적과 체류자격은 allowed_values 중 하나로 정규화한다.",
+    "기타를 선택한 경우 기타 내용을 별도 필드에 저장한다.",
+    "주민등록번호가 없는 경우 birth_date와 gender를 추가 질문으로 요청한다.",
+    "상하이 서식 profile인 경우 household_head_name과 relationship_to_household_head를 추가 확인한다.",
+    "주중국대사관 구형 서식 profile인 경우 korea_address_contact를 추가 확인할 수 있다."
+  ],
+
+  "judge_rules": [
+    "필수 필드가 누락되었는지 확인한다.",
+    "조건부 필드의 조건이 충족되었을 때 해당 필드가 입력되었는지 확인한다.",
+    "공관별 profile_optional 필드가 해당 profile에서 필요한지 확인한다.",
+    "체류목적과 체류자격 값이 allowed_values 안에 있는지 확인한다.",
+    "접수번호, 접수일시, 심사관 등 기관 작성란을 AI가 채우지 않았는지 확인한다.",
+    "신청일, 서명, 행정정보 공동이용 동의는 사용자 확인 대상으로 남겼는지 확인한다.",
+    "사용자 입력에 없는 여권번호, 주소, 입국일, 체류자격 등을 임의 생성하지 않았는지 확인한다."
+  ],
+
+  "output_template": {
+    "form_id": "cn_overseas_korean_registration_application",
+    "form_name": "재외국민등록신청서",
+    "form_profile_id": "",
+    "form_source_file": "",
+    "fields": {},
+    "missing_fields": [],
+    "office_fields": [],
+    "user_confirmation_fields": [],
+    "submission_documents": []
+  }
+}
