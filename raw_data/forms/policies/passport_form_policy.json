@@ -16,7 +16,7 @@
     }
   ],
 
-  "default_rule": "exception_mission_forms에 없는 공관은 기본적으로 여권발급신청서만 안내한다. 단, 사용자가 미성년자, 분실, 우편수령, 영문성명 변경, 로마자성명 변경, 기재사항 변경, 대리수령 등 추가 상황을 말하면 intent_to_form_rules에 따라 추가 서식을 required_forms에 포함한다.",
+  "default_rule": "exception_mission_forms에 없는 공관은 기본적으로 여권발급신청서만 안내한다. 단, 사용자가 미성년자, 분실, 우편수령, 영문성명 변경, 로마자성명 변경, 기재사항 변경, 대리수령, 여권사실증명, 여권사본증명, 여권실효확인 등 추가 상황을 말하면 intent_to_form_rules에 따라 추가 서식을 required_forms에 포함한다.",
 
   "exception_mission_forms": {
     "주요코하마대한민국 총영사관": {
@@ -24,50 +24,74 @@
         "passport_issue_application",
         "legal_representative_consent",
         "passport_loss_report",
-        "mail_delivery_application"
+        "mail_delivery_application",
+        "passport_fact_certificate_application",
+        "proxy_authorization"
       ],
-      "checklist_note": "여권발급신청서, 법정대리인 동의서, 여권분실신고서, 우편수령 신청서를 관리한다."
+      "checklist_note": "여권발급신청서, 법정대리인 동의서, 여권분실신고서, 우편수령 신청서, 여권사실증명서, 대리수령 위임장을 관리한다."
     },
 
     "주후쿠오카대한민국 총영사관": {
       "available_forms": [
         "passport_issue_application",
-        "legal_representative_consent"
+        "legal_representative_consent",
+        "passport_fact_certificate_application_3"
       ],
-      "checklist_note": "여권발급신청서와 법정대리인 동의서를 관리한다."
+      "checklist_note": "여권발급신청서, 법정대리인 동의서, 여권사실증명서_3을 관리한다."
     },
 
     "주니가타대한민국 총영사관": {
       "available_forms": [
         "passport_issue_application",
-        "passport_record_change_application"
+        "passport_record_change_application",
+        "passport_fact_certificate_application_2"
       ],
-      "checklist_note": "여권발급신청서와 여권 기재사항 변경신청서를 관리한다."
+      "checklist_note": "여권발급신청서, 여권 기재사항 변경신청서, 여권사실증명서_2를 관리한다."
+    },
+
+    "주삿포로대한민국 총영사관": {
+      "available_forms": [
+        "passport_issue_application",
+        "passport_fact_certificate_application_3"
+      ],
+      "checklist_note": "여권발급신청서와 여권사실증명서_3을 관리한다."
+    },
+
+    "주히로시마대한민국 총영사관": {
+      "available_forms": [
+        "passport_issue_application",
+        "passport_fact_certificate_application_3"
+      ],
+      "checklist_note": "여권발급신청서와 여권사실증명서_3을 관리한다."
     },
 
     "주베트남대한민국 대사관": {
       "available_forms": [
         "passport_issue_application",
-        "legal_representative_consent"
+        "legal_representative_consent",
+        "passport_copy_certificate_application_no_space",
+        "passport_fact_certificate_request_application"
       ],
-      "checklist_note": "여권발급신청서와 법정대리인 동의서를 관리한다."
+      "checklist_note": "여권발급신청서, 법정대리인 동의서, 여권사본증명서발급신청서, 여권사실증명신청서를 관리한다."
     },
 
     "주호치민대한민국 총영사관": {
       "available_forms": [
         "passport_issue_application",
-        "legal_representative_consent"
+        "legal_representative_consent",
+        "passport_fact_certificate_application_3"
       ],
-      "checklist_note": "여권발급신청서와 법정대리인 동의서를 관리한다."
+      "checklist_note": "여권발급신청서, 법정대리인 동의서, 여권사실증명서_3을 관리한다."
     },
 
     "주몬트리올대한민국 총영사관": {
       "available_forms": [
         "passport_issue_application",
         "passport_loss_report",
-        "legal_representative_consent"
+        "legal_representative_consent",
+        "passport_fact_certificate_application_2"
       ],
-      "checklist_note": "구비서류, 여권분실신고서, 법정대리인 동의서, 여권발급신청서를 관리한다."
+      "checklist_note": "여권발급신청서, 여권분실신고서, 법정대리인 동의서, 여권사실증명서_2를 관리한다."
     },
 
     "주뉴욕대한민국총영사관": {
@@ -75,9 +99,10 @@
         "passport_issue_application",
         "passport_loss_report",
         "english_name_change_application",
+        "passport_fact_certificate_application_3",
         "proxy_authorization"
       ],
-      "checklist_note": "여권분실신고서, 여권 영문성명 변경 신청서, 여권발급신청서, 여권 위임장을 관리한다. 단순 위임장은 대리수령 위임장으로 정규화한다."
+      "checklist_note": "여권발급신청서, 여권분실신고서, 여권 영문성명 변경 신청서, 여권사실증명서_3, 대리수령 위임장을 관리한다."
     },
 
     "주로스앤젤레스대한민국 총영사관": {
@@ -94,9 +119,12 @@
     "주보스턴대한민국 총영사관": {
       "available_forms": [
         "epassport_required_documents_checklist",
-        "passport_issue_application"
+        "passport_issue_application",
+        "proxy_authorization",
+        "passport_copy_certificate_application",
+        "passport_fact_certificate_application"
       ],
-      "checklist_note": "전자여권 구비서류는 checklist로 관리하고, 실제 신청서로 여권발급신청서를 사용한다."
+      "checklist_note": "전자여권 구비서류, 여권발급신청서, 대리수령 위임장, 여권사본증명서 발급신청서, 여권사실증명서를 관리한다."
     },
 
     "주샌프란시스코대한민국 총영사관": {
@@ -104,9 +132,11 @@
         "passport_issue_application",
         "mail_delivery_application",
         "legal_representative_consent",
-        "passport_loss_report"
+        "passport_loss_report",
+        "passport_fact_certificate_application_3",
+        "proxy_authorization"
       ],
-      "checklist_note": "여권발급신청서, 우편수령 신청서, 법정대리인 동의서, 여권분실신고서를 관리한다."
+      "checklist_note": "여권발급신청서, 우편수령 신청서, 법정대리인 동의서, 여권분실신고서, 여권사실증명서_3, 대리수령 위임장을 관리한다."
     },
 
     "주시애틀대한민국 총영사관": {
@@ -116,9 +146,10 @@
         "passport_record_change_application",
         "english_name_change_application",
         "mail_delivery_application",
-        "passport_issue_proxy_consent"
+        "passport_issue_proxy_consent",
+        "passport_fact_certificate_application_2"
       ],
-      "checklist_note": "대리수령 위임장, 법정대리인 동의서, 여권 기재사항 변경신청서, 영문성명 변경 신청서, 우편수령 신청서, 여권발급 위임장 및 동의서를 관리한다."
+      "checklist_note": "대리수령 위임장, 법정대리인 동의서, 여권 기재사항 변경신청서, 영문성명 변경 신청서, 우편수령 신청서, 여권발급 위임장 및 동의서, 여권사실증명서_2를 관리한다."
     },
 
     "주시카고대한민국 총영사관": {
@@ -128,9 +159,17 @@
         "proxy_authorization",
         "romanized_name_change_application",
         "braille_passport_application",
-        "passport_loss_report"
+        "passport_loss_report",
+        "passport_fact_certificate_application_3"
       ],
-      "checklist_note": "우편수령 신청서, 법정대리인 동의서, 위임장, 여권 로마자성명 변경 신청서, 점자여권 발급신청서, 여권분실신고서를 관리한다."
+      "checklist_note": "우편수령 신청서, 법정대리인 동의서, 대리수령 위임장, 여권 로마자성명 변경 신청서, 점자여권 발급신청서, 여권분실신고서, 여권사실증명서_3을 관리한다."
+    },
+
+    "주애틀랜타대한민국 총영사관": {
+      "available_forms": [
+        "passport_issue_application"
+      ],
+      "checklist_note": "기본 여권발급신청서를 관리한다."
     },
 
     "주앵커리지대한민국 출장소": {
@@ -144,14 +183,25 @@
       "checklist_note": "여권발급신청서, 영문성명 변경 신청서, 법정대리인 동의서, 대리수령 위임장, 우편수령 신청서를 관리한다."
     },
 
+    "주하갓냐대한민국 출장소": {
+      "available_forms": [
+        "passport_issue_application",
+        "passport_fact_certificate_application",
+        "passport_invalid_confirmation_application"
+      ],
+      "checklist_note": "여권발급신청서, 여권사실증명서, 여권실효확인신청서를 관리한다."
+    },
+
     "주호놀룰루대한민국 총영사관": {
       "available_forms": [
         "passport_issue_application",
         "passport_issue_application_legacy",
         "proxy_authorization",
-        "legal_representative_consent"
+        "legal_representative_consent",
+        "passport_copy_certificate_application_no_space",
+        "passport_fact_certificate_request_application"
       ],
-      "checklist_note": "여권발급신청서, 여권발급신청서 구양식, 위임장, 법정대리인 동의서를 관리한다. 단순 위임장은 대리수령 위임장으로 정규화한다."
+      "checklist_note": "여권발급신청서, 여권발급신청서 구양식, 대리수령 위임장, 법정대리인 동의서, 여권사본증명서발급신청서, 여권사실증명신청서를 관리한다."
     },
 
     "주휴스턴대한민국 총영사관": {
@@ -173,13 +223,30 @@
       "checklist_note": "여권발급신청서와 법정대리인 동의서를 관리한다."
     },
 
+    "주상하이대한민국 총영사관": {
+      "available_forms": [
+        "passport_issue_application",
+        "passport_fact_certificate_application_3"
+      ],
+      "checklist_note": "여권발급신청서와 여권사실증명서_3을 관리한다."
+    },
+
     "주중국대한민국 대사관": {
       "available_forms": [
         "passport_issue_application",
         "passport_record_change_application",
-        "passport_loss_report"
+        "passport_loss_report",
+        "passport_fact_certificate_application_3"
       ],
-      "checklist_note": "여권발급신청서, 여권 기재사항 변경신청서, 여권분실신고서를 관리한다."
+      "checklist_note": "여권발급신청서, 여권 기재사항 변경신청서, 여권분실신고서, 여권사실증명서_3을 관리한다."
+    },
+
+    "주청두대한민국 총영사관": {
+      "available_forms": [
+        "passport_issue_application",
+        "passport_fact_certificate_application_3"
+      ],
+      "checklist_note": "여권발급신청서와 여권사실증명서_3을 관리한다."
     }
   },
 
@@ -201,6 +268,16 @@
     "주니카타": "주니가타대한민국 총영사관",
     "주니가타총영사관": "주니가타대한민국 총영사관",
     "주니가타대한민국총영사관": "주니가타대한민국 총영사관",
+
+    "삿포로": "주삿포로대한민국 총영사관",
+    "주삿포로": "주삿포로대한민국 총영사관",
+    "주삿포로총영사관": "주삿포로대한민국 총영사관",
+    "주삿포로대한민국총영사관": "주삿포로대한민국 총영사관",
+
+    "히로시마": "주히로시마대한민국 총영사관",
+    "주히로시마": "주히로시마대한민국 총영사관",
+    "주히로시마총영사관": "주히로시마대한민국 총영사관",
+    "주히로시마대한민국총영사관": "주히로시마대한민국 총영사관",
 
     "베트남": "주베트남대한민국 대사관",
     "하노이": "주베트남대한민국 대사관",
@@ -250,8 +327,23 @@
     "주시카고": "주시카고대한민국 총영사관",
     "주시카고총영사관": "주시카고대한민국 총영사관",
 
+    "애틀랜타": "주애틀랜타대한민국 총영사관",
+    "아틀란타": "주애틀랜타대한민국 총영사관",
+    "주애틀랜타": "주애틀랜타대한민국 총영사관",
+    "주애틀랜타총영사관": "주애틀랜타대한민국 총영사관",
+
     "앵커리지": "주앵커리지대한민국 출장소",
     "주앵커리지": "주앵커리지대한민국 출장소",
+    "주앵커리지출장소": "주앵커리지대한민국 출장소",
+    "주앵커리지대한민국출장소": "주앵커리지대한민국 출장소",
+
+    "하갓냐": "주하갓냐대한민국 출장소",
+    "하갓냐출장소": "주하갓냐대한민국 출장소",
+    "아가냐": "주하갓냐대한민국 출장소",
+    "괌": "주하갓냐대한민국 출장소",
+    "주하갓냐": "주하갓냐대한민국 출장소",
+    "주하갓냐출장소": "주하갓냐대한민국 출장소",
+    "주하갓냐대한민국출장소": "주하갓냐대한민국 출장소",
 
     "호놀룰루": "주호놀룰루대한민국 총영사관",
     "하와이": "주호놀룰루대한민국 총영사관",
@@ -262,6 +354,18 @@
     "주휴스턴": "주휴스턴대한민국 총영사관",
     "주휴스턴총영사관": "주휴스턴대한민국 총영사관",
 
+    "광저우": "주광저우대한민국 총영사관",
+    "광주": "주광저우대한민국 총영사관",
+    "주광저우": "주광저우대한민국 총영사관",
+    "주광저우총영사관": "주광저우대한민국 총영사관",
+    "주광저우대한민국총영사관": "주광저우대한민국 총영사관",
+
+    "상하이": "주상하이대한민국 총영사관",
+    "상해": "주상하이대한민국 총영사관",
+    "주상하이": "주상하이대한민국 총영사관",
+    "주상하이총영사관": "주상하이대한민국 총영사관",
+    "주상하이대한민국총영사관": "주상하이대한민국 총영사관",
+
     "중국": "주중국대한민국 대사관",
     "베이징": "주중국대한민국 대사관",
     "북경": "주중국대한민국 대사관",
@@ -269,11 +373,11 @@
     "주중국대사관": "주중국대한민국 대사관",
     "주중국대한민국대사관": "주중국대한민국 대사관",
 
-    "광저우": "주광저우대한민국 총영사관",
-    "광주": "주광저우대한민국 총영사관",
-    "주광저우": "주광저우대한민국 총영사관",
-    "주광저우총영사관": "주광저우대한민국 총영사관",
-    "주광저우대한민국총영사관": "주광저우대한민국 총영사관"
+    "청두": "주청두대한민국 총영사관",
+    "성도": "주청두대한민국 총영사관",
+    "주청두": "주청두대한민국 총영사관",
+    "주청두총영사관": "주청두대한민국 총영사관",
+    "주청두대한민국총영사관": "주청두대한민국 총영사관"
   },
 
   "intent_to_form_rules": {
@@ -327,6 +431,15 @@
     "epassport_checklist": [
       "epassport_required_documents_checklist",
       "passport_issue_application"
+    ],
+    "passport_fact_certificate": [
+      "passport_fact_certificate_application"
+    ],
+    "passport_copy_certificate": [
+      "passport_copy_certificate_application"
+    ],
+    "passport_invalid_confirmation": [
+      "passport_invalid_confirmation_application"
     ]
   },
 
@@ -335,7 +448,7 @@
     "step_2": "공관명 또는 도시명이 mission_aliases에 있으면 표준 공관명으로 정규화한다.",
     "step_3": "정규화된 공관명이 exception_mission_forms에 있으면 해당 공관의 available_forms 안에서 사용자 상황에 맞는 서식을 고른다.",
     "step_4": "정규화된 공관명이 exception_mission_forms에 없으면 default_forms를 기본 안내한다.",
-    "step_5": "사용자 상황이 미성년자, 분실, 우편수령, 영문성명 변경, 로마자성명 변경, 기재사항 변경, 대리수령 등으로 확인되면 intent_to_form_rules에 따라 required_forms를 구성한다.",
+    "step_5": "사용자 상황이 미성년자, 분실, 우편수령, 영문성명 변경, 로마자성명 변경, 기재사항 변경, 대리수령, 여권사실증명, 여권사본증명, 여권실효확인 등으로 확인되면 intent_to_form_rules에 따라 required_forms를 구성한다.",
     "step_6": "required_forms의 각 form_id는 passport_forms.schema.json의 forms에 존재해야 한다.",
     "step_7": "각 form_id의 source_file은 forms/raw/passport/ 안에서 불러온다.",
     "step_8": "공관별 목록에 단순히 위임장이라고 적힌 경우 proxy_authorization으로 정규화한다."
@@ -368,6 +481,57 @@
     ]
   },
 
+  "agent_output_example_newyork_fact_certificate": {
+    "country": "미국",
+    "resolved_mission": "주뉴욕대한민국총영사관",
+    "category": "여권",
+    "service_title": "여권사실증명 신청",
+    "passport_intent": "passport_fact_certificate",
+    "required_forms": [
+      {
+        "form_id": "passport_fact_certificate_application_3",
+        "form_name": "여권사실증명서_3",
+        "form_source_file": "여권사실증명서_3",
+        "form_path": "forms/raw/passport/여권사실증명서_3",
+        "form_selection_rule": "mission_available_form"
+      }
+    ]
+  },
+
+  "agent_output_example_boston_copy_certificate": {
+    "country": "미국",
+    "resolved_mission": "주보스턴대한민국 총영사관",
+    "category": "여권",
+    "service_title": "여권사본증명서 발급 신청",
+    "passport_intent": "passport_copy_certificate",
+    "required_forms": [
+      {
+        "form_id": "passport_copy_certificate_application",
+        "form_name": "여권사본증명서 발급신청서",
+        "form_source_file": "여권사본증명서 발급신청서",
+        "form_path": "forms/raw/passport/여권사본증명서 발급신청서",
+        "form_selection_rule": "mission_available_form"
+      }
+    ]
+  },
+
+  "agent_output_example_hagatna_invalid_confirmation": {
+    "country": "미국",
+    "resolved_mission": "주하갓냐대한민국 출장소",
+    "category": "여권",
+    "service_title": "여권실효확인 신청",
+    "passport_intent": "passport_invalid_confirmation",
+    "required_forms": [
+      {
+        "form_id": "passport_invalid_confirmation_application",
+        "form_name": "여권실효확인신청서",
+        "form_source_file": "여권실효확인신청서",
+        "form_path": "forms/raw/passport/여권실효확인신청서",
+        "form_selection_rule": "mission_available_form"
+      }
+    ]
+  },
+
   "agent_output_example_yokohama_loss": {
     "country": "일본",
     "resolved_mission": "주요코하마대한민국 총영사관",
@@ -392,47 +556,6 @@
     ]
   },
 
-  "agent_output_example_minor": {
-    "country": "베트남",
-    "resolved_mission": "주호치민대한민국 총영사관",
-    "category": "여권",
-    "service_title": "미성년자 여권 발급 신청",
-    "passport_intent": "minor_passport",
-    "required_forms": [
-      {
-        "form_id": "passport_issue_application",
-        "form_name": "여권발급신청서",
-        "form_source_file": "여권발급신청서.pdf",
-        "form_path": "forms/raw/passport/여권발급신청서.pdf",
-        "form_selection_rule": "mission_available_form"
-      },
-      {
-        "form_id": "legal_representative_consent",
-        "form_name": "법정대리인 동의서",
-        "form_source_file": "법정대리인 동의서.pdf",
-        "form_path": "forms/raw/passport/법정대리인 동의서.pdf",
-        "form_selection_rule": "mission_available_form"
-      }
-    ]
-  },
-
-  "agent_output_example_china_record_change": {
-    "country": "중국",
-    "resolved_mission": "주중국대한민국 대사관",
-    "category": "여권",
-    "service_title": "여권 기재사항 변경 신청",
-    "passport_intent": "passport_record_change",
-    "required_forms": [
-      {
-        "form_id": "passport_record_change_application",
-        "form_name": "여권 기재사항 변경신청서",
-        "form_source_file": "여권 기재사항 변경신청서.pdf",
-        "form_path": "forms/raw/passport/여권 기재사항 변경신청서.pdf",
-        "form_selection_rule": "mission_available_form"
-      }
-    ]
-  },
-
   "agent_output_example_china_loss": {
     "country": "중국",
     "resolved_mission": "주중국대한민국 대사관",
@@ -452,30 +575,6 @@
         "form_name": "여권분실신고서",
         "form_source_file": "여권분실신고서.pdf",
         "form_path": "forms/raw/passport/여권분실신고서.pdf",
-        "form_selection_rule": "mission_available_form"
-      }
-    ]
-  },
-
-  "agent_output_example_china_guangzhou_minor": {
-    "country": "중국",
-    "resolved_mission": "주광저우대한민국 총영사관",
-    "category": "여권",
-    "service_title": "미성년자 여권 발급 신청",
-    "passport_intent": "minor_passport",
-    "required_forms": [
-      {
-        "form_id": "passport_issue_application",
-        "form_name": "여권발급신청서",
-        "form_source_file": "여권발급신청서.pdf",
-        "form_path": "forms/raw/passport/여권발급신청서.pdf",
-        "form_selection_rule": "mission_available_form"
-      },
-      {
-        "form_id": "legal_representative_consent",
-        "form_name": "법정대리인 동의서",
-        "form_source_file": "법정대리인 동의서.pdf",
-        "form_path": "forms/raw/passport/법정대리인 동의서.pdf",
         "form_selection_rule": "mission_available_form"
       }
     ]
@@ -518,8 +617,11 @@
     "영문성명 변경이면 여권 영문성명 변경 신청서가 포함되었는지 확인한다.",
     "로마자성명 변경이면 여권 로마자성명 변경 신청서가 포함되었는지 확인한다.",
     "대리수령 또는 위임이면 대리수령 위임장이 포함되었는지 확인한다.",
-    "주중국대한민국 대사관에서 여권 기재사항 변경 또는 여권 분실 상황이면 해당 공관의 available_forms 안에서 서식이 선택되었는지 확인한다.",
-    "주광저우대한민국 총영사관에서 미성년자 여권 발급이면 법정대리인 동의서가 포함되었는지 확인한다.",
+    "여권사실증명 신청이면 여권사실증명서 계열 서식이 포함되었는지 확인한다.",
+    "여권사본증명서 발급 신청이면 여권사본증명서 발급신청서 계열 서식이 포함되었는지 확인한다.",
+    "여권실효확인 신청이면 여권실효확인신청서가 포함되었는지 확인한다.",
+    "공관별로 여권사실증명서_2 또는 여권사실증명서_3을 쓰는 경우 해당 공관의 available_forms에 등록된 서식을 선택했는지 확인한다.",
+    "주하갓냐대한민국 출장소에서 여권실효확인 신청이면 passport_invalid_confirmation_application이 포함되었는지 확인한다.",
     "공관별 목록에 단순히 위임장이라고 적힌 경우 proxy_authorization으로 정규화되었는지 확인한다.",
     "기관 작성란은 AI가 작성하지 않았는지 확인한다.",
     "사용자가 말하지 않은 개인정보, 여권번호, 분실 일자, 분실 장소, 법정대리인 정보를 임의 생성하지 않았는지 확인한다."
