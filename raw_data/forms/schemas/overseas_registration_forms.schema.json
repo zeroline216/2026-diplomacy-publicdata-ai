@@ -1,0 +1,340 @@
+{
+  "schema_id": "overseas_registration_forms",
+  "category": "재외국민등록",
+  "raw_form_dir": "forms/raw/overseas_registration/",
+  "description": "재외국민등록 민원 통합 서식 구조 정의. 국가별로 schema를 나누지 않고 forms/raw/overseas_registration/ 폴더의 서식을 공관별 policy에서 불러온다.",
+
+  "forms": {
+    "overseas_registration_application": {
+      "form_name": "재외국민등록신청서",
+      "source_file": "재외국민등록신청서",
+      "form_type": "application",
+      "description": "기본 재외국민등록 신청서",
+      "required_fields": [
+        "name_ko",
+        "name_en",
+        "passport_number",
+        "military_status",
+        "applicant_contact",
+        "foreign_address",
+        "foreign_phone",
+        "foreign_email",
+        "first_entry_date",
+        "stay_purpose",
+        "residence_status"
+      ],
+      "conditional_fields": [
+        {
+          "field_id": "resident_registration_number",
+          "condition": "대한민국 주민등록번호가 있는 경우"
+        },
+        {
+          "field_id": "birth_date",
+          "condition": "주민등록번호가 없거나 구형 서식에서 생년월일을 요구하는 경우"
+        },
+        {
+          "field_id": "gender",
+          "condition": "주민등록번호가 없거나 구형 서식에서 성별을 요구하는 경우"
+        },
+        {
+          "field_id": "stay_purpose_other",
+          "condition": "체류목적이 기타인 경우"
+        },
+        {
+          "field_id": "residence_status_other",
+          "condition": "체류자격이 기타인 경우"
+        }
+      ],
+      "optional_fields": [
+        "registered_domicile_korea",
+        "foreign_job",
+        "foreign_organization",
+        "domestic_contact_name",
+        "domestic_contact_phone",
+        "expected_return_date"
+      ],
+      "office_fields": [
+        "접수번호",
+        "접수일시",
+        "심사관",
+        "담당공무원 확인사항"
+      ],
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 서명 또는 인",
+        "행정정보 공동이용 동의",
+        "본인정보 제공요구 및 공동이용 동의"
+      ]
+    },
+
+    "overseas_registration_application_2": {
+      "form_name": "재외국민등록신청서_2",
+      "source_file": "재외국민등록신청서_2",
+      "form_type": "application",
+      "inherits": "overseas_registration_application",
+      "description": "일부 공관에서 사용하는 대체형 재외국민등록 신청서"
+    },
+
+    "overseas_registration_proxy_authorization": {
+      "form_name": "재외국민등록위임장",
+      "source_file": "재외국민등록위임장",
+      "form_type": "authorization",
+      "description": "재외국민등록 관련 신청 또는 교부를 대리인에게 위임할 때 사용하는 기본 위임장",
+      "required_fields": [
+        "delegator_name",
+        "delegator_birth_date",
+        "delegator_address",
+        "delegator_contact",
+        "agent_name",
+        "agent_birth_date",
+        "agent_address",
+        "agent_contact",
+        "relationship_to_delegator",
+        "delegation_scope"
+      ],
+      "allowed_delegation_scope": [
+        "재외국민등록 신청",
+        "재외국민등록부등본 교부 신청",
+        "재외국민등록 변경이동 신고",
+        "기타"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "위임자 서명 또는 인",
+        "대리인 서명 또는 인"
+      ]
+    },
+
+    "overseas_registration_certificate_copy_application": {
+      "form_name": "재외국민등록부등본 교부 신청서",
+      "source_file": "재외국민등록부등본 교부 신청서",
+      "form_type": "certificate_copy_application",
+      "description": "재외국민등록부등본 발급 또는 교부를 신청할 때 사용하는 서식",
+      "required_fields": [
+        "name_ko",
+        "name_en",
+        "birth_date",
+        "passport_number",
+        "registered_mission",
+        "foreign_address",
+        "foreign_contact",
+        "usage_purpose",
+        "requested_copy_count"
+      ],
+      "conditional_fields": [
+        {
+          "field_id": "resident_registration_number",
+          "condition": "대한민국 주민등록번호가 있는 경우"
+        },
+        {
+          "field_id": "proxy_authorization",
+          "condition": "대리인이 신청하거나 수령하는 경우"
+        }
+      ],
+      "office_fields": [
+        "접수번호",
+        "접수자",
+        "심사자",
+        "발급자"
+      ],
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 서명 또는 인"
+      ]
+    },
+
+    "overseas_registration_change_move_report": {
+      "form_name": "재외국민등록 변경이동 신고서",
+      "source_file": "재외국민등록 변경이동 신고서",
+      "form_type": "change_move_report",
+      "description": "재외국민등록 사항 변경 또는 관할 공관 이동 신고 시 사용하는 서식",
+      "required_fields": [
+        "name_ko",
+        "passport_number",
+        "current_registered_mission",
+        "new_registered_mission",
+        "change_reason",
+        "changed_foreign_address",
+        "changed_foreign_contact"
+      ],
+      "conditional_fields": [
+        {
+          "field_id": "resident_registration_number",
+          "condition": "대한민국 주민등록번호가 있는 경우"
+        }
+      ],
+      "user_confirmation_fields": [
+        "신고일",
+        "신고인 서명 또는 인"
+      ],
+      "office_fields": [
+        "접수번호",
+        "접수일시",
+        "담당자"
+      ]
+    },
+
+    "cn_shanghai_overseas_registration_application": {
+      "form_name": "중국_주상하이 총영사관_재외국민등록신청서",
+      "source_file": "중국_주상하이 총영사관_재외국민등록신청서",
+      "form_type": "application",
+      "inherits": "overseas_registration_application",
+      "description": "주상하이대한민국 총영사관 전용 재외국민등록신청서"
+    },
+
+    "cn_embassy_overseas_registration_application": {
+      "form_name": "중국_주중국대한민국 대사관_재외국민등록신청서",
+      "source_file": "중국_주중국대한민국 대사관_재외국민등록신청서",
+      "form_type": "application",
+      "inherits": "overseas_registration_application",
+      "description": "주중국대한민국 대사관 전용 재외국민등록신청서"
+    },
+
+    "cn_embassy_certificate_copy_application": {
+      "form_name": "중국_주중국대한민국 대사관_재외국민등록부등본 교부 신청서",
+      "source_file": "중국_주중국대한민국 대사관_재외국민등록부등본 교부 신청서",
+      "form_type": "certificate_copy_application",
+      "inherits": "overseas_registration_certificate_copy_application",
+      "description": "주중국대한민국 대사관 전용 재외국민등록부등본 교부 신청서"
+    },
+
+    "jp_kobe_overseas_registration_application": {
+      "form_name": "주고베대한민국 총영사관 재외국민등록신청서",
+      "source_file": "재외국민등록신청서_2",
+      "form_type": "application",
+      "inherits": "overseas_registration_application_2",
+      "description": "주고베대한민국 총영사관에서 사용하는 재외국민등록신청서_2"
+    },
+
+    "jp_niigata_overseas_registration_application": {
+      "form_name": "주니가타대한민국 총영사관 재외국민등록신청서",
+      "source_file": "재외국민등록신청서_2",
+      "form_type": "application",
+      "inherits": "overseas_registration_application_2",
+      "description": "주니가타대한민국 총영사관에서 사용하는 재외국민등록신청서_2"
+    },
+
+    "jp_sapporo_overseas_registration_application": {
+      "form_name": "일본_주삿포로대한민국 총영사관재외국민등록신청서",
+      "source_file": "일본_주삿포로대한민국 총영사관재외국민등록신청서",
+      "form_type": "application",
+      "inherits": "overseas_registration_application",
+      "description": "주삿포로대한민국 총영사관 전용 재외국민등록신청서"
+    },
+
+    "jp_yokohama_overseas_registration_application": {
+      "form_name": "재외국민등록신청서_일본2",
+      "source_file": "재외국민등록신청서_일본2",
+      "form_type": "application",
+      "inherits": "overseas_registration_application",
+      "description": "주요코하마대한민국 총영사관 전용 재외국민등록신청서"
+    },
+
+    "vn_embassy_overseas_registration_application": {
+      "form_name": "재외국민등록 신청서",
+      "source_file": "재외국민등록 신청서",
+      "form_type": "application",
+      "inherits": "overseas_registration_application",
+      "description": "주베트남대한민국대사관에서 사용하는 재외국민등록 신청서"
+    },
+
+    "vn_embassy_certificate_copy_application": {
+      "form_name": "재외국민등록부등본교부신청서_베트남",
+      "source_file": "재외국민등록부등본교부신청서_베트남",
+      "form_type": "certificate_copy_application",
+      "inherits": "overseas_registration_certificate_copy_application",
+      "description": "주베트남대한민국대사관에서 재외국민등록 신청 시 함께 제출하는 재외국민등록부등본교부신청서"
+    },
+
+    "vn_hochiminh_overseas_registration_application": {
+      "form_name": "주호치민대한민국 총영사관 재외국민등록신청서",
+      "source_file": "재외국민등록신청서_2",
+      "form_type": "application",
+      "inherits": "overseas_registration_application_2",
+      "description": "주호치민대한민국 총영사관에서 사용하는 재외국민등록신청서_2"
+    },
+
+    "us_newyork_certificate_copy_application": {
+      "form_name": "미국_재외국민등록부등본 교부신청서_주뉴욕대한민국총영사관",
+      "source_file": "미국_재외국민등록부등본 교부신청서_주뉴욕대한민국총영사관",
+      "form_type": "certificate_copy_application",
+      "inherits": "overseas_registration_certificate_copy_application",
+      "description": "주뉴욕대한민국 총영사관 전용 재외국민등록부등본 교부신청서"
+    },
+
+    "us_newyork_overseas_registration_application": {
+      "form_name": "미국_재외국민등록신청_주뉴욕대한민국총영사관",
+      "source_file": "미국_재외국민등록신청_주뉴욕대한민국총영사관",
+      "form_type": "application",
+      "inherits": "overseas_registration_application",
+      "description": "주뉴욕대한민국 총영사관 전용 재외국민등록신청서"
+    },
+
+    "us_newyork_default_overseas_registration_application": {
+      "form_name": "재외국민등록신청서",
+      "source_file": "재외국민등록신청서",
+      "form_type": "application",
+      "inherits": "overseas_registration_application",
+      "description": "주뉴욕대한민국 총영사관 제출 목록에 포함된 기본 재외국민등록신청서"
+    },
+
+    "us_newyork_proxy_authorization": {
+      "form_name": "재외국민등록위임장",
+      "source_file": "재외국민등록위임장",
+      "form_type": "authorization",
+      "inherits": "overseas_registration_proxy_authorization",
+      "description": "주뉴욕대한민국 총영사관 제출 목록에 포함된 재외국민등록위임장"
+    },
+
+    "us_boston_overseas_registration_application": {
+      "form_name": "미국_주보스턴대한민국 총영사관_재외국민등록신청",
+      "source_file": "미국_주보스턴대한민국 총영사관_재외국민등록신청",
+      "form_type": "application",
+      "inherits": "overseas_registration_application",
+      "description": "주보스턴대한민국 총영사관 전용 재외국민등록신청서"
+    },
+
+    "us_honolulu_overseas_registration_application": {
+      "form_name": "재외국민등록 신청서_미국2",
+      "source_file": "재외국민등록 신청서_미국2",
+      "form_type": "application",
+      "inherits": "overseas_registration_application",
+      "description": "주호놀룰루대한민국 총영사관 전용 재외국민등록신청서"
+    },
+
+    "us_seattle_change_move_report": {
+      "form_name": "미국_주시애틀대한민국 총영사관_재외국민등록 변경이동 신고서",
+      "source_file": "미국_주시애틀대한민국 총영사관_재외국민등록 변경이동 신고서",
+      "form_type": "change_move_report",
+      "inherits": "overseas_registration_change_move_report",
+      "description": "주시애틀대한민국 총영사관 전용 재외국민등록 변경이동 신고서"
+    },
+
+    "us_seattle_overseas_registration_application": {
+      "form_name": "미국_주시애틀대한민국 총영사관_재외국민등록신청",
+      "source_file": "미국_주시애틀대한민국 총영사관_재외국민등록신청",
+      "form_type": "application",
+      "inherits": "overseas_registration_application",
+      "description": "주시애틀대한민국 총영사관 전용 재외국민등록신청서"
+    },
+
+    "ca_montreal_overseas_registration_application": {
+      "form_name": "재외국민등록신청서_캐나다2",
+      "source_file": "재외국민등록신청서_캐나다2",
+      "form_type": "application",
+      "inherits": "overseas_registration_application",
+      "description": "주몬트리올대한민국 총영사관 전용 재외국민등록신청서"
+    }
+  },
+
+  "common_judge_rules": [
+    "사용자가 말하지 않은 개인정보, 여권번호, 주소, 입국일, 체류목적, 체류자격을 임의 생성하지 않는다.",
+    "접수번호, 접수일시, 심사관, 담당공무원 확인사항 등 기관 작성란은 AI가 작성하지 않는다.",
+    "신청일, 신고일, 작성일, 서명, 행정정보 공동이용 동의는 사용자 확인 대상으로 남긴다.",
+    "재외국민등록 신청 기본 서식은 overseas_registration_application을 사용한다.",
+    "공관별 예외가 있는 경우 overseas_registration_form_policy.json의 exception_mission_forms를 우선 적용한다.",
+    "대리 신청 또는 대리 수령이면 overseas_registration_proxy_authorization을 추가한다.",
+    "재외국민등록부등본 교부 신청이 필요한 공관은 certificate_copy_application 계열 서식을 함께 포함한다.",
+    "재외국민등록 변경이동 신고가 필요한 경우 overseas_registration_change_move_report 계열 서식을 사용한다."
+  ]
+}
