@@ -1,0 +1,352 @@
+{
+  "schema_id": "birth_report_forms",
+  "category": "출생신고",
+  "raw_form_dir": "forms/raw/birth_report/",
+  "description": "재외공관 출생신고 민원 통합 서식 구조 정의. 국가별 schema를 만들지 않고 forms/raw/birth_report/ 폴더의 서식을 공관별 policy에서 불러온다.",
+
+  "forms": {
+    "birth_report": {
+      "form_name": "출생신고서",
+      "source_file": "출생신고서.pdf",
+      "form_type": "birth_report",
+      "description": "재외공관을 통해 자녀의 출생 사실을 가족관계등록부에 신고할 때 사용하는 기본 서식",
+      "required_fields": [
+        "child_name_ko_last",
+        "child_name_ko_first",
+        "child_gender",
+        "birth_status",
+        "birth_datetime_local",
+        "birth_place_type",
+        "birth_place_address",
+        "registered_domicile_decided_by_parents",
+        "child_address",
+        "household_head_and_relation",
+        "father_name",
+        "father_resident_registration_number_or_birth_date",
+        "mother_name",
+        "mother_resident_registration_number_or_birth_date",
+        "father_registered_domicile",
+        "mother_registered_domicile",
+        "reporter_name",
+        "reporter_resident_registration_number_or_birth_date",
+        "reporter_qualification",
+        "reporter_address",
+        "reporter_phone"
+      ],
+      "optional_fields": [
+        "child_name_hanja_last",
+        "child_name_hanja_first",
+        "child_bon_hanja",
+        "dual_nationality_info",
+        "father_name_hanja",
+        "father_bon_hanja",
+        "mother_name_hanja",
+        "mother_bon_hanja",
+        "maternal_surname_agreement",
+        "closed_family_register_info",
+        "multiple_birth_status",
+        "birth_order",
+        "reporter_email",
+        "submitter_name",
+        "submitter_resident_registration_number_or_birth_date",
+        "father_education_level",
+        "mother_education_level"
+      ],
+      "conditional_fields": [
+        {
+          "field_id": "dual_nationality_info",
+          "condition": "자녀가 복수국적자인 경우"
+        },
+        {
+          "field_id": "closed_family_register_info",
+          "condition": "친생자관계 부존재확인판결 등으로 가족관계등록부 폐쇄 후 다시 출생신고하는 경우"
+        },
+        {
+          "field_id": "multiple_birth_status",
+          "condition": "쌍둥이 등 다태아인 경우"
+        },
+        {
+          "field_id": "submitter_name",
+          "condition": "신고인이 아닌 제출인이 신고서를 제출하는 경우"
+        }
+      ],
+      "allowed_birth_status": [
+        "혼인중의 출생자",
+        "혼인외의 출생자"
+      ],
+      "allowed_birth_place_type": [
+        "자택",
+        "병원",
+        "기타"
+      ],
+      "allowed_reporter_qualification": [
+        "부",
+        "모",
+        "동거친족",
+        "기타"
+      ],
+      "submission_documents": [
+        {
+          "name": "출생증명서 또는 출생사실을 증명하는 서면",
+          "condition": "항상 필요"
+        },
+        {
+          "name": "외국어 출생증명서 번역문",
+          "condition": "현지 출생증명서가 외국어인 경우"
+        },
+        {
+          "name": "부 또는 모의 혼인관계증명서",
+          "condition": "가족관계등록관서에서 확인할 수 없는 경우 또는 혼인외 출생 관련 확인이 필요한 경우"
+        },
+        {
+          "name": "모의 기본증명서",
+          "condition": "1998.06.14 이후 외국인 부와 한국인 모 사이에 출생한 자녀의 출생신고인 경우"
+        },
+        {
+          "name": "여권 또는 신분증 사본",
+          "condition": "신고인 신분확인이 필요한 경우"
+        },
+        {
+          "name": "복수국적 소명자료",
+          "condition": "자녀가 복수국적자인 경우"
+        }
+      ],
+      "office_fields": [
+        "읍면동접수",
+        "가족관계등록관서 송부",
+        "가족관계등록관서 접수 및 처리",
+        "접수담당공무원 확인란"
+      ],
+      "user_confirmation_fields": [
+        "신고일",
+        "신고인 서명 또는 인",
+        "제출인 서명 또는 인"
+      ]
+    },
+
+    "electronic_transmission_application": {
+      "form_name": "전자적송부신청서",
+      "source_file": "전자적송부신청서.pdf",
+      "form_type": "electronic_transmission_application",
+      "description": "재외공관에 제출한 가족관계등록 신고서류를 외교부장관을 거쳐 재외국민 가족관계등록사무소로 전자적으로 송부하도록 신청하는 서식",
+      "required_fields": [
+        "applicant_name",
+        "applicant_birth_date",
+        "applicant_phone",
+        "applicant_email",
+        "submitted_document_type",
+        "submitted_document_count"
+      ],
+      "optional_fields": [
+        "mission_name",
+        "confirmation_date",
+        "transmission_date"
+      ],
+      "office_fields": [
+        "송부업무담당자",
+        "재외공관 직원 확인란",
+        "송부일자"
+      ],
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 서명 또는 날인",
+        "확인자 서명"
+      ]
+    },
+
+    "electronic_transmission_application_2": {
+      "form_name": "전자적송부신청서_2",
+      "source_file": "전자적송부신청서_2.pdf",
+      "form_type": "electronic_transmission_application",
+      "inherits": "electronic_transmission_application",
+      "description": "일부 미국 공관에서 사용하는 대체형 전자적송부신청서"
+    },
+
+    "jp_nagoya_electronic_transmission_application": {
+      "form_name": "일본_주나고야대한민국총영사관_전자적송부신청서",
+      "source_file": "일본_주나고야대한민국총영사관_전자적송부신청서.pdf",
+      "form_type": "electronic_transmission_application",
+      "inherits": "electronic_transmission_application",
+      "description": "주나고야대한민국 총영사관 전용 전자적송부신청서"
+    },
+
+    "us_newyork_electronic_transmission_application": {
+      "form_name": "미국_주뉴욕총영사관_전자적송부신청서",
+      "source_file": "미국_주뉴욕총영사관_전자적송부신청서.pdf",
+      "form_type": "electronic_transmission_application",
+      "inherits": "electronic_transmission_application",
+      "description": "주뉴욕대한민국총영사관 전용 전자적송부신청서"
+    },
+
+    "us_seattle_electronic_transmission_application": {
+      "form_name": "미국_주시애틀대한민국 총영사관_전자적송부신청서",
+      "source_file": "미국_주시애틀대한민국 총영사관_전자적송부신청서.pdf",
+      "form_type": "electronic_transmission_application",
+      "inherits": "electronic_transmission_application",
+      "description": "주시애틀대한민국 총영사관 전용 전자적송부신청서"
+    },
+
+    "us_anchorage_electronic_transmission_application": {
+      "form_name": "미국_주앵커리지대한민국 출장소전자적송부신청서",
+      "source_file": "미국_주앵커리지대한민국 출장소전자적송부신청서.hwp",
+      "form_type": "electronic_transmission_application",
+      "inherits": "electronic_transmission_application",
+      "description": "주앵커리지대한민국 출장소 전용 전자적송부신청서"
+    },
+
+    "us_honolulu_electronic_transmission_application": {
+      "form_name": "미국_주호놀룰루대한민국 총영사관_전자적송부신청서",
+      "source_file": "미국_주호놀룰루대한민국 총영사관_전자적송부신청서.pdf",
+      "form_type": "electronic_transmission_application",
+      "inherits": "electronic_transmission_application",
+      "description": "주호놀룰루대한민국 총영사관 전용 전자적송부신청서"
+    },
+
+    "us_houston_electronic_transmission_application": {
+      "form_name": "미국_주휴스턴대한민국 총영사관_전자적송부신청서",
+      "source_file": "미국_주휴스턴대한민국 총영사관_전자적송부신청서.pdf",
+      "form_type": "electronic_transmission_application",
+      "inherits": "electronic_transmission_application",
+      "description": "주휴스턴대한민국 총영사관 전용 전자적송부신청서"
+    },
+
+    "birth_cleanup_application": {
+      "form_name": "출생정리신청서",
+      "source_file": "출생정리신청서.pdf",
+      "form_type": "birth_cleanup_application",
+      "description": "가족관계등록부 정리 또는 출생 정리를 신청하는 서식",
+      "required_fields": [
+        "registered_domicile",
+        "address",
+        "father_name",
+        "father_birth_date",
+        "mother_name",
+        "mother_birth_date",
+        "child_name_ko",
+        "child_gender",
+        "child_birth_date",
+        "child_birth_place",
+        "cleanup_purpose",
+        "applicant_name",
+        "applicant_contact"
+      ],
+      "optional_fields": [
+        "father_name_hanja",
+        "mother_name_hanja",
+        "child_name_hanja",
+        "child_bon_hanja",
+        "dual_nationality_info"
+      ],
+      "submission_documents": [
+        "출생수리증명서 및 번역문",
+        "부모의 혼인관계증명서 및 가족관계증명서",
+        "재외국민등록부등본",
+        "신분증"
+      ],
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 서명 또는 도장"
+      ]
+    },
+
+    "california_birth_record_certificate_translation": {
+      "form_name": "미국_주로스앤젤레스대한민국 총영사관_캘리포니아_출생기록증명서",
+      "source_file": "미국_주로스앤젤레스대한민국 총영사관_캘리포니아_출생기록증명서.pdf",
+      "form_type": "birth_record_translation",
+      "description": "캘리포니아 출생기록증명서 번역문 또는 출생증명서 확인용 서식",
+      "required_fields": [
+        "file_number",
+        "local_registration_number",
+        "child_first_name",
+        "child_middle_name",
+        "child_last_name",
+        "child_sex",
+        "birth_date",
+        "birth_time",
+        "birth_place_facility",
+        "birth_place_address",
+        "birth_place_city",
+        "birth_place_county",
+        "father_first_name",
+        "father_middle_name",
+        "father_last_name",
+        "father_birth_place",
+        "father_birth_date",
+        "mother_first_name",
+        "mother_middle_name",
+        "mother_last_name",
+        "mother_birth_place",
+        "mother_birth_date",
+        "translator_name",
+        "translator_address",
+        "translator_contact"
+      ],
+      "optional_fields": [
+        "certifier_name",
+        "certifier_title",
+        "certifier_signature_date",
+        "local_registrar_signature",
+        "registration_date"
+      ],
+      "user_confirmation_fields": [
+        "번역인 서명"
+      ]
+    },
+
+    "identity_verification_certificate": {
+      "form_name": "미국_동일인증명서",
+      "source_file": "미국_동일인증명서.pdf",
+      "form_type": "identity_verification_certificate",
+      "description": "대한민국 가족관계등록부 또는 호적상의 인적사항과 미국 출생증명서상의 인적사항이 동일인임을 확인하는 서식",
+      "required_fields": [
+        "name_ko",
+        "name_en",
+        "birth_date",
+        "permanent_address",
+        "us_address",
+        "phone_number",
+        "passport_number",
+        "korean_record_name",
+        "us_birth_certificate_name",
+        "applicant_name"
+      ],
+      "optional_fields": [
+        "certificate_of_naturalization_number"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "신청인 성명",
+        "신청인 서명"
+      ]
+    }
+  },
+
+  "external_form_refs": {
+    "jp_yokohama_overseas_registration_application": {
+      "category": "재외국민등록",
+      "schema_file": "overseas_registration_forms.schema.json",
+      "form_name": "일본_주요코하마대한민국_재외국민등록신청서",
+      "source_file": "일본_주요코하마대한민국_재외국민등록신청서",
+      "form_path": "forms/raw/overseas_registration/일본_주요코하마대한민국_재외국민등록신청서"
+    },
+    "family_relation_certificate_application_2": {
+      "category": "가족관계",
+      "schema_file": "family_relation_forms.schema.json",
+      "form_name": "가족관계 등록사항별 증명서 교부 등 신청서_2",
+      "source_file": "가족관계 등록사항별 증명서 교부 등 신청서_2.pdf",
+      "form_path": "forms/raw/family_relation/가족관계 등록사항별 증명서 교부 등 신청서_2.pdf"
+    }
+  },
+
+  "common_judge_rules": [
+    "사용자가 말하지 않은 출생자 성명, 출생일시, 출생장소, 부모 정보, 등록기준지, 주소, 연락처를 임의 생성하지 않는다.",
+    "접수담당공무원 확인란, 송부업무담당자, 재외공관 직원 확인란 등 기관 작성란은 AI가 작성하지 않는다.",
+    "신고일, 신청일, 신청인 서명, 신고인 서명, 확인자 서명은 사용자 확인 대상으로 남긴다.",
+    "기본 출생신고 민원은 birth_report를 사용한다.",
+    "전자적 송부가 필요한 공관은 electronic_transmission_application 계열 서식을 추가한다.",
+    "출생정리 또는 가족관계등록부 정리가 필요한 경우 birth_cleanup_application을 추가한다.",
+    "캘리포니아 출생기록증명서가 필요한 경우 california_birth_record_certificate_translation을 추가한다.",
+    "동일인 확인이 필요한 경우 identity_verification_certificate를 추가한다.",
+    "다른 카테고리의 서식이 필요한 경우 external_form_refs에 정의된 cross-category form을 참조한다."
+  ]
+}
