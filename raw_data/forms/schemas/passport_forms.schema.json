@@ -373,6 +373,167 @@
         "여권분실신고서 또는 여권재발급사유서",
         "여권 기재사항 변경신청서"
       ]
+    },
+
+    "passport_fact_certificate_application": {
+      "form_name": "여권사실증명서",
+      "source_file": "여권사실증명서",
+      "form_type": "certificate_application",
+      "description": "여권 발급기록, 여권 실효확인, 여권 발급신청 사실 등 여권 관련 사실증명을 신청할 때 사용하는 기본 서식",
+      "required_fields": [
+        "applicant_name",
+        "applicant_resident_registration_number_or_birth_date",
+        "applicant_address",
+        "applicant_contact",
+        "certificate_type",
+        "usage_purpose",
+        "requested_copy_count"
+      ],
+      "optional_fields": [
+        "passport_number",
+        "name_en",
+        "proxy_name",
+        "proxy_contact",
+        "relationship_to_applicant"
+      ],
+      "conditional_fields": [
+        {
+          "field_id": "proxy_authorization",
+          "condition": "대리인이 신청하거나 수령하는 경우"
+        },
+        {
+          "field_id": "passport_number",
+          "condition": "특정 여권에 대한 사실증명을 신청하는 경우"
+        }
+      ],
+      "allowed_certificate_type": [
+        "여권 발급기록 증명",
+        "여권 발급신청 사실증명",
+        "여권 실효확인",
+        "여권 정보증명",
+        "기타 여권 사실증명"
+      ],
+      "office_fields": [
+        "접수번호",
+        "접수일자",
+        "처리기간",
+        "담당자"
+      ],
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 서명 또는 날인",
+        "행정정보 공동이용 동의"
+      ]
+    },
+
+    "passport_fact_certificate_application_2": {
+      "form_name": "여권사실증명서_2",
+      "source_file": "여권사실증명서_2",
+      "form_type": "certificate_application",
+      "inherits": "passport_fact_certificate_application",
+      "description": "일부 공관에서 사용하는 대체형 여권사실증명 신청 서식"
+    },
+
+    "passport_fact_certificate_application_3": {
+      "form_name": "여권사실증명서_3",
+      "source_file": "여권사실증명서_3",
+      "form_type": "certificate_application",
+      "inherits": "passport_fact_certificate_application",
+      "description": "일부 공관에서 사용하는 대체형 여권사실증명 신청 서식"
+    },
+
+    "passport_fact_certificate_request_application": {
+      "form_name": "여권사실증명신청서",
+      "source_file": "여권사실증명신청서",
+      "form_type": "certificate_application",
+      "inherits": "passport_fact_certificate_application",
+      "description": "여권사실증명 신청을 위한 공관별 서식"
+    },
+
+    "passport_copy_certificate_application": {
+      "form_name": "여권사본증명서 발급신청서",
+      "source_file": "여권사본증명서 발급신청서",
+      "form_type": "certificate_application",
+      "description": "여권 사본증명서 발급을 신청할 때 사용하는 서식",
+      "required_fields": [
+        "applicant_name",
+        "applicant_resident_registration_number_or_birth_date",
+        "applicant_address",
+        "applicant_contact",
+        "passport_number",
+        "usage_purpose",
+        "requested_copy_count"
+      ],
+      "optional_fields": [
+        "name_en",
+        "passport_issue_date",
+        "passport_expiry_date",
+        "proxy_name",
+        "proxy_contact",
+        "relationship_to_applicant"
+      ],
+      "conditional_fields": [
+        {
+          "field_id": "proxy_authorization",
+          "condition": "대리인이 신청하거나 수령하는 경우"
+        }
+      ],
+      "office_fields": [
+        "접수번호",
+        "접수일자",
+        "처리기간",
+        "담당자"
+      ],
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 서명 또는 날인"
+      ]
+    },
+
+    "passport_copy_certificate_application_no_space": {
+      "form_name": "여권사본증명서발급신청서",
+      "source_file": "여권사본증명서발급신청서",
+      "form_type": "certificate_application",
+      "inherits": "passport_copy_certificate_application",
+      "description": "띄어쓰기 없는 파일명으로 관리되는 여권사본증명서 발급신청서"
+    },
+
+    "passport_invalid_confirmation_application": {
+      "form_name": "여권실효확인신청서",
+      "source_file": "여권실효확인신청서",
+      "form_type": "certificate_application",
+      "description": "여권 실효확인을 신청할 때 사용하는 서식",
+      "required_fields": [
+        "applicant_name",
+        "applicant_resident_registration_number_or_birth_date",
+        "applicant_address",
+        "applicant_contact",
+        "passport_number",
+        "usage_purpose"
+      ],
+      "optional_fields": [
+        "passport_issue_date",
+        "passport_expiry_date",
+        "proxy_name",
+        "proxy_contact",
+        "relationship_to_applicant"
+      ],
+      "conditional_fields": [
+        {
+          "field_id": "proxy_authorization",
+          "condition": "대리인이 신청하거나 수령하는 경우"
+        }
+      ],
+      "office_fields": [
+        "접수번호",
+        "접수일자",
+        "처리기간",
+        "담당자"
+      ],
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 서명 또는 날인"
+      ]
     }
   },
 
@@ -388,6 +549,9 @@
     "영문성명 변경을 원하는 경우 english_name_change_application을 사용한다.",
     "로마자성명 변경을 원하는 경우 romanized_name_change_application을 사용한다.",
     "단순히 위임장이라고 적힌 경우 proxy_authorization으로 정규화한다.",
-    "전자여권 구비서류는 신청서가 아니라 checklist로 처리한다."
+    "전자여권 구비서류는 신청서가 아니라 checklist로 처리한다.",
+    "여권사실증명을 신청하는 경우 passport_fact_certificate_application 계열 서식을 사용한다.",
+    "여권사본증명서 발급을 신청하는 경우 passport_copy_certificate_application 계열 서식을 사용한다.",
+    "여권실효확인을 신청하는 경우 passport_invalid_confirmation_application을 사용한다."
   ]
 }
