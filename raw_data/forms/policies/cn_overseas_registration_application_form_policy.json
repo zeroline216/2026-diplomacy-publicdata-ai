@@ -1,0 +1,144 @@
+#예시
+{
+  "policy_id": "cn_overseas_registration_application_form_policy",
+  "country": "중국",
+  "country_code": "CN",
+  "category": "재외국민등록",
+  "service_title": "재외국민등록 신청",
+  "form_id": "cn_overseas_korean_registration_application",
+  "form_name": "재외국민등록신청서",
+
+  "default_form": {
+    "form_profile_id": "cn_default_overseas_registration_application",
+    "form_source_file": "중국_재외국민등록신청.pdf",
+    "form_source_mission": "중국 공통 기본 서식",
+    "schema_file": "cn_overseas_korean_registration_application.schema.json",
+    "form_selection_rule": "default_form",
+    "description": "공관별 별도 신청양식이 없는 중국 내 공관은 이 기본 서식을 사용한다."
+  },
+
+  "exception_forms": {
+    "주중국대한민국 대사관": {
+      "form_profile_id": "cn_embassy_overseas_registration_application",
+      "form_source_file": "중국_재외국민등록신청_주중국대한민국 대사관.hwp",
+      "schema_file": "cn_overseas_korean_registration_application.schema.json",
+      "form_selection_rule": "exception_form",
+      "description": "주중국대한민국 대사관 전용 재외국민등록신청서 사용"
+    },
+    "주상하이대한민국 총영사관": {
+      "form_profile_id": "cn_shanghai_overseas_registration_application",
+      "form_source_file": "중국_재외국민등록신청_주상하이대한민국 총영사관.pdf",
+      "schema_file": "cn_overseas_korean_registration_application.schema.json",
+      "form_selection_rule": "exception_form",
+      "description": "주상하이대한민국 총영사관 전용 재외국민등록신청서 사용"
+    },
+    "주광저우대한민국 총영사관": {
+      "form_profile_id": "cn_guangzhou_overseas_registration_application",
+      "form_source_file": "중국_재외국민등록신청_주광저우대한민국 총영사관.pdf",
+      "schema_file": "cn_overseas_korean_registration_application.schema.json",
+      "form_selection_rule": "exception_form",
+      "description": "주광저우대한민국 총영사관 전용 재외국민등록신청서 사용"
+    }
+  },
+
+  "mission_aliases": {
+    "중국": "주중국대한민국 대사관",
+    "베이징": "주중국대한민국 대사관",
+    "북경": "주중국대한민국 대사관",
+    "주중국": "주중국대한민국 대사관",
+    "주중국대사관": "주중국대한민국 대사관",
+    "주중대한민국대사관": "주중국대한민국 대사관",
+    "주중국대한민국대사관": "주중국대한민국 대사관",
+
+    "상하이": "주상하이대한민국 총영사관",
+    "상해": "주상하이대한민국 총영사관",
+    "주상하이": "주상하이대한민국 총영사관",
+    "주상하이총영사관": "주상하이대한민국 총영사관",
+    "주상하이대한민국총영사관": "주상하이대한민국 총영사관",
+
+    "광저우": "주광저우대한민국 총영사관",
+    "광주": "주광저우대한민국 총영사관",
+    "주광저우": "주광저우대한민국 총영사관",
+    "주광저우총영사관": "주광저우대한민국 총영사관",
+    "주광저우대한민국총영사관": "주광저우대한민국 총영사관"
+  },
+
+  "selection_logic": {
+    "step_1": "사용자 입력 또는 도시-공관 매핑 결과로 resolved_mission을 정한다.",
+    "step_2": "resolved_mission이 mission_aliases에 있으면 표준 공관명으로 정규화한다.",
+    "step_3": "정규화된 resolved_mission이 exception_forms에 있으면 해당 공관 전용 서식을 사용한다.",
+    "step_4": "exception_forms에 없으면 default_form인 중국_재외국민등록신청.pdf를 사용한다."
+  },
+
+  "agent_output_required_keys": [
+    "country",
+    "country_code",
+    "resolved_mission",
+    "category",
+    "service_title",
+    "form_id",
+    "form_name",
+    "form_profile_id",
+    "form_source_file",
+    "form_selection_rule"
+  ],
+
+  "agent_output_example_default": {
+    "country": "중국",
+    "country_code": "CN",
+    "resolved_mission": "주칭다오대한민국 총영사관",
+    "category": "재외국민등록",
+    "service_title": "재외국민등록 신청",
+    "form_id": "cn_overseas_korean_registration_application",
+    "form_name": "재외국민등록신청서",
+    "form_profile_id": "cn_default_overseas_registration_application",
+    "form_source_file": "중국_재외국민등록신청.pdf",
+    "form_selection_rule": "default_form"
+  },
+
+  "agent_output_example_exception": {
+    "country": "중국",
+    "country_code": "CN",
+    "resolved_mission": "주상하이대한민국 총영사관",
+    "category": "재외국민등록",
+    "service_title": "재외국민등록 신청",
+    "form_id": "cn_overseas_korean_registration_application",
+    "form_name": "재외국민등록신청서",
+    "form_profile_id": "cn_shanghai_overseas_registration_application",
+    "form_source_file": "중국_재외국민등록신청_주상하이대한민국 총영사관.pdf",
+    "form_selection_rule": "exception_form"
+  },
+
+  "profile_field_notes": {
+    "cn_default_overseas_registration_application": {
+      "uses_current_standard_form": true,
+      "extra_fields": []
+    },
+    "cn_embassy_overseas_registration_application": {
+      "uses_current_standard_form": false,
+      "extra_fields": ["korea_address_contact"],
+      "note": "주중국대한민국 대사관 구형 서식에는 한국 내 주소 및 연락처 항목이 포함된다."
+    },
+    "cn_shanghai_overseas_registration_application": {
+      "uses_current_standard_form": false,
+      "extra_fields": ["household_head_name", "relationship_to_household_head"],
+      "note": "주상하이대한민국 총영사관 서식에는 세대주 성명과 세대주와의 관계 항목이 포함된다."
+    },
+    "cn_guangzhou_overseas_registration_application": {
+      "uses_current_standard_form": true,
+      "extra_fields": [],
+      "note": "주광저우대한민국 총영사관 서식은 2025년형 표준 서식 구조와 유사하다."
+    }
+  },
+
+  "judge_checks": [
+    "resolved_mission이 exception_forms에 포함되어 있으면 해당 공관 전용 form_profile_id와 form_source_file을 사용했는지 확인한다.",
+    "resolved_mission이 exception_forms에 포함되어 있지 않으면 default_form을 사용했는지 확인한다.",
+    "사용자 입력의 공관명 또는 도시명이 mission_aliases에 있으면 표준 공관명으로 정규화되었는지 확인한다.",
+    "form_id가 cn_overseas_korean_registration_application인지 확인한다.",
+    "form_source_file이 실제 raw 폴더에 존재하는 원본 서식 파일명과 일치하는지 확인한다.",
+    "주상하이 profile이면 세대주 성명과 세대주와의 관계 항목이 필요한지 확인한다.",
+    "주중국대사관 profile이면 한국 내 주소 및 연락처 항목을 추가 확인할 수 있다.",
+    "서식 필드 검증은 cn_overseas_korean_registration_application.schema.json을 기준으로 수행한다."
+  ]
+}

@@ -1,0 +1,1568 @@
+{
+  "미국": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "United States of America",
+              "country_iso_alp2": "US",
+              "country_nm": "미합중국",
+              "embassy_cd": "us",
+              "embassy_kor_nm": "주 미국 대한민국 대사관",
+              "embassy_lat": 38.91209,
+              "embassy_lng": -77.051264,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "2320 Massachusetts Avenue, N.W., Washington, D.C. 20008, U.S.A.",
+              "free_tel_no": null,
+              "tel_no": "(1) 202-939-5600",
+              "urgency_tel_no": "(1) 202-939-5653"
+            },
+            {
+              "center_tel_no": "02-3210-0404",
+              "country_eng_nm": "United States of America",
+              "country_iso_alp2": "US",
+              "country_nm": "미합중국",
+              "embassy_cd": "us-anchorage",
+              "embassy_kor_nm": "주 앵커리지 대한민국 출장소",
+              "embassy_lat": 61.142386,
+              "embassy_lng": -149.867276,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "70",
+              "embassy_ty_cd_nm": "출장소",
+              "emblgbd_addr": "800 E. Dimond Blvd, Suite 3-695, Anchorage, AK 99515, U.S.A.",
+              "free_tel_no": null,
+              "tel_no": "(1) 907-339-7955",
+              "urgency_tel_no": "(1) 907-331-7135"
+            },
+            {
+              "center_tel_no": "(82) 2-3210-0404",
+              "country_eng_nm": "United States of America",
+              "country_iso_alp2": "US",
+              "country_nm": "미합중국",
+              "embassy_cd": "us-atlanta",
+              "embassy_kor_nm": "주 애틀랜타 대한민국 총영사관",
+              "embassy_lat": 33.76020746,
+              "embassy_lng": -84.38661598,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "229 Peachtree St., Suite 2100, International tower, Atlanta, GA 30303. USA",
+              "free_tel_no": null,
+              "tel_no": "(1) 404-522-1611",
+              "urgency_tel_no": "(1) 470-880-1986"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "United States of America",
+              "country_iso_alp2": "US",
+              "country_nm": "미합중국",
+              "embassy_cd": "us-boston",
+              "embassy_kor_nm": "주 보스턴 대한민국 총영사관",
+              "embassy_lat": 42.357228,
+              "embassy_lng": -71.186603,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "1 Gateway Center Suite 800, Newton, MA 02458 미국",
+              "free_tel_no": "(1) 617-264-0404",
+              "tel_no": "(1) 617-641-2830",
+              "urgency_tel_no": "+1-617-264-0404"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "United States of America",
+              "country_iso_alp2": "US",
+              "country_nm": "미합중국",
+              "embassy_cd": "us-chicago",
+              "embassy_kor_nm": "주 시카고 대한민국 총영사관",
+              "embassy_lat": 41.895927,
+              "embassy_lng": -87.612389,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "NBC Tower Suite 2700, 455 North Cityfront Plaza Drive, Chicago, Illinois 60611 U.S.A.",
+              "free_tel_no": "(1) 312-405-4425",
+              "tel_no": "(1) 312-822-9485",
+              "urgency_tel_no": "+1-312-405-4425"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "United States of America",
+              "country_iso_alp2": "US",
+              "country_nm": "미합중국",
+              "embassy_cd": "us-dallas",
+              "embassy_kor_nm": "주 휴스턴 대한민국 총영사관 댈러스 출장소",
+              "embassy_lat": 32.93664,
+              "embassy_lng": -96.822985,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "130",
+              "embassy_ty_cd_nm": "총영사관 댈러스 출장소",
+              "emblgbd_addr": "14001 N Dallas Parkway Ste.450, Dallas, TX 75240",
+              "free_tel_no": null,
+              "tel_no": "(1) 972-701-0180",
+              "urgency_tel_no": "+82-2-6747-0404"
+            },
+            {
+              "center_tel_no": "82)-2-3210-0404",
+              "country_eng_nm": "United States of America",
+              "country_iso_alp2": "US",
+              "country_nm": "미합중국",
+              "embassy_cd": "us-hagatna",
+              "embassy_kor_nm": "주 하갓냐 대한민국 출장소",
+              "embassy_lat": 13.498961,
+              "embassy_lng": 144.777238,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "70",
+              "embassy_ty_cd_nm": "출장소",
+              "emblgbd_addr": "153 Zoilo St., Oka, 96913 괌",
+              "free_tel_no": "(1) 671-688-5886",
+              "tel_no": "(1) 671-647-6488/9",
+              "urgency_tel_no": "(82)-2-3210-0404"
+            },
+            {
+              "center_tel_no": "+82-2-3210-0404",
+              "country_eng_nm": "United States of America",
+              "country_iso_alp2": "US",
+              "country_nm": "미합중국",
+              "embassy_cd": "us-honolulu",
+              "embassy_kor_nm": "주 호놀룰루 대한민국 총영사관",
+              "embassy_lat": 21.334952,
+              "embassy_lng": -157.84187,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "2756 Pali Highway, Honolulu, Hawaii 96817, U.S.A",
+              "free_tel_no": null,
+              "tel_no": "+1-808-595-6109",
+              "urgency_tel_no": "+1-808-265-9349"
+            },
+            {
+              "center_tel_no": "(82) 2-3210-0404",
+              "country_eng_nm": "United States of America",
+              "country_iso_alp2": "US",
+              "country_nm": "미합중국",
+              "embassy_cd": "us-houston",
+              "embassy_kor_nm": "주 휴스턴 대한민국 총영사관",
+              "embassy_lat": 29.745657,
+              "embassy_lng": -95.462634,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "1990 Post Oak Blvd. Suite 1250, Houston, TX 77056",
+              "free_tel_no": null,
+              "tel_no": "(1) 713-961-0186",
+              "urgency_tel_no": "(1) 281-785-4231"
+            },
+            {
+              "center_tel_no": "+82-2-3210-0404",
+              "country_eng_nm": "United States of America",
+              "country_iso_alp2": "US",
+              "country_nm": "미합중국",
+              "embassy_cd": "us-losangeles",
+              "embassy_kor_nm": "주 로스앤젤레스 대한민국 총영사관",
+              "embassy_lat": 34.062062,
+              "embassy_lng": -118.292648,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "3243 Wilshire Blvd, Los Angeles, CA 90010",
+              "free_tel_no": null,
+              "tel_no": "+1-213-385-9300",
+              "urgency_tel_no": "+1-213-700-1147"
+            },
+            {
+              "center_tel_no": "+82-2-3210-0404",
+              "country_eng_nm": "United States of America",
+              "country_iso_alp2": "US",
+              "country_nm": "미합중국",
+              "embassy_cd": "us-newyork",
+              "embassy_kor_nm": "주 뉴욕 대한민국 총영사관",
+              "embassy_lat": 40.761975,
+              "embassy_lng": -73.970658,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "460 Park Ave 6th Fl, New York, NY 10022 미국",
+              "free_tel_no": null,
+              "tel_no": "(1) 646-674-6000",
+              "urgency_tel_no": "+1-646-965-3639"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "United States of America",
+              "country_iso_alp2": "US",
+              "country_nm": "미합중국",
+              "embassy_cd": "us-sanfrancisco",
+              "embassy_kor_nm": "주 샌프란시스코 대한민국 총영사관",
+              "embassy_lat": 37.778723,
+              "embassy_lng": -122.42004,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "3500 Clay street San Francisco, CA 94118, U.S.A",
+              "free_tel_no": null,
+              "tel_no": "(1) 415-921-2251",
+              "urgency_tel_no": "(1) 415-265-4859"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "United States of America",
+              "country_iso_alp2": "US",
+              "country_nm": "미합중국",
+              "embassy_cd": "us-seattle",
+              "embassy_kor_nm": "주 시애틀 대한민국 총영사관",
+              "embassy_lat": 47.614745,
+              "embassy_lng": -122.339339,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "115 W Mercer St. Seattle, WA 98119",
+              "free_tel_no": "(1) 206-947-8293",
+              "tel_no": "(1) 206-441-1011",
+              "urgency_tel_no": "+1-206-947-8293"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 13
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  },
+  "중국": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": "(82)02-3210-0404",
+              "country_eng_nm": "China",
+              "country_iso_alp2": "CN",
+              "country_nm": "중국",
+              "embassy_cd": "cn",
+              "embassy_kor_nm": "주 중국 대한민국 대사관",
+              "embassy_lat": 39.571951,
+              "embassy_lng": 116.275275,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "20 Dongfang E Rd, Chaoyang, Beijing, 중국 100028",
+              "free_tel_no": "00-800-2100-0404",
+              "tel_no": "(86)010-8531-0700",
+              "urgency_tel_no": "(86) 186-1173-0089"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "China",
+              "country_iso_alp2": "CN",
+              "country_nm": "중국",
+              "embassy_cd": "cn-chengdu",
+              "embassy_kor_nm": "주 청두 대한민국 총영사관",
+              "embassy_lat": 30.656032,
+              "embassy_lng": 104.067034,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "Alc&aacute;ntara 74, 7550159 Santiago, Las Condes, Regi&oacute;n Metropolitana, 칠레",
+              "free_tel_no": null,
+              "tel_no": "+56-2-2729-3999",
+              "urgency_tel_no": "+56-9-7430-4546"
+            },
+            {
+              "center_tel_no": "（86) 02-3210-0404",
+              "country_eng_nm": "China",
+              "country_iso_alp2": "CN",
+              "country_nm": "중국",
+              "embassy_cd": "cn-dalian",
+              "embassy_kor_nm": "주 다롄 대한민국 출장소",
+              "embassy_lat": 38.922919,
+              "embassy_lng": 121.649229,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "70",
+              "embassy_ty_cd_nm": "출장소",
+              "emblgbd_addr": "33 FLOOR Hongyuan building, Renmin 23 Road, Zhongshan district, Dalian, 11600, China",
+              "free_tel_no": "00-800-2100-0404",
+              "tel_no": "(86) 411-8235-6288",
+              "urgency_tel_no": "（86） 158-4085-1230"
+            },
+            {
+              "center_tel_no": "+82-(0)2-3210-0404",
+              "country_eng_nm": "China",
+              "country_iso_alp2": "CN",
+              "country_nm": "중국",
+              "embassy_cd": "cn-qingdao",
+              "embassy_kor_nm": "주 칭다오 대한민국 총영사관",
+              "embassy_lat": 36.316019,
+              "embassy_lng": 120.435135,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "中国山东省青岛市城阳区春阳路88号",
+              "free_tel_no": null,
+              "tel_no": "(86) 532-8897-6001",
+              "urgency_tel_no": "+86-186-6026-5087"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "China",
+              "country_iso_alp2": "CN",
+              "country_nm": "중국",
+              "embassy_cd": "cn-shanghai",
+              "embassy_kor_nm": "주 상하이 대한민국 총영사관",
+              "embassy_lat": 31.204412,
+              "embassy_lng": 121.40166,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "60 WanShan Road, Changning District, Shanghai, China 200336",
+              "free_tel_no": "(86) 138-1650-9503",
+              "tel_no": "(86) 21-6295-5000",
+              "urgency_tel_no": "(86) 138-1650-9503, (86)"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "China",
+              "country_iso_alp2": "CN",
+              "country_nm": "중국",
+              "embassy_cd": "cn-shenyang",
+              "embassy_kor_nm": "주 선양 대한민국 총영사관",
+              "embassy_lat": 41.7839708,
+              "embassy_lng": 123.4268609,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "No.37, South 13 Latitude Road, Heping District,. Shenyang, Liaoning, 110003 P.R.China",
+              "free_tel_no": "(86) 138-0400-6338",
+              "tel_no": "(86) 24-2385-3388",
+              "urgency_tel_no": "+86-138-0400-6338"
+            },
+            {
+              "center_tel_no": "(82) 2-3210-0404 / 00-800",
+              "country_eng_nm": "China",
+              "country_iso_alp2": "CN",
+              "country_nm": "중국",
+              "embassy_cd": "cn-wuhan",
+              "embassy_kor_nm": "주 우한 대한민국 총영사관",
+              "embassy_lat": 30.590266,
+              "embassy_lng": 114.275139,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "4F, Pudong, Develpment Bank B/D, 218, Xinhua-Road, Jianghan-District, Wuhan, 430022 P.R.China",
+              "free_tel_no": null,
+              "tel_no": "(86) 27-8556-1085",
+              "urgency_tel_no": "(86) 159-2626-1124"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "China",
+              "country_iso_alp2": "CN",
+              "country_nm": "중국",
+              "embassy_cd": "cn-xian",
+              "embassy_kor_nm": "주 시안 대한민국 총영사관",
+              "embassy_lat": 34.231976,
+              "embassy_lng": 108.90348,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "中國 陝西省 西安市 高新技術産業開發區 科技路33號 高新國際商務中心19層",
+              "free_tel_no": "(86) 187-1091-0838",
+              "tel_no": "(86) 29-8835-1001",
+              "urgency_tel_no": "(86) 187-1091-0838"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "China",
+              "country_iso_alp2": "CN",
+              "country_nm": "중국",
+              "embassy_cd": "hk",
+              "embassy_kor_nm": "주 홍콩 대한민국 총영사관",
+              "embassy_lat": 22.279938,
+              "embassy_lng": 114.16408,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "홍콩 Admiralty, Harcourt Rd, 16號, Far East Finance Centre, 5/F",
+              "free_tel_no": null,
+              "tel_no": "(+852)2529-4141",
+              "urgency_tel_no": "(+852)9731-0092"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 9
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  },
+  "일본": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Japan",
+              "country_iso_alp2": "JP",
+              "country_nm": "일본",
+              "embassy_cd": "jp",
+              "embassy_kor_nm": "주 일본 대한민국 대사관",
+              "embassy_lat": 35.65156,
+              "embassy_lng": 139.73698,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "1 Chome-2-5 Minamiazabu, Minato City, Tokyo 106-0047 일본",
+              "free_tel_no": null,
+              "tel_no": "+81-3-3452-7611",
+              "urgency_tel_no": "+81-70-2153-5454"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Japan",
+              "country_iso_alp2": "JP",
+              "country_nm": "일본",
+              "embassy_cd": "jp-fukuoka",
+              "embassy_kor_nm": "주 후쿠오카 대한민국 총영사관",
+              "embassy_lat": 33.591435,
+              "embassy_lng": 130.362918,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "1-1-3 Jigyohama, chuo-ku, Fukuoka, Japan",
+              "free_tel_no": "02-3210-0404",
+              "tel_no": "(81) 92-771-0461",
+              "urgency_tel_no": "(81) 80-8588-2806"
+            },
+            {
+              "center_tel_no": "(82)2-3210-0404",
+              "country_eng_nm": "Japan",
+              "country_iso_alp2": "JP",
+              "country_nm": "일본",
+              "embassy_cd": "jp-hiroshima",
+              "embassy_kor_nm": "주 히로시마 대한민국 총영사관",
+              "embassy_lat": 34.393766,
+              "embassy_lng": 132.47846,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "広島市南区翠5丁目9-17",
+              "free_tel_no": null,
+              "tel_no": "(81) 82-505-2100",
+              "urgency_tel_no": "(81) 90-8712-8028"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Japan",
+              "country_iso_alp2": "JP",
+              "country_nm": "일본",
+              "embassy_cd": "jp-kobe",
+              "embassy_kor_nm": "주 고베 대한민국 총영사관",
+              "embassy_lat": 34.695403,
+              "embassy_lng": 135.188742,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "2-21-5 Nakayamate-Dori, Chuo-ku, kobe, Japan",
+              "free_tel_no": "(81) 90-5099-0414",
+              "tel_no": "(81) 78-221-4853",
+              "urgency_tel_no": "+81-90-5099-0414"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Japan",
+              "country_iso_alp2": "JP",
+              "country_nm": "일본",
+              "embassy_cd": "jp-nagoya",
+              "embassy_kor_nm": "주 나고야 대한민국 총영사관",
+              "embassy_lat": 35.166249,
+              "embassy_lng": 136.885369,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "1-19-12, Meiekiminami, Nakamura-ku, Nagoya, Japan",
+              "free_tel_no": null,
+              "tel_no": "(81) 52-586-9221",
+              "urgency_tel_no": "(81) 80-4221-9500"
+            },
+            {
+              "center_tel_no": "(82) 2-3210-0404",
+              "country_eng_nm": "Japan",
+              "country_iso_alp2": "JP",
+              "country_nm": "일본",
+              "embassy_cd": "jp-niigata",
+              "embassy_kor_nm": "주 니가타 대한민국 총영사관",
+              "embassy_lat": 37.92731,
+              "embassy_lng": 139.061312,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "8th Floor, Bandaijima Building, Bandaijima 5-1, Chuo-ku, Niigata, Japan",
+              "free_tel_no": null,
+              "tel_no": "(81) 25-255-5555",
+              "urgency_tel_no": "(82) 2-3210-0404"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Japan",
+              "country_iso_alp2": "JP",
+              "country_nm": "일본",
+              "embassy_cd": "jp-osaka",
+              "embassy_kor_nm": "주 오사카 대한민국 총영사관",
+              "embassy_lat": 34.681149,
+              "embassy_lng": 135.503924,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "Japan 2-3-4, Nishishinsaibashi, Chuo Ward, Osaka, Japan",
+              "free_tel_no": "(81) 90-3050-0746",
+              "tel_no": "(81) 6-4256-2345",
+              "urgency_tel_no": "+81-90-3050-0746"
+            },
+            {
+              "center_tel_no": "(82)2-3210-0404",
+              "country_eng_nm": "Japan",
+              "country_iso_alp2": "JP",
+              "country_nm": "일본",
+              "embassy_cd": "jp-sapporo",
+              "embassy_kor_nm": "주 삿포로 대한민국 총영사관",
+              "embassy_lat": 43.06238404,
+              "embassy_lng": 141.338247,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "1-4, Nishi 12-Chome, KIta 2-jo, Chuo-ku Sapporo, Japan",
+              "free_tel_no": "(82)2-3210-0404",
+              "tel_no": "(81) 11-218-0288",
+              "urgency_tel_no": "(82)2-3210-0404"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Japan",
+              "country_iso_alp2": "JP",
+              "country_nm": "일본",
+              "embassy_cd": "jp-sendai",
+              "embassy_kor_nm": "주 센다이 대한민국 총영사관",
+              "embassy_lat": 38.269126,
+              "embassy_lng": 140.870953,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "4-3, 1-chome, Kamisugi, Aobaku, Sendai, Japan",
+              "free_tel_no": "(81) 90-9538-0741",
+              "tel_no": "(81) 22-221-2751",
+              "urgency_tel_no": "(81) 90-9538-0741"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Japan",
+              "country_iso_alp2": "JP",
+              "country_nm": "일본",
+              "embassy_cd": "jp-yokohama",
+              "embassy_kor_nm": "주 요코하마 대한민국 총영사관",
+              "embassy_lat": 35.438042,
+              "embassy_lng": 139.656296,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "118, Yamatecho, Naka-ku, Yokohama, Japan",
+              "free_tel_no": "(82) 2-3210-0404",
+              "tel_no": "(81) 45-621-4531",
+              "urgency_tel_no": "(82) 2-3210-0404"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 10
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  },
+  "캐나다": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": "+82-2-3210-0404",
+              "country_eng_nm": "Canada",
+              "country_iso_alp2": "CA",
+              "country_nm": "캐나다",
+              "embassy_cd": "ca",
+              "embassy_kor_nm": "주 캐나다 대한민국 대사관",
+              "embassy_lat": 45.435292,
+              "embassy_lng": -75.694839,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "150 Boteler St, Ottawa, ON K1N 5A6",
+              "free_tel_no": null,
+              "tel_no": "+1-613-244-5010",
+              "urgency_tel_no": "+1-613-986-0482"
+            },
+            {
+              "center_tel_no": "+82-2-3210-0404",
+              "country_eng_nm": "Canada",
+              "country_iso_alp2": "CA",
+              "country_nm": "캐나다",
+              "embassy_cd": "ca-montreal",
+              "embassy_kor_nm": "주 몬트리올 대한민국 총영사관 겸 주국제민간항공기구대표부",
+              "embassy_lat": 45.504302,
+              "embassy_lng": -73.57375,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "60",
+              "embassy_ty_cd_nm": "총영사관 겸 주국제민간항공기구대표부",
+              "emblgbd_addr": "1250 Rene-Levesque Bld. West, Suite 3600(36층), Montreal Quebec, Canada, H3B 4W8",
+              "free_tel_no": null,
+              "tel_no": "+1-514-845-2555",
+              "urgency_tel_no": "+1-514-261-4677"
+            },
+            {
+              "center_tel_no": "82-2-3210-0404",
+              "country_eng_nm": "Canada",
+              "country_iso_alp2": "CA",
+              "country_nm": "캐나다",
+              "embassy_cd": "ca-toronto",
+              "embassy_kor_nm": "주 토론토 대한민국 총영사관",
+              "embassy_lat": 43.687904,
+              "embassy_lng": -79.401977,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "555 Avenue Road, Toronto, Ontario M4V 2J7, Canada",
+              "free_tel_no": "1-416-994-4490",
+              "tel_no": "1-416-920-3809",
+              "urgency_tel_no": "1-416-994-4490"
+            },
+            {
+              "center_tel_no": "+82-2-3210-0404",
+              "country_eng_nm": "Canada",
+              "country_iso_alp2": "CA",
+              "country_nm": "캐나다",
+              "embassy_cd": "ca-vancouver",
+              "embassy_kor_nm": "주 밴쿠버 대한민국 총영사관",
+              "embassy_lat": 49.2827,
+              "embassy_lng": -123.1207,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "Suite 1600, 1090 West Georgia St. Vancouver, BC Canada V6E 3V7",
+              "free_tel_no": "+1- 604-313-0911",
+              "tel_no": "+1-604-681-9581",
+              "urgency_tel_no": "+1-604-313-0911"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 4
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  },
+  "베트남": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": "+82-(0)2-3210-0404",
+              "country_eng_nm": "Vietnam",
+              "country_iso_alp2": "VN",
+              "country_nm": "베트남",
+              "embassy_cd": "vn",
+              "embassy_kor_nm": "주 베트남 대한민국 대사관",
+              "embassy_lat": 21.067095,
+              "embassy_lng": 105.796723,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "Tang 3-4, Lo A1-2 Chuong Duong, P. Khue My, Q. Ngu Hanh Son, TP. Da Nang, Vietnam,  Vietnam",
+              "free_tel_no": null,
+              "tel_no": "+84-(0)236-3566-100",
+              "urgency_tel_no": "+84-(0)93-548-4428"
+            },
+            {
+              "center_tel_no": "+82-(0)2-3210-0404",
+              "country_eng_nm": "Vietnam",
+              "country_iso_alp2": "VN",
+              "country_nm": "베트남",
+              "embassy_cd": "vn-danang",
+              "embassy_kor_nm": "주 다낭 대한민국 총영사관",
+              "embassy_lat": 16.027969,
+              "embassy_lng": 108.237979,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "SQ4 Diplomatic Complex, Nguyen Xuan Khoat st., Xuan Tao, Bac Tu Liem, Hanoi",
+              "free_tel_no": null,
+              "tel_no": "+84-(0)24-3831-5111",
+              "urgency_tel_no": "+84-(0)90-402-6126"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Vietnam",
+              "country_iso_alp2": "VN",
+              "country_nm": "베트남",
+              "embassy_cd": "vn-hochiminh",
+              "embassy_kor_nm": "주 호치민 대한민국 총영사관",
+              "embassy_lat": 10.774473,
+              "embassy_lng": 106.69567,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "107 Nguyen Du Street, Districr 1, Hochiminh City, Vietnam",
+              "free_tel_no": "(84) 93-850-0238",
+              "tel_no": "(84) 28-3822-5757",
+              "urgency_tel_no": "+84-93-850-0238"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 3
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  },
+  "우즈베키스탄": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Uzbekistan",
+              "country_iso_alp2": "UZ",
+              "country_nm": "우즈베키스탄",
+              "embassy_cd": "uz",
+              "embassy_kor_nm": "주 우즈베키스탄 대한민국 대사관",
+              "embassy_lat": 41.301358,
+              "embassy_lng": 69.271215,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "Afrosiyob ko&#39;chasi 7, 100029, Тоshkent, Toshkent, 우즈베키스탄",
+              "free_tel_no": null,
+              "tel_no": "+998-71-252- 3151",
+              "urgency_tel_no": "+998-90-029-6963"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 1
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  },
+  "호주": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": "(82) 2-3210-0404",
+              "country_eng_nm": "Australia",
+              "country_iso_alp2": "AU",
+              "country_nm": "호주",
+              "embassy_cd": "au",
+              "embassy_kor_nm": "주 호주 대한민국 대사관",
+              "embassy_lat": -35.30982,
+              "embassy_lng": 149.112711,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "113 Empire Circuit, Yarralumla ACT 2600, Australia",
+              "free_tel_no": "800-2100-0404",
+              "tel_no": "(61) 2-6270-4100",
+              "urgency_tel_no": "(61) 408-815-922"
+            },
+            {
+              "center_tel_no": "800-2100-0404",
+              "country_eng_nm": "Australia",
+              "country_iso_alp2": "AU",
+              "country_nm": "호주",
+              "embassy_cd": "au-melbourne",
+              "embassy_kor_nm": "주 멜번 대한민국 분관",
+              "embassy_lat": -37.854733,
+              "embassy_lng": 144.981904,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "50",
+              "embassy_ty_cd_nm": "분관",
+              "emblgbd_addr": "Level 10, 636 St kilda rd, Melbourne VIC 3004",
+              "free_tel_no": null,
+              "tel_no": "(61) 3-9533-3800",
+              "urgency_tel_no": "(82) 2-3210-0404"
+            },
+            {
+              "center_tel_no": "800-2100-0404",
+              "country_eng_nm": "Australia",
+              "country_iso_alp2": "AU",
+              "country_nm": "호주",
+              "embassy_cd": "au-sydney",
+              "embassy_kor_nm": "주 시드니 대한민국 총영사관",
+              "embassy_lat": -33.870306,
+              "embassy_lng": 151.206111,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "Level 10, 44 Market Street Sydney NSW 2000",
+              "free_tel_no": "(61) 403-546-058",
+              "tel_no": "(61) 2-9210-0200",
+              "urgency_tel_no": "(82) 2-3210-0404"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 3
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  },
+  "카자흐스탄": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Kazakhstan",
+              "country_iso_alp2": "KZ",
+              "country_nm": "카자흐스탄",
+              "embassy_cd": "kz",
+              "embassy_kor_nm": "주 카자흐스탄 대한민국 대사관",
+              "embassy_lat": 51.130734,
+              "embassy_lng": 71.477602,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "Embassy of the Republic of Korea to the Republic of Kazakhstan Obagan 5, Astana,010009 Kazakhstan",
+              "free_tel_no": null,
+              "tel_no": "+7-7172-572-100",
+              "urgency_tel_no": "+7-705-757-9922"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Kazakhstan",
+              "country_iso_alp2": "KZ",
+              "country_nm": "카자흐스탄",
+              "embassy_cd": "kz-almaty",
+              "embassy_kor_nm": "주 알마티 대한민국 총영사관",
+              "embassy_lat": 43.254579,
+              "embassy_lng": 76.959507,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "Kaldayakov st. 66A, Bogenbai batyr st. corner, Almaty",
+              "free_tel_no": null,
+              "tel_no": "+7-727-291-0490/291-0449",
+              "urgency_tel_no": "+7-777-705-6634"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 2
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  },
+  "러시아": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Russia",
+              "country_iso_alp2": "RU",
+              "country_nm": "러시아",
+              "embassy_cd": "ru",
+              "embassy_kor_nm": "주 러시아 대한민국 대사관",
+              "embassy_lat": 55.737956,
+              "embassy_lng": 37.57501,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "Ulitsa Plyushchikha, 56, Moscow, 러시아 119121",
+              "free_tel_no": null,
+              "tel_no": "+7-495-783-2727",
+              "urgency_tel_no": "+7-495-783-2727"
+            },
+            {
+              "center_tel_no": "+82-2-3210-0404",
+              "country_eng_nm": "Russia",
+              "country_iso_alp2": "RU",
+              "country_nm": "러시아",
+              "embassy_cd": "ru-irkutsk",
+              "embassy_kor_nm": "주 이르쿠츠크 대한민국 총영사관",
+              "embassy_lat": 52.282376,
+              "embassy_lng": 104.273833,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "3F, Gagarina Blvd, 44, Irkutsk 664025, Russia",
+              "free_tel_no": null,
+              "tel_no": "+7-3952-250-301",
+              "urgency_tel_no": "+(7) 964-650-9403"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Russia",
+              "country_iso_alp2": "RU",
+              "country_nm": "러시아",
+              "embassy_cd": "ru-sakhalin",
+              "embassy_kor_nm": "주 블라디보스톡 대한민국 총영사관 유즈노사할린스크 출장소",
+              "embassy_lat": 46.950357,
+              "embassy_lng": 142.731927,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "130",
+              "embassy_ty_cd_nm": "총영사관 댈러스 출장소",
+              "emblgbd_addr": "283 Bm Lennin St., Yuzhno-Sakhalinsk, Russia",
+              "free_tel_no": null,
+              "tel_no": "(7) 4242-462-430",
+              "urgency_tel_no": "(7) 984-132-8098"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Russia",
+              "country_iso_alp2": "RU",
+              "country_nm": "러시아",
+              "embassy_cd": "ru-stpetersburg",
+              "embassy_kor_nm": "주 상트페테르부르크 대한민국 총영사관",
+              "embassy_lat": 59.939155,
+              "embassy_lng": 30.358574,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "Ulitsa Nekrasova, 32А, St Petersburg, 러시아 191014",
+              "free_tel_no": null,
+              "tel_no": "+7- 812-448-1909",
+              "urgency_tel_no": "+7- 905-255-5496"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Russia",
+              "country_iso_alp2": "RU",
+              "country_nm": "러시아",
+              "embassy_cd": "ru-vladivostok",
+              "embassy_kor_nm": "주 블라디보스톡 대한민국 총영사관",
+              "embassy_lat": 43.122694,
+              "embassy_lng": 131.880936,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "Consulate General of the Republic of Korea Pologaya St. 19 Vladivostok, 690091, Russia",
+              "free_tel_no": "(7) 914-072-8347",
+              "tel_no": "(7) 423-240-2222",
+              "urgency_tel_no": "+(7) 914-072-8347"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 5
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  },
+  "필리핀": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Philippines",
+              "country_iso_alp2": "PH",
+              "country_nm": "필리핀",
+              "embassy_cd": "ph",
+              "embassy_kor_nm": "주 필리핀 대한민국 대사관",
+              "embassy_lat": 14.54077826,
+              "embassy_lng": 121.0552698,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "McKinley Town Center, 122 Upper McKinley Hl, Fort Bonifacio, Taguig, 1634 Metro Manila, 필리핀",
+              "free_tel_no": null,
+              "tel_no": "+63-2-8856-9210",
+              "urgency_tel_no": "+63-917-817-5703"
+            },
+            {
+              "center_tel_no": "+82-02-3210-0404",
+              "country_eng_nm": "Philippines",
+              "country_iso_alp2": "PH",
+              "country_nm": "필리핀",
+              "embassy_cd": "ph-cebu",
+              "embassy_kor_nm": "주 세부 대한민국 분관",
+              "embassy_lat": 10.316248,
+              "embassy_lng": 123.908387,
+              "embassy_manage_ty_cd": "2",
+              "embassy_manage_ty_cd_nm": "겸임",
+              "embassy_ty_cd": "50",
+              "embassy_ty_cd_nm": "분관",
+              "emblgbd_addr": "12F Chinabank Corporate Center, Samar Loop, Cebu City, 6000 Cebu, 필리핀",
+              "free_tel_no": null,
+              "tel_no": "+63-32-231-1516",
+              "urgency_tel_no": "+82-02-3210-0404"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 2
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  },
+  "독일": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": "+822-3210-0404",
+              "country_eng_nm": "Germany",
+              "country_iso_alp2": "DE",
+              "country_nm": "독일",
+              "embassy_cd": "de",
+              "embassy_kor_nm": "주 독일 대한민국 대사관",
+              "embassy_lat": 52.50901,
+              "embassy_lng": 13.346508,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "St&uuml;lerstra&szlig;e 8-10, 10787 Berlin, 독일",
+              "free_tel_no": null,
+              "tel_no": "(49) 30-260-650",
+              "urgency_tel_no": "+49 -(0)173 - 407-6943"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Germany",
+              "country_iso_alp2": "DE",
+              "country_nm": "독일",
+              "embassy_cd": "de-bonn",
+              "embassy_kor_nm": "주 독일 연방공화국 대한민국 대사관 본분관",
+              "embassy_lat": 50.69869,
+              "embassy_lng": 7.1566,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "80",
+              "embassy_ty_cd_nm": "대사관 본분관",
+              "emblgbd_addr": "Godesberger Allee 142-148, 53175 Bonn, 독일",
+              "free_tel_no": "+82 2 3210 0404",
+              "tel_no": "+49 228-943-790",
+              "urgency_tel_no": "+49 170-337-9105"
+            },
+            {
+              "center_tel_no": "+82-2-3210-0404",
+              "country_eng_nm": "Germany",
+              "country_iso_alp2": "DE",
+              "country_nm": "독일",
+              "embassy_cd": "de-frankfurt",
+              "embassy_kor_nm": "주 프랑크푸르트 대한민국 총영사관",
+              "embassy_lat": 50.07833,
+              "embassy_lng": 8.62353,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "Generalkonsulat der Republik Korea, Lyoner Str. 34, 60528 Frankfurt am Main, Germany",
+              "free_tel_no": null,
+              "tel_no": "+49-69-9567520",
+              "urgency_tel_no": "+49-173-363-4854"
+            },
+            {
+              "center_tel_no": "+82 2 3210 0404",
+              "country_eng_nm": "Germany",
+              "country_iso_alp2": "DE",
+              "country_nm": "독일",
+              "embassy_cd": "de-hamburg",
+              "embassy_kor_nm": "주 함부르크 대한민국 총영사관",
+              "embassy_lat": 53.552942,
+              "embassy_lng": 9.98393,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "Kaiser-Wilhelm-Str 9, 20355 Hamburg, Germany",
+              "free_tel_no": null,
+              "tel_no": "+49 40 650 677 600",
+              "urgency_tel_no": "+82 2 3210 0404"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 4
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  },
+  "브라질": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Brazil",
+              "country_iso_alp2": "BR",
+              "country_nm": "브라질",
+              "embassy_cd": "br",
+              "embassy_kor_nm": "주 브라질 대한민국 대사관",
+              "embassy_lat": -15.776487,
+              "embassy_lng": -47.796623,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "SEN 801, Lote 14, Asa Norte, Brasilia - DF, 70800-915, Brazil",
+              "free_tel_no": null,
+              "tel_no": "+55-61-3321-2500",
+              "urgency_tel_no": "+55-61-99658-2421"
+            },
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Brazil",
+              "country_iso_alp2": "BR",
+              "country_nm": "브라질",
+              "embassy_cd": "br-saopaulo",
+              "embassy_kor_nm": "주 상파울루 대한민국 총영사관",
+              "embassy_lat": -23.570884,
+              "embassy_lng": -46.644843,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "20",
+              "embassy_ty_cd_nm": "총영사관",
+              "emblgbd_addr": "Av. paulista, 37, 8 층, Cerqueira Cesar CEP: 01311-902, Sao Paulo, SP Brasil",
+              "free_tel_no": null,
+              "tel_no": "(55) 11-3141-1278",
+              "urgency_tel_no": "(55) 11-97188-5194"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 2
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  },
+  "영국": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "United Kingdom",
+              "country_iso_alp2": "GB",
+              "country_nm": "영국",
+              "embassy_cd": "gb",
+              "embassy_kor_nm": "주 영국 대한민국 대사관",
+              "embassy_lat": 51.497987,
+              "embassy_lng": -0.136127,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "60 Buckingham Gate, London SW1E 6AJ 영국",
+              "free_tel_no": null,
+              "tel_no": "+44-20-7227-5500",
+              "urgency_tel_no": "+44-78-7650-6895"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 1
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  },
+  "뉴질랜드": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": "(82) 2-3210-0404",
+              "country_eng_nm": "New Zealand",
+              "country_iso_alp2": "NZ",
+              "country_nm": "뉴질랜드",
+              "embassy_cd": "nz",
+              "embassy_kor_nm": "주 뉴질랜드 대한민국 대사관",
+              "embassy_lat": -41.28572,
+              "embassy_lng": 174.777313,
+              "embassy_manage_ty_cd": "2",
+              "embassy_manage_ty_cd_nm": "겸임",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "Level 20, ANZ Centre, 171 Featherston Street, Wellington 6011, New Zealand",
+              "free_tel_no": "스마트폰에 영사콜센터 무료전화앱 설치/이용",
+              "tel_no": "+64-4-473-9073",
+              "urgency_tel_no": "+64-21-0269-3271"
+            },
+            {
+              "center_tel_no": "(82) 2-3210-0404",
+              "country_eng_nm": "New Zealand",
+              "country_iso_alp2": "NZ",
+              "country_nm": "뉴질랜드",
+              "embassy_cd": "nz-auckland",
+              "embassy_kor_nm": "주 오클랜드 대한민국 분관",
+              "embassy_lat": -36.853372,
+              "embassy_lng": 174.763702,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "50",
+              "embassy_ty_cd_nm": "분관",
+              "emblgbd_addr": "12/205 Queen Street, Auckland Central, Auckland 1010 뉴질랜드",
+              "free_tel_no": "스마트폰에 영사콜센터 무료전화앱 설치/이용",
+              "tel_no": "+64-9-379-0818",
+              "urgency_tel_no": "+82-2-3210-0404"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 2
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  },
+  "프랑스": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "France",
+              "country_iso_alp2": "FR",
+              "country_nm": "프랑스",
+              "embassy_cd": "fr",
+              "embassy_kor_nm": "주 프랑스 대한민국 대사관",
+              "embassy_lat": 48.858052,
+              "embassy_lng": 2.316395,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "41 Rue Saint-Dominique, 75007 Paris, 프랑스",
+              "free_tel_no": null,
+              "tel_no": "+33-1-4753-0101",
+              "urgency_tel_no": "+33-6-8028-5396"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 1
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  },
+  "인도네시아": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Indonesia",
+              "country_iso_alp2": "ID",
+              "country_nm": "인도네시아",
+              "embassy_cd": "id",
+              "embassy_kor_nm": "주 인도네시아 대한민국 대사관",
+              "embassy_lat": -6.23925,
+              "embassy_lng": 106.832922,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "Jl. Gatot Subroto No.57 1, RT.1/RW.4, Kuningan Tim., Kecamatan Setiabudi, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12950 인도네시아",
+              "free_tel_no": null,
+              "tel_no": "+62-21-2967-2555",
+              "urgency_tel_no": "+62-811-852-446"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 1
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  },
+  "싱가포르": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Singapore",
+              "country_iso_alp2": "SG",
+              "country_nm": "싱가포르",
+              "embassy_cd": "sg",
+              "embassy_kor_nm": "주 싱가포르 대한민국 대사관",
+              "embassy_lat": 1.312146,
+              "embassy_lng": 103.837197,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "47 Scotts Road #08-00 Goldbell Towers, Singapore 228233",
+              "free_tel_no": null,
+              "tel_no": "(65) 6256-1188",
+              "urgency_tel_no": "(65) 9654-3528"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 1
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  },
+  "아르헨티나": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Argentina",
+              "country_iso_alp2": "AR",
+              "country_nm": "아르헨티나",
+              "embassy_cd": "ar",
+              "embassy_kor_nm": "주 아르헨티나 대한민국 대사관",
+              "embassy_lat": -34.579598,
+              "embassy_lng": -58.405488,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "Av. del Libertador 2395, Ciudad Aut&oacute;noma de Buenos Aires (C1425AAJ) Argentina",
+              "free_tel_no": null,
+              "tel_no": "(54-11) 4802-8865",
+              "urgency_tel_no": "(54-911) 4141-1450"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 1
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  },
+  "태국": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": "+82-2-3210-0404",
+              "country_eng_nm": "Thailand",
+              "country_iso_alp2": "TH",
+              "country_nm": "태국",
+              "embassy_cd": "th",
+              "embassy_kor_nm": "주 태국 대한민국 대사관",
+              "embassy_lat": 13.767403,
+              "embassy_lng": 100.577986,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "23 Thiam Ruam Mit Rd, Khwaeng Huai Khwang, Khet Huai Khwang, Bangkok 10310 태국",
+              "free_tel_no": null,
+              "tel_no": "+66-2-481-6000",
+              "urgency_tel_no": "+66-81-914-5803"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 1
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  },
+  "키르기즈공화국": {
+    "response": {
+      "body": {
+        "dataType": "JSON",
+        "items": {
+          "item": [
+            {
+              "center_tel_no": null,
+              "country_eng_nm": "Kyrgyz Republic",
+              "country_iso_alp2": "KG",
+              "country_nm": "키르기즈공화국",
+              "embassy_cd": "kg",
+              "embassy_kor_nm": "주 키르기즈공화국 대한민국 대사관",
+              "embassy_lat": 42.8425,
+              "embassy_lng": 74.62291666666664,
+              "embassy_manage_ty_cd": "1",
+              "embassy_manage_ty_cd_nm": "일반",
+              "embassy_ty_cd": "10",
+              "embassy_ty_cd_nm": "대사관",
+              "emblgbd_addr": "35 Akhunbayev St, Bishkek, 키르기스스탄",
+              "free_tel_no": null,
+              "tel_no": "+996-312-57-00-55",
+              "urgency_tel_no": "+996-500-579-773"
+            }
+          ]
+        },
+        "numOfRows": 100,
+        "pageNo": 1,
+        "totalCount": 1
+      },
+      "header": {
+        "resultCode": "0",
+        "resultMsg": "정상"
+      }
+    }
+  }
+}

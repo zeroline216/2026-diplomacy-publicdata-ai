@@ -1,0 +1,2687 @@
+{
+  "미국": {
+    "us": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "us",
+                "embassy_kor_nm": "주 미국 대한민국 대사관",
+                "embassy_original_nm": "주 미국 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/us-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "us-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "us",
+                "embassy_kor_nm": "주 미국 대한민국 대사관",
+                "embassy_original_nm": "Embassy of the Republic of Korea in the USA",
+                "homepage_url": "http://overseas.mofa.go.kr/us-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "us-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "us-anchorage": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "us-anchorage",
+                "embassy_kor_nm": "주 앵커리지 대한민국 출장소",
+                "embassy_original_nm": "주 앵커리지 대한민국 출장소",
+                "homepage_url": "http://overseas.mofa.go.kr/us-anchorage-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "us-anchorage-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "us-anchorage",
+                "embassy_kor_nm": "주 앵커리지 대한민국 출장소",
+                "embassy_original_nm": "Consular Office of the Republic of Korea in Anchorage",
+                "homepage_url": "http://overseas.mofa.go.kr/us-anchorage-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "us-anchorage-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "us-atlanta": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "us-atlanta",
+                "embassy_kor_nm": "주 애틀랜타 대한민국 총영사관",
+                "embassy_original_nm": "주 애틀랜타 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/us-atlanta-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "us-atlanta-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "us-atlanta",
+                "embassy_kor_nm": "주 애틀랜타 대한민국 총영사관",
+                "embassy_original_nm": "Consulate General of the Republic of Korea in Atlanta",
+                "homepage_url": "http://overseas.mofa.go.kr/us-atlanta-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "us-atlanta-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "us-boston": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "us-boston",
+                "embassy_kor_nm": "주 보스턴 대한민국 총영사관",
+                "embassy_original_nm": "주 보스턴 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/us-boston-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "us-boston-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "us-boston",
+                "embassy_kor_nm": "주 보스턴 대한민국 총영사관",
+                "embassy_original_nm": "Consulate General of the Republic of Korea in Boston",
+                "homepage_url": "http://overseas.mofa.go.kr/us-boston-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "us-boston-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "us-chicago": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "us-chicago",
+                "embassy_kor_nm": "주 시카고 대한민국 총영사관",
+                "embassy_original_nm": "주 시카고 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/us-chicago-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "us-chicago-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "us-chicago",
+                "embassy_kor_nm": "주 시카고 대한민국 총영사관",
+                "embassy_original_nm": "Consulate General of the Republic of Korea in Chicago",
+                "homepage_url": "http://overseas.mofa.go.kr/us-chicago-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "us-chicago-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "us-dallas": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "us-dallas",
+                "embassy_kor_nm": "주 휴스턴 대한민국 총영사관 댈러스 출장소",
+                "embassy_original_nm": "주 휴스턴 대한민국 총영사관 댈러스 출장소",
+                "homepage_url": "http://overseas.mofa.go.kr/us-dallas-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "us-dallas-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "us-dallas",
+                "embassy_kor_nm": "주 휴스턴 대한민국 총영사관 댈러스 출장소",
+                "embassy_original_nm": "Consular Office of the Republic of Korea in Dallas",
+                "homepage_url": "http://overseas.mofa.go.kr/us-dallas-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "us-dallas-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "us-hagatna": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "us-hagatna",
+                "embassy_kor_nm": "주 하갓냐 대한민국 출장소",
+                "embassy_original_nm": "주 하갓냐 대한민국 출장소",
+                "homepage_url": "http://overseas.mofa.go.kr/us-hagatna-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "us-hagatna-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "us-hagatna",
+                "embassy_kor_nm": "주 하갓냐 대한민국 출장소",
+                "embassy_original_nm": "Consulate Agency of the Republic of Korea in Hagatna",
+                "homepage_url": "http://overseas.mofa.go.kr/us-hagatna-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "us-hagatna-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "us-honolulu": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "us-honolulu",
+                "embassy_kor_nm": "주 호놀룰루 대한민국 총영사관",
+                "embassy_original_nm": "주 호놀룰루 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/us-honolulu-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "us-honolulu-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "us-honolulu",
+                "embassy_kor_nm": "주 호놀룰루 대한민국 총영사관",
+                "embassy_original_nm": "Consulate General of the Republic of Korea in Honolulu",
+                "homepage_url": "http://overseas.mofa.go.kr/us-honolulu-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "us-honolulu-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "us-houston": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "us-houston",
+                "embassy_kor_nm": "주 휴스턴 대한민국 총영사관",
+                "embassy_original_nm": "주 휴스턴 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/us-houston-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "us-houston-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "us-houston",
+                "embassy_kor_nm": "주 휴스턴 대한민국 총영사관",
+                "embassy_original_nm": "Consulate General of the Republic of Korea in Houston",
+                "homepage_url": "http://overseas.mofa.go.kr/us-houston-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "us-houston-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "us-losangeles": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "us-losangeles",
+                "embassy_kor_nm": "주 로스앤젤레스 대한민국 총영사관",
+                "embassy_original_nm": "주 로스앤젤레스 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/us-losangeles-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "us-losangeles-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "us-losangeles",
+                "embassy_kor_nm": "주 로스앤젤레스 대한민국 총영사관",
+                "embassy_original_nm": "Consulate General of the Republic of Korea in Los Angeles",
+                "homepage_url": "http://overseas.mofa.go.kr/us-losangeles-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "us-losangeles-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "us-newyork": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "us-newyork",
+                "embassy_kor_nm": "주 뉴욕 대한민국 총영사관",
+                "embassy_original_nm": "주 뉴욕 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/us-newyork-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "us-newyork-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "us-newyork",
+                "embassy_kor_nm": "주 뉴욕 대한민국 총영사관",
+                "embassy_original_nm": "Consulate General of the Republic of Korea in New York",
+                "homepage_url": "http://overseas.mofa.go.kr/us-newyork-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "us-newyork-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "us-sanfrancisco": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "us-sanfrancisco",
+                "embassy_kor_nm": "주 샌프란시스코 대한민국 총영사관",
+                "embassy_original_nm": "주 샌프란시스코 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/us-sanfrancisco-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "us-sanfrancisco-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "us-sanfrancisco",
+                "embassy_kor_nm": "주 샌프란시스코 대한민국 총영사관",
+                "embassy_original_nm": "Consulate General of the Republic of Korea in San Francisco",
+                "homepage_url": "http://overseas.mofa.go.kr/us-sanfrancisco-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "us-sanfrancisco-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "us-seattle": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "us-seattle",
+                "embassy_kor_nm": "주 시애틀 대한민국 총영사관",
+                "embassy_original_nm": "주 시애틀 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/us-seattle-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "us-seattle-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "us-seattle",
+                "embassy_kor_nm": "주 시애틀 대한민국 총영사관",
+                "embassy_original_nm": "Consulate General of the Republic of Korea in Seattle",
+                "homepage_url": "http://overseas.mofa.go.kr/us-seattle-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "us-seattle-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  },
+  "중국": {
+    "cn": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "cn",
+                "embassy_kor_nm": "주 중국 대한민국 대사관",
+                "embassy_original_nm": "주 중국 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/cn-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "cn-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "cn",
+                "embassy_kor_nm": "주 중국 대한민국 대사관",
+                "embassy_original_nm": "大韩民国驻中国大使馆",
+                "homepage_url": "http://overseas.mofa.go.kr/cn-zh/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "cn-zh",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "cn-chengdu": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "cn-chengdu",
+                "embassy_kor_nm": "주 청두 대한민국 총영사관",
+                "embassy_original_nm": "주 청두 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/cn-chengdu-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "cn-chengdu-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "cn-chengdu",
+                "embassy_kor_nm": "주 청두 대한민국 총영사관",
+                "embassy_original_nm": "大韩民国驻成都总领事馆",
+                "homepage_url": "http://overseas.mofa.go.kr/cn-chengdu-zh/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "cn-chengdu-zh",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "cn-dalian": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "cn-dalian",
+                "embassy_kor_nm": "주 다롄 대한민국 출장소",
+                "embassy_original_nm": "주 다롄 대한민국 출장소",
+                "homepage_url": "http://overseas.mofa.go.kr/cn-dalian-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "cn-dalian-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 1
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "cn-qingdao": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "cn-qingdao",
+                "embassy_kor_nm": "주 칭다오 대한민국 총영사관",
+                "embassy_original_nm": "주 칭다오 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/cn-qingdao-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "cn-qingdao-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "cn-qingdao",
+                "embassy_kor_nm": "주 칭다오 대한민국 총영사관",
+                "embassy_original_nm": "大韓民國驻青岛总领事馆",
+                "homepage_url": "http://overseas.mofa.go.kr/cn-qingdao-zh/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "cn-qingdao-zh",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "cn-shanghai": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "cn-shanghai",
+                "embassy_kor_nm": "주 상하이 대한민국 총영사관",
+                "embassy_original_nm": "주 상하이  대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/cn-shanghai-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "cn-shanghai-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "cn-shanghai",
+                "embassy_kor_nm": "주 상하이 대한민국 총영사관",
+                "embassy_original_nm": "大韩民国驻上海总领事馆",
+                "homepage_url": "http://overseas.mofa.go.kr/cn-shanghai-zh/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "cn-shanghai-zh",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "cn-shenyang": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "cn-shenyang",
+                "embassy_kor_nm": "주 선양 대한민국 총영사관",
+                "embassy_original_nm": "주 선양 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/cn-shenyang-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "cn-shenyang-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "cn-shenyang",
+                "embassy_kor_nm": "주 선양 대한민국 총영사관",
+                "embassy_original_nm": "大韩民国驻沈阳总领事馆",
+                "homepage_url": "http://overseas.mofa.go.kr/cn-shenyang-zh/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "cn-shenyang-zh",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "cn-wuhan": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "cn-wuhan",
+                "embassy_kor_nm": "주 우한 대한민국 총영사관",
+                "embassy_original_nm": "주 우한 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/cn-wuhan-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "cn-wuhan-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "cn-wuhan",
+                "embassy_kor_nm": "주 우한 대한민국 총영사관",
+                "embassy_original_nm": "大韩民国驻武汉总领事馆",
+                "homepage_url": "http://overseas.mofa.go.kr/cn-wuhan-zh/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "cn-wuhan-zh",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "cn-xian": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "cn-xian",
+                "embassy_kor_nm": "주 시안 대한민국 총영사관",
+                "embassy_original_nm": "주 시안 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/cn-xian-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "cn-xian-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "cn-xian",
+                "embassy_kor_nm": "주 시안 대한민국 총영사관",
+                "embassy_original_nm": "大韩民国驻西安总领事馆",
+                "homepage_url": "http://overseas.mofa.go.kr/cn-xian-zh/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "cn-xian-zh",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "hk": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "hk",
+                "embassy_kor_nm": "주 홍콩 대한민국 총영사관",
+                "embassy_original_nm": "주 홍콩 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/hk-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "hk-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "hk",
+                "embassy_kor_nm": "주 홍콩 대한민국 총영사관",
+                "embassy_original_nm": "Consulate General of the Republic of Korea in Hong Kong",
+                "homepage_url": "http://overseas.mofa.go.kr/hk-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "hk-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  },
+  "일본": {
+    "jp": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "jp",
+                "embassy_kor_nm": "주 일본 대한민국 대사관",
+                "embassy_original_nm": "주 일본 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "jp-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "jp",
+                "embassy_kor_nm": "주 일본 대한민국 대사관",
+                "embassy_original_nm": "駐日本国大韓民国大使館",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-ja/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "jp-ja",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "jp-fukuoka": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "jp-fukuoka",
+                "embassy_kor_nm": "주 후쿠오카 대한민국 총영사관",
+                "embassy_original_nm": "주 후쿠오카 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-fukuoka-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "jp-fukuoka-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "jp-fukuoka",
+                "embassy_kor_nm": "주 후쿠오카 대한민국 총영사관",
+                "embassy_original_nm": "駐福岡大韓民国総領事館",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-fukuoka-ja/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "jp-fukuoka-ja",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "jp-hiroshima": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "jp-hiroshima",
+                "embassy_kor_nm": "주 히로시마 대한민국 총영사관",
+                "embassy_original_nm": "주 히로시마 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-hiroshima-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "jp-hiroshima-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "jp-hiroshima",
+                "embassy_kor_nm": "주 히로시마 대한민국 총영사관",
+                "embassy_original_nm": "駐広島大韓民国総領事館",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-hiroshima-ja/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "jp-hiroshima-ja",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "jp-kobe": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "jp-kobe",
+                "embassy_kor_nm": "주 고베 대한민국 총영사관",
+                "embassy_original_nm": "주 고베 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-kobe-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "jp-kobe-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "jp-kobe",
+                "embassy_kor_nm": "주 고베 대한민국 총영사관",
+                "embassy_original_nm": "駐神戸大韓民国総領事館",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-kobe-ja/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "jp-kobe-ja",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "jp-nagoya": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "jp-nagoya",
+                "embassy_kor_nm": "주 나고야 대한민국 총영사관",
+                "embassy_original_nm": "주 나고야 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-nagoya-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "jp-nagoya-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "jp-nagoya",
+                "embassy_kor_nm": "주 나고야 대한민국 총영사관",
+                "embassy_original_nm": "駐名古屋大韓民国総領事館",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-nagoya-ja/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "jp-nagoya-ja",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "jp-niigata": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "jp-niigata",
+                "embassy_kor_nm": "주 니가타 대한민국 총영사관",
+                "embassy_original_nm": "주 니가타 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-niigata-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "jp-niigata-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "jp-niigata",
+                "embassy_kor_nm": "주 니가타 대한민국 총영사관",
+                "embassy_original_nm": "駐新潟大韓民国総領事館",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-niigata-ja/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "jp-niigata-ja",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "jp-osaka": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "jp-osaka",
+                "embassy_kor_nm": "주 오사카 대한민국 총영사관",
+                "embassy_original_nm": "주 오사카 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-osaka-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "jp-osaka-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "jp-osaka",
+                "embassy_kor_nm": "주 오사카 대한민국 총영사관",
+                "embassy_original_nm": "駐大阪大韓民国総領事館",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-osaka-ja/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "jp-osaka-ja",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "jp-sapporo": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "jp-sapporo",
+                "embassy_kor_nm": "주 삿포로 대한민국 총영사관",
+                "embassy_original_nm": "주 삿포로 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-sapporo-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "jp-sapporo-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "jp-sapporo",
+                "embassy_kor_nm": "주 삿포로 대한민국 총영사관",
+                "embassy_original_nm": "駐札幌大韓民国総領事館",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-sapporo-ja/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "jp-sapporo-ja",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "jp-sendai": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "jp-sendai",
+                "embassy_kor_nm": "주 센다이 대한민국 총영사관",
+                "embassy_original_nm": "주 센다이 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-sendai-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "jp-sendai-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "jp-sendai",
+                "embassy_kor_nm": "주 센다이 대한민국 총영사관",
+                "embassy_original_nm": "駐仙台大韓民国総領事館",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-sendai-ja/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "jp-sendai-ja",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "jp-yokohama": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "jp-yokohama",
+                "embassy_kor_nm": "주 요코하마 대한민국 총영사관",
+                "embassy_original_nm": "주 요코하마 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-yokohama-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "jp-yokohama-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "jp-yokohama",
+                "embassy_kor_nm": "주 요코하마 대한민국 총영사관",
+                "embassy_original_nm": "駐横浜大韓民国総領事館",
+                "homepage_url": "http://overseas.mofa.go.kr/jp-yokohama-ja/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "jp-yokohama-ja",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  },
+  "캐나다": {
+    "ca": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "ca",
+                "embassy_kor_nm": "주 캐나다 대한민국 대사관",
+                "embassy_original_nm": "주 캐나다 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/ca-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "ca-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "ca",
+                "embassy_kor_nm": "주 캐나다 대한민국 대사관",
+                "embassy_original_nm": "Embassy of the Republic of Korea to Canada",
+                "homepage_url": "http://overseas.mofa.go.kr/ca-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "ca-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "ca",
+                "embassy_kor_nm": "주 캐나다 대한민국 대사관",
+                "embassy_original_nm": "Ambassade de la République de Corée en Canada",
+                "homepage_url": "http://overseas.mofa.go.kr/ca-fr/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "ca-fr",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 3
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "ca-montreal": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "ca-montreal",
+                "embassy_kor_nm": "주 몬트리올 대한민국 총영사관 겸 주국제민간항공기구대표부",
+                "embassy_original_nm": "주 몬트리올 대한민국 총영사관 겸 주국제민간항공기구대표부",
+                "homepage_url": "http://overseas.mofa.go.kr/ca-montreal-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "ca-montreal-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "ca-montreal",
+                "embassy_kor_nm": "주 몬트리올 대한민국 총영사관 겸 주국제민간항공기구대표부",
+                "embassy_original_nm": "Consulate General of the Republic of Korea in Montreal and Permanent Mission to ICAO",
+                "homepage_url": "http://overseas.mofa.go.kr/ca-montreal-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "ca-montreal-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "ca-toronto": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "ca-toronto",
+                "embassy_kor_nm": "주 토론토 대한민국 총영사관",
+                "embassy_original_nm": "주 토론토 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/ca-toronto-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "ca-toronto-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "ca-toronto",
+                "embassy_kor_nm": "주 토론토 대한민국 총영사관",
+                "embassy_original_nm": "Consulate General of the Republic of Korea in Toronto",
+                "homepage_url": "http://overseas.mofa.go.kr/ca-toronto-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "ca-toronto-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "ca-vancouver": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "ca-vancouver",
+                "embassy_kor_nm": "주 밴쿠버 대한민국 총영사관",
+                "embassy_original_nm": "주 밴쿠버 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/ca-vancouver-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "ca-vancouver-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "ca-vancouver",
+                "embassy_kor_nm": "주 밴쿠버 대한민국 총영사관",
+                "embassy_original_nm": "Consulate General of the Republic of Korea in Vancouver",
+                "homepage_url": "http://overseas.mofa.go.kr/ca-vancouver-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "ca-vancouver-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  },
+  "베트남": {
+    "vn": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "vn",
+                "embassy_kor_nm": "주 베트남 대한민국 대사관",
+                "embassy_original_nm": "주 베트남 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/vn-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "vn-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "vn",
+                "embassy_kor_nm": "주 베트남 대한민국 대사관",
+                "embassy_original_nm": "ĐẠI SỨ QUÁN ĐẠI HÀN DÂN QUỐC TẠI VIỆT NAM",
+                "homepage_url": "http://overseas.mofa.go.kr/vn-vi/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "vn-vi",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "vn-danang": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": []
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 0
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "vn-hochiminh": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "vn-hochiminh",
+                "embassy_kor_nm": "주 호치민 대한민국 총영사관",
+                "embassy_original_nm": "주 호치민 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/vn-hochiminh-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "vn-hochiminh-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "vn-hochiminh",
+                "embassy_kor_nm": "주 호치민 대한민국 총영사관",
+                "embassy_original_nm": "Tổng Lãnh sự quán Đại Hàn Dân Quốc tại Thành phố Hồ Chí Minh",
+                "homepage_url": "http://overseas.mofa.go.kr/vn-hochiminh-vi/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "vn-hochiminh-vi",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  },
+  "우즈베키스탄": {
+    "uz": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "uz",
+                "embassy_kor_nm": "주 우즈베키스탄 대한민국 대사관",
+                "embassy_original_nm": "주 우즈베키스탄 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/uz-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "uz-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "uz",
+                "embassy_kor_nm": "주 우즈베키스탄 대한민국 대사관",
+                "embassy_original_nm": "Посольство Республики Корея в Республике Узбекистан",
+                "homepage_url": "http://overseas.mofa.go.kr/uz-ru/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "uz-ru",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "uz",
+                "embassy_kor_nm": "주 우즈베키스탄 대한민국 대사관",
+                "embassy_original_nm": "Koreya Respublikasining O'zbekiston Respublikasidagi Elchixonasi",
+                "homepage_url": "http://overseas.mofa.go.kr/uz-uz/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "uz-uz",
+                "site_ty_cd": "10",
+                "site_ty_cd_nm": "로컬"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 3
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  },
+  "호주": {
+    "au": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "au",
+                "embassy_kor_nm": "주 호주 대한민국 대사관",
+                "embassy_original_nm": "주 호주 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/au-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "au-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "au",
+                "embassy_kor_nm": "주 호주 대한민국 대사관",
+                "embassy_original_nm": "Embassy of the Republic of Korea to the Commonwealth of Australia",
+                "homepage_url": "http://overseas.mofa.go.kr/au-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "au-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "au-melbourne": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "au-melbourne",
+                "embassy_kor_nm": "주 멜번 대한민국 분관",
+                "embassy_original_nm": "주 멜번 대한민국 분관",
+                "homepage_url": "http://overseas.mofa.go.kr/au-melbourne-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "au-melbourne-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "au-melbourne",
+                "embassy_kor_nm": "주 멜번 대한민국 분관",
+                "embassy_original_nm": "Consulate General of the Republic of Korea in Melbourne",
+                "homepage_url": "http://overseas.mofa.go.kr/au-melbourne-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "au-melbourne-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "au-sydney": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "au-sydney",
+                "embassy_kor_nm": "주 시드니 대한민국 총영사관",
+                "embassy_original_nm": "주 시드니 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/au-sydney-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "au-sydney-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "au-sydney",
+                "embassy_kor_nm": "주 시드니 대한민국 총영사관",
+                "embassy_original_nm": "Consulate General of the Republic of Korea in Sydney",
+                "homepage_url": "http://overseas.mofa.go.kr/au-sydney-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "au-sydney-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  },
+  "카자흐스탄": {
+    "kz": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "kz",
+                "embassy_kor_nm": "주 카자흐스탄 대한민국 대사관",
+                "embassy_original_nm": "주 카자흐스탄 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/kz-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "kz-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "kz",
+                "embassy_kor_nm": "주 카자흐스탄 대한민국 대사관",
+                "embassy_original_nm": "Посольство Республики Корея в Республике Казахстан",
+                "homepage_url": "http://overseas.mofa.go.kr/kz-kk/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "kz-kk",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "kz-almaty": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "kz-almaty",
+                "embassy_kor_nm": "주 알마티 대한민국 총영사관",
+                "embassy_original_nm": "주 알마티 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/kz-almaty-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "kz-almaty-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "kz-almaty",
+                "embassy_kor_nm": "주 알마티 대한민국 총영사관",
+                "embassy_original_nm": "Генеральное Консульство Республики Корея в г. Алматы",
+                "homepage_url": "http://overseas.mofa.go.kr/kz-almaty-kk/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "kz-almaty-kk",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  },
+  "러시아": {
+    "ru": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "ru",
+                "embassy_kor_nm": "주 러시아 대한민국 대사관",
+                "embassy_original_nm": "주 러시아 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/ru-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "ru-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "ru",
+                "embassy_kor_nm": "주 러시아 대한민국 대사관",
+                "embassy_original_nm": "Посольство Республики Корея в Российской Федерации",
+                "homepage_url": "http://overseas.mofa.go.kr/ru-ru/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "ru-ru",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "ru-irkutsk": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "ru-irkutsk",
+                "embassy_kor_nm": "주 이르쿠츠크 대한민국 총영사관",
+                "embassy_original_nm": "주 이르쿠츠크 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/ru-irkutsk-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "ru-irkutsk-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "ru-irkutsk",
+                "embassy_kor_nm": "주 이르쿠츠크 대한민국 총영사관",
+                "embassy_original_nm": "Генеральное Консульство Республики Корея в г. Иркутске",
+                "homepage_url": "http://overseas.mofa.go.kr/ru-irkutsk-ru/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "ru-irkutsk-ru",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "ru-sakhalin": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": []
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 0
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "ru-stpetersburg": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "ru-stpetersburg",
+                "embassy_kor_nm": "주 상트페테르부르크 대한민국 총영사관",
+                "embassy_original_nm": "주 상트페테르부르크 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/ru-stpetersburg-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "ru-stpetersburg-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "ru-stpetersburg",
+                "embassy_kor_nm": "주 상트페테르부르크 대한민국 총영사관",
+                "embassy_original_nm": "Генеральное консульство Республики Корея в Санкт-Петербурге",
+                "homepage_url": "http://overseas.mofa.go.kr/ru-stpetersburg-ru/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "ru-stpetersburg-ru",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "ru-vladivostok": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "ru-vladivostok",
+                "embassy_kor_nm": "주 블라디보스톡 대한민국 총영사관",
+                "embassy_original_nm": "주 블라디보스톡 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/ru-vladivostok-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "ru-vladivostok-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "ru-vladivostok",
+                "embassy_kor_nm": "주 블라디보스톡 대한민국 총영사관",
+                "embassy_original_nm": "Генеральное Консульство Республики Корея в г.Владивостоке",
+                "homepage_url": "http://overseas.mofa.go.kr/ru-vladivostok-ru/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "ru-vladivostok-ru",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  },
+  "필리핀": {
+    "ph": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "ph",
+                "embassy_kor_nm": "주 필리핀 대한민국 대사관",
+                "embassy_original_nm": "주 필리핀 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/ph-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "ph-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "ph",
+                "embassy_kor_nm": "주 필리핀 대한민국 대사관",
+                "embassy_original_nm": "Embassy of the Republic of Korea in the Republic of the Philippines",
+                "homepage_url": "http://overseas.mofa.go.kr/ph-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "ph-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "ph-cebu": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "ph-cebu",
+                "embassy_kor_nm": "주 세부 대한민국 분관",
+                "embassy_original_nm": "주 세부 대한민국 분관",
+                "homepage_url": "http://overseas.mofa.go.kr/ph-cebu-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "ph-cebu-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "ph-cebu",
+                "embassy_kor_nm": "주 세부 대한민국 분관",
+                "embassy_original_nm": "Consulate of the Republic of Korea in Cebu",
+                "homepage_url": "http://overseas.mofa.go.kr/ph-cebu-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "ph-cebu-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  },
+  "독일": {
+    "de": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "de",
+                "embassy_kor_nm": "주 독일 대한민국 대사관",
+                "embassy_original_nm": "주 독일 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/de-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "de-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "de",
+                "embassy_kor_nm": "주 독일 대한민국 대사관",
+                "embassy_original_nm": "Botschaft der Republik Korea in der Bundesrepublik Deutschland",
+                "homepage_url": "http://overseas.mofa.go.kr/de-de/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "de-de",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "de-bonn": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "de-bonn",
+                "embassy_kor_nm": "주 독일 연방공화국 대한민국 대사관 본분관",
+                "embassy_original_nm": "주 독일 연방공화국 대한민국 대사관 본분관",
+                "homepage_url": "http://overseas.mofa.go.kr/de-bonn-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "de-bonn-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "de-bonn",
+                "embassy_kor_nm": "주 독일 연방공화국 대한민국 대사관 본분관",
+                "embassy_original_nm": "Botschaft der Republik Korea Außenstelle Bonn in der Bundesrepublik Deutschland",
+                "homepage_url": "http://overseas.mofa.go.kr/de-bonn-de/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "de-bonn-de",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "de-frankfurt": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "de-frankfurt",
+                "embassy_kor_nm": "주 프랑크푸르트 대한민국 총영사관",
+                "embassy_original_nm": "주 프랑크푸르트 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/de-frankfurt-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "de-frankfurt-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "de-frankfurt",
+                "embassy_kor_nm": "주 프랑크푸르트 대한민국 총영사관",
+                "embassy_original_nm": "Generalkonsulat der Republik Korea in Frankfurt",
+                "homepage_url": "http://overseas.mofa.go.kr/de-frankfurt-de/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "de-frankfurt-de",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "de-hamburg": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "de-hamburg",
+                "embassy_kor_nm": "주 함부르크 대한민국 총영사관",
+                "embassy_original_nm": "주 함부르크 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/de-hamburg-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "de-hamburg-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "de-hamburg",
+                "embassy_kor_nm": "주 함부르크 대한민국 총영사관",
+                "embassy_original_nm": "Generalkonsulat der Republik Korea in Hamburg",
+                "homepage_url": "http://overseas.mofa.go.kr/de-hamburg-de/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "de-hamburg-de",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  },
+  "브라질": {
+    "br": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "br",
+                "embassy_kor_nm": "주 브라질 대한민국 대사관",
+                "embassy_original_nm": "주 브라질 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/br-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "br-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "br",
+                "embassy_kor_nm": "주 브라질 대한민국 대사관",
+                "embassy_original_nm": "Embaixada da República da Coreia na República Federativa do Brasil",
+                "homepage_url": "http://overseas.mofa.go.kr/br-pt/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "br-pt",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "br-saopaulo": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "br-saopaulo",
+                "embassy_kor_nm": "주 상파울루 대한민국 총영사관",
+                "embassy_original_nm": "주 상파울루 대한민국 총영사관",
+                "homepage_url": "http://overseas.mofa.go.kr/br-saopaulo-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "br-saopaulo-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "br-saopaulo",
+                "embassy_kor_nm": "주 상파울루 대한민국 총영사관",
+                "embassy_original_nm": "Consulado Geral da República da Coreia em São Paulo",
+                "homepage_url": "http://overseas.mofa.go.kr/br-saopaulo-pt/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "br-saopaulo-pt",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  },
+  "영국": {
+    "gb": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "gb",
+                "embassy_kor_nm": "주 영국 대한민국 대사관",
+                "embassy_original_nm": "주 영국 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/gb-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "gb-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "gb",
+                "embassy_kor_nm": "주 영국 대한민국 대사관",
+                "embassy_original_nm": "Embassy of the Republic of Korea in the United Kingdom of Great Britain and Northern Ireland",
+                "homepage_url": "http://overseas.mofa.go.kr/gb-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "gb-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  },
+  "뉴질랜드": {
+    "nz": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "nz",
+                "embassy_kor_nm": "주 뉴질랜드 대한민국 대사관",
+                "embassy_original_nm": "주 뉴질랜드 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/nz-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "nz-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "nz",
+                "embassy_kor_nm": "주 뉴질랜드 대한민국 대사관",
+                "embassy_original_nm": "Embassy of the Republic of Korea to New Zealand",
+                "homepage_url": "http://overseas.mofa.go.kr/nz-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "nz-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    },
+    "nz-auckland": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "nz-auckland",
+                "embassy_kor_nm": "주 오클랜드 대한민국 분관",
+                "embassy_original_nm": "주 오클랜드 대한민국 분관",
+                "homepage_url": "http://overseas.mofa.go.kr/nz-auckland-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "nz-auckland-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "nz-auckland",
+                "embassy_kor_nm": "주 오클랜드 대한민국 분관",
+                "embassy_original_nm": "Consulate of the Republic of Korea in Auckland",
+                "homepage_url": "http://overseas.mofa.go.kr/nz-auckland-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "nz-auckland-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  },
+  "프랑스": {
+    "fr": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "fr",
+                "embassy_kor_nm": "주 프랑스 대한민국 대사관",
+                "embassy_original_nm": "주 프랑스 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/fr-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "fr-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "fr",
+                "embassy_kor_nm": "주 프랑스 대한민국 대사관",
+                "embassy_original_nm": "Ambassade de la République de Corée en France",
+                "homepage_url": "http://overseas.mofa.go.kr/fr-fr/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "fr-fr",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  },
+  "인도네시아": {
+    "id": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "id",
+                "embassy_kor_nm": "주 인도네시아 대한민국 대사관",
+                "embassy_original_nm": "주 인도네시아 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/id-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "id-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "id",
+                "embassy_kor_nm": "주 인도네시아 대한민국 대사관",
+                "embassy_original_nm": "Kedutaan Besar Republik Korea untuk Republik Indonesia",
+                "homepage_url": "http://overseas.mofa.go.kr/id-id/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "id-id",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  },
+  "싱가포르": {
+    "sg": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "sg",
+                "embassy_kor_nm": "주 싱가포르 대한민국 대사관",
+                "embassy_original_nm": "주 싱가포르 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/sg-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "sg-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "sg",
+                "embassy_kor_nm": "주 싱가포르 대한민국 대사관",
+                "embassy_original_nm": "Embassy of the Republic of Korea to the Republic of Singapore",
+                "homepage_url": "http://overseas.mofa.go.kr/sg-en/index.do",
+                "lang_cd": "20",
+                "lang_cd_nm": "재외공관(영문)",
+                "site_id_val": "sg-en",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  },
+  "아르헨티나": {
+    "ar": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "ar",
+                "embassy_kor_nm": "주 아르헨티나 대한민국 대사관",
+                "embassy_original_nm": "주 아르헨티나 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/ar-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "ar-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "ar",
+                "embassy_kor_nm": "주 아르헨티나 대한민국 대사관",
+                "embassy_original_nm": "Embajada de la República de Corea en Argentina",
+                "homepage_url": "http://overseas.mofa.go.kr/ar-es/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "ar-es",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  },
+  "태국": {
+    "th": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "th",
+                "embassy_kor_nm": "주 태국 대한민국 대사관",
+                "embassy_original_nm": "주 태국 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/th-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "th-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "th",
+                "embassy_kor_nm": "주 태국 대한민국 대사관",
+                "embassy_original_nm": "สถานเอกอัครราชทูตสาธารณรัฐเกาหลีประจำประเทศไทย",
+                "homepage_url": "http://overseas.mofa.go.kr/th-th/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "th-th",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  },
+  "키르기즈공화국": {
+    "kg": {
+      "response": {
+        "body": {
+          "dataType": "JSON",
+          "items": {
+            "item": [
+              {
+                "embassy_cd": "kg",
+                "embassy_kor_nm": "주 키르기즈공화국 대한민국 대사관",
+                "embassy_original_nm": "주 키르기즈공화국 대한민국 대사관",
+                "homepage_url": "http://overseas.mofa.go.kr/kg-ko/index.do",
+                "lang_cd": "10",
+                "lang_cd_nm": "재외공관(국문)",
+                "site_id_val": "kg-ko",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              },
+              {
+                "embassy_cd": "kg",
+                "embassy_kor_nm": "주 키르기즈공화국 대한민국 대사관",
+                "embassy_original_nm": "Посольство Республики Корея в Кыргызской Республике",
+                "homepage_url": "http://overseas.mofa.go.kr/kg-ky/index.do",
+                "lang_cd": "30",
+                "lang_cd_nm": "재외공관(현지어)",
+                "site_id_val": "kg-ky",
+                "site_ty_cd": "20",
+                "site_ty_cd_nm": "반응형"
+              }
+            ]
+          },
+          "numOfRows": 100,
+          "pageNo": 1,
+          "totalCount": 2
+        },
+        "header": {
+          "resultCode": "0",
+          "resultMsg": "정상"
+        }
+      }
+    }
+  }
+}
