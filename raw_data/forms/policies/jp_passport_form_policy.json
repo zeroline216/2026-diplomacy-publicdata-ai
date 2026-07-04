@@ -1,0 +1,269 @@
+{
+  "policy_id": "jp_passport_form_policy",
+  "country": "일본",
+  "country_code": "JP",
+  "category": "여권",
+  "schema_file": "jp_passport_forms.schema.json",
+  "description": "일본 내 재외공관별 여권 민원 서식 선택 정책",
+
+  "default_forms": [
+    {
+      "form_id": "jp_passport_issue_application",
+      "form_name": "여권발급신청서",
+      "form_source_file": "일본_여권발급신청.pdf",
+      "condition": "기본 여권 발급 또는 재발급 신청",
+      "form_selection_rule": "default_form"
+    }
+  ],
+
+  "default_rule": "exception_mission_forms에 없는 일본 내 공관은 기본적으로 일본_여권발급신청.pdf만 안내한다. 단, 사용자가 미성년자, 분실, 우편수령, 기재사항 변경 등 추가 상황을 말하면 intent_to_form_rules에 따라 추가 서식을 required_forms에 포함할 수 있다.",
+
+  "exception_mission_forms": {
+    "주요코하마대한민국 총영사관": {
+      "available_forms": [
+        {
+          "form_id": "jp_passport_issue_application",
+          "form_name": "여권발급신청서",
+          "form_source_file": "일본_여권발급신청.pdf",
+          "condition": "여권 발급 또는 재발급 신청"
+        },
+        {
+          "form_id": "jp_passport_legal_representative_consent",
+          "form_name": "법정대리인 동의서",
+          "form_source_file": "일본_법정대리인동의서.pdf",
+          "condition": "18세 미만 미성년자 여권 발급 또는 여권 분실 신고"
+        },
+        {
+          "form_id": "jp_passport_loss_report",
+          "form_name": "여권 분실신고서",
+          "form_source_file": "일본_여권분실신고서.pdf",
+          "condition": "여권을 분실한 경우"
+        },
+        {
+          "form_id": "jp_passport_mail_delivery_application",
+          "form_name": "우편수령신청서",
+          "form_source_file": "일본_우편수령신청서.pdf",
+          "condition": "여권을 우편으로 수령하려는 경우"
+        }
+      ],
+      "checklist_note": "주요코하마대한민국 총영사관의 여권 관련 구비서류 목록은 여권발급신청서, 법정대리인 동의서, 여권 분실신고서, 우편수령신청서를 포함한다."
+    },
+
+    "주후쿠오카대한민국 총영사관": {
+      "available_forms": [
+        {
+          "form_id": "jp_passport_issue_application",
+          "form_name": "여권발급신청서",
+          "form_source_file": "일본_여권발급신청.pdf",
+          "condition": "여권 발급 또는 재발급 신청"
+        },
+        {
+          "form_id": "jp_passport_legal_representative_consent",
+          "form_name": "법정대리인 동의서",
+          "form_source_file": "일본_법정대리인동의서.pdf",
+          "condition": "18세 미만 미성년자 여권 발급 또는 여권 분실 신고"
+        }
+      ],
+      "checklist_note": "주후쿠오카대한민국 총영사관의 여권 관련 구비서류 목록은 여권발급신청서와 법정대리인 동의서를 포함한다."
+    },
+
+    "주니가타대한민국 총영사관": {
+      "available_forms": [
+        {
+          "form_id": "jp_passport_issue_application",
+          "form_name": "여권발급신청서",
+          "form_source_file": "일본_여권발급신청.pdf",
+          "condition": "여권 발급 또는 재발급 신청"
+        },
+        {
+          "form_id": "jp_passport_record_change_application",
+          "form_name": "여권 기재사항변경신청서",
+          "form_source_file": "일본_여권 기재사항변경신청서.pdf",
+          "condition": "사증란 추가 또는 구여권번호 기재 등 여권 기재사항 변경 신청"
+        }
+      ],
+      "checklist_note": "주니가타대한민국 총영사관의 여권 관련 구비서류 목록은 여권발급신청서와 기재사항변경신청서를 포함한다."
+    }
+  },
+
+  "mission_aliases": {
+    "요코하마": "주요코하마대한민국 총영사관",
+    "주요코하마": "주요코하마대한민국 총영사관",
+    "주요코하마총영사관": "주요코하마대한민국 총영사관",
+    "주요코하마대한민국총영사관": "주요코하마대한민국 총영사관",
+
+    "후쿠오카": "주후쿠오카대한민국 총영사관",
+    "후꾸오카": "주후쿠오카대한민국 총영사관",
+    "주후쿠오카": "주후쿠오카대한민국 총영사관",
+    "주후쿠오카총영사관": "주후쿠오카대한민국 총영사관",
+    "주후쿠오카대한민국총영사관": "주후쿠오카대한민국 총영사관",
+
+    "니가타": "주니가타대한민국 총영사관",
+    "니카타": "주니가타대한민국 총영사관",
+    "주니가타": "주니가타대한민국 총영사관",
+    "주니카타": "주니가타대한민국 총영사관",
+    "주니가타총영사관": "주니가타대한민국 총영사관",
+    "주니가타대한민국총영사관": "주니가타대한민국 총영사관"
+  },
+
+  "intent_to_form_rules": {
+    "passport_issue": [
+      "jp_passport_issue_application"
+    ],
+    "passport_reissue": [
+      "jp_passport_issue_application"
+    ],
+    "minor_passport": [
+      "jp_passport_issue_application",
+      "jp_passport_legal_representative_consent"
+    ],
+    "passport_loss": [
+      "jp_passport_issue_application",
+      "jp_passport_loss_report"
+    ],
+    "minor_passport_loss": [
+      "jp_passport_issue_application",
+      "jp_passport_loss_report",
+      "jp_passport_legal_representative_consent"
+    ],
+    "mail_delivery": [
+      "jp_passport_mail_delivery_application"
+    ],
+    "passport_record_change": [
+      "jp_passport_record_change_application"
+    ]
+  },
+
+  "selection_logic": {
+    "step_1": "사용자 입력 또는 도시/지역-공관 매핑으로 resolved_mission을 정한다.",
+    "step_2": "resolved_mission이 mission_aliases에 있으면 표준 공관명으로 정규화한다.",
+    "step_3": "정규화된 공관명이 exception_mission_forms에 있으면 해당 공관의 available_forms 안에서 사용자 상황에 맞는 서식을 고른다.",
+    "step_4": "정규화된 공관명이 exception_mission_forms에 없으면 default_forms를 기본 안내한다.",
+    "step_5": "사용자 상황이 미성년자, 여권 분실, 우편수령, 기재사항 변경 중 하나로 확인되면 intent_to_form_rules에 따라 추가 서식을 required_forms에 포함한다."
+  },
+
+  "agent_output_required_keys": [
+    "country",
+    "country_code",
+    "resolved_mission",
+    "category",
+    "service_title",
+    "passport_intent",
+    "required_forms",
+    "missing_fields"
+  ],
+
+  "agent_output_example_default": {
+    "country": "일본",
+    "country_code": "JP",
+    "resolved_mission": "주오사카대한민국 총영사관",
+    "category": "여권",
+    "service_title": "여권 발급 신청",
+    "passport_intent": "passport_issue",
+    "required_forms": [
+      {
+        "form_id": "jp_passport_issue_application",
+        "form_name": "여권발급신청서",
+        "form_source_file": "일본_여권발급신청.pdf",
+        "form_selection_rule": "default_form"
+      }
+    ]
+  },
+
+  "agent_output_example_yokohama_loss": {
+    "country": "일본",
+    "country_code": "JP",
+    "resolved_mission": "주요코하마대한민국 총영사관",
+    "category": "여권",
+    "service_title": "여권 분실 신고 및 재발급",
+    "passport_intent": "passport_loss",
+    "required_forms": [
+      {
+        "form_id": "jp_passport_issue_application",
+        "form_name": "여권발급신청서",
+        "form_source_file": "일본_여권발급신청.pdf",
+        "form_selection_rule": "mission_available_form"
+      },
+      {
+        "form_id": "jp_passport_loss_report",
+        "form_name": "여권 분실신고서",
+        "form_source_file": "일본_여권분실신고서.pdf",
+        "form_selection_rule": "mission_available_form"
+      }
+    ]
+  },
+
+  "agent_output_example_yokohama_mail": {
+    "country": "일본",
+    "country_code": "JP",
+    "resolved_mission": "주요코하마대한민국 총영사관",
+    "category": "여권",
+    "service_title": "여권 우편수령 신청",
+    "passport_intent": "mail_delivery",
+    "required_forms": [
+      {
+        "form_id": "jp_passport_issue_application",
+        "form_name": "여권발급신청서",
+        "form_source_file": "일본_여권발급신청.pdf",
+        "form_selection_rule": "mission_available_form"
+      },
+      {
+        "form_id": "jp_passport_mail_delivery_application",
+        "form_name": "우편수령신청서",
+        "form_source_file": "일본_우편수령신청서.pdf",
+        "form_selection_rule": "mission_available_form"
+      }
+    ]
+  },
+
+  "agent_output_example_fukuoka_minor": {
+    "country": "일본",
+    "country_code": "JP",
+    "resolved_mission": "주후쿠오카대한민국 총영사관",
+    "category": "여권",
+    "service_title": "미성년자 여권 발급 신청",
+    "passport_intent": "minor_passport",
+    "required_forms": [
+      {
+        "form_id": "jp_passport_issue_application",
+        "form_name": "여권발급신청서",
+        "form_source_file": "일본_여권발급신청.pdf",
+        "form_selection_rule": "mission_available_form"
+      },
+      {
+        "form_id": "jp_passport_legal_representative_consent",
+        "form_name": "법정대리인 동의서",
+        "form_source_file": "일본_법정대리인동의서.pdf",
+        "form_selection_rule": "mission_available_form"
+      }
+    ]
+  },
+
+  "agent_output_example_niigata_record_change": {
+    "country": "일본",
+    "country_code": "JP",
+    "resolved_mission": "주니가타대한민국 총영사관",
+    "category": "여권",
+    "service_title": "여권 기재사항 변경 신청",
+    "passport_intent": "passport_record_change",
+    "required_forms": [
+      {
+        "form_id": "jp_passport_record_change_application",
+        "form_name": "여권 기재사항변경신청서",
+        "form_source_file": "일본_여권 기재사항변경신청서.pdf",
+        "form_selection_rule": "mission_available_form"
+      }
+    ]
+  },
+
+  "judge_checks": [
+    "resolved_mission이 주요코하마대한민국 총영사관, 주후쿠오카대한민국 총영사관, 주니가타대한민국 총영사관 중 하나이면 available_forms 안에서 서식이 선택되었는지 확인한다.",
+    "resolved_mission이 exception_mission_forms에 없으면 기본적으로 일본_여권발급신청.pdf가 선택되었는지 확인한다.",
+    "미성년자 여권 발급이면 법정대리인 동의서가 required_forms에 포함되었는지 확인한다.",
+    "여권 분실 상황이면 여권 분실신고서가 required_forms에 포함되었는지 확인한다.",
+    "우편수령이면 우편수령신청서가 required_forms에 포함되었는지 확인한다.",
+    "사증란 추가 또는 구여권번호 기재 등 기재사항 변경이면 여권 기재사항변경신청서가 required_forms에 포함되었는지 확인한다.",
+    "기관 작성란은 AI가 작성하지 않았는지 확인한다.",
+    "사용자가 말하지 않은 여권번호, 주소, 분실 일자, 분실 장소, 법정대리인 정보를 임의 생성하지 않았는지 확인한다."
+  ]
+}
