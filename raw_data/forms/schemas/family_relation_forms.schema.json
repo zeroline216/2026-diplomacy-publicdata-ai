@@ -1,0 +1,282 @@
+{
+  "schema_id": "family_relation_forms",
+  "category": "가족관계",
+  "raw_form_dir": "forms/raw/family_relation/",
+  "description": "재외공관 가족관계 증명서 민원 통합 서식 구조 정의. 국가별로 schema를 나누지 않고 forms/raw/family_relation/ 폴더의 서식을 공관별 policy에서 불러온다.",
+
+  "forms": {
+    "family_relation_certificate_application": {
+      "form_name": "가족관계 등록사항별 증명서 교부 등 신청서",
+      "source_file": "가족관계 등록사항별 증명서 교부 등 신청서.pdf",
+      "form_type": "certificate_application",
+      "description": "가족관계증명서, 기본증명서, 혼인관계증명서, 입양관계증명서, 친양자입양관계증명서, 제적 등본·초본 등의 교부를 신청하는 기본 서식",
+      "required_fields": [
+        "target_name",
+        "target_registered_domicile",
+        "target_resident_registration_number_or_birth_date",
+        "certificate_request_items",
+        "applicant_name",
+        "applicant_birth_date_or_resident_registration_number",
+        "applicant_address",
+        "applicant_relationship_to_target",
+        "applicant_contact",
+        "request_reason"
+      ],
+      "optional_fields": [
+        "target_name_hanja",
+        "resident_registration_number_disclosure",
+        "disclosure_reason",
+        "supporting_documents",
+        "apostille_transmission_consent",
+        "delegator_name",
+        "delegator_resident_registration_number_or_birth_date",
+        "application_date"
+      ],
+      "conditional_fields": [
+        {
+          "field_id": "family_member_specific_target",
+          "condition": "가족관계증명서 특정증명서를 신청하는 경우"
+        },
+        {
+          "field_id": "previous_spouse_name",
+          "condition": "혼인관계증명서 특정증명서를 신청하는 경우"
+        },
+        {
+          "field_id": "old_family_register_domicile",
+          "condition": "종전 호적법에 따른 제적 등본·초본을 신청하는 경우"
+        },
+        {
+          "field_id": "old_family_register_head",
+          "condition": "종전 호적법에 따른 제적 등본·초본을 신청하는 경우"
+        },
+        {
+          "field_id": "proxy_authorization",
+          "condition": "대리인이 신청하거나 수령하는 경우"
+        }
+      ],
+      "allowed_certificate_items": [
+        "가족관계증명서 일반",
+        "가족관계증명서 특정",
+        "가족관계증명서 상세",
+        "기본증명서 일반",
+        "기본증명서 특정",
+        "기본증명서 상세",
+        "혼인관계증명서 일반",
+        "혼인관계증명서 특정",
+        "혼인관계증명서 상세",
+        "입양관계증명서 일반",
+        "입양관계증명서 상세",
+        "친양자입양관계증명서 일반",
+        "친양자입양관계증명서 상세",
+        "신고서류기재사항증명",
+        "수리·불수리증명",
+        "신고서류 열람",
+        "제적등본",
+        "제적초본",
+        "제적부 열람"
+      ],
+      "office_fields": [
+        "접수번호",
+        "접수일자",
+        "납부수수료액",
+        "열람·교부예정시간",
+        "접수공무원 확인란"
+      ],
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 서명 또는 날인",
+        "증명서 발급정보 전송 동의",
+        "주민등록번호 공개신청 여부"
+      ]
+    },
+
+    "family_relation_certificate_application_2": {
+      "form_name": "가족관계 등록사항별 증명서 교부 등 신청서_2",
+      "source_file": "가족관계 등록사항별 증명서 교부 등 신청서_2.pdf",
+      "form_type": "certificate_application",
+      "inherits": "family_relation_certificate_application",
+      "description": "일부 중국·미국·캐나다 공관에서 사용하는 대체형 가족관계 등록사항별 증명서 교부 신청서"
+    },
+
+    "family_relation_certificate_application_vietnam": {
+      "form_name": "가족관계 등록사항별 증명서 교부 등 신청서_베트남",
+      "source_file": "가족관계 등록사항별 증명서 교부 등 신청서_베트남.pdf",
+      "form_type": "certificate_application",
+      "inherits": "family_relation_certificate_application",
+      "description": "주베트남대한민국 대사관에서 사용하는 가족관계 등록사항별 증명서 교부 등 신청서"
+    },
+
+    "family_relation_certificate_application_japan2": {
+      "form_name": "가족관계 등록사항별 증명서 교부 등 신청서_일본2",
+      "source_file": "가족관계 등록사항별 증명서 교부 등 신청서_일본2.hwp",
+      "form_type": "certificate_application",
+      "inherits": "family_relation_certificate_application",
+      "description": "일본 일부 공관에서 사용하는 가족관계 등록사항별 증명서 교부 등 신청서"
+    },
+
+    "family_relation_certificate_application_3": {
+      "form_name": "가족관계등록부 등의 증명서 교부 등 신청서_3",
+      "source_file": "가족관계등록부 등의 증명서 교부 등 신청서_3.hwp",
+      "form_type": "certificate_application",
+      "inherits": "family_relation_certificate_application",
+      "description": "일부 베트남·미국 공관에서 사용하는 가족관계등록부 등의 증명서 교부 등 신청서"
+    },
+
+    "family_relation_certificate_application_4": {
+      "form_name": "가족관계등록부등의증명서교부등신청서_4",
+      "source_file": "가족관계등록부등의증명서교부등신청서_4.hwp",
+      "form_type": "certificate_application",
+      "inherits": "family_relation_certificate_application",
+      "description": "주로스앤젤레스대한민국 총영사관에서 사용하는 가족관계등록부 등의 증명서 교부 등 신청서"
+    },
+
+    "family_relation_certificate_application_japan3": {
+      "form_name": "가족관계등록사항별증명서교부신청서_일본3",
+      "source_file": "가족관계등록사항별증명서교부신청서_일본3.pdf",
+      "form_type": "certificate_application",
+      "inherits": "family_relation_certificate_application",
+      "description": "주삿포로대한민국 총영사관에서 사용하는 가족관계등록사항별증명서 교부 신청서"
+    },
+
+    "family_relation_proxy_authorization": {
+      "form_name": "가족관계 증명서 신청 위임장",
+      "source_file": "가족관계 증명서 신청 위임장.pdf",
+      "form_type": "authorization",
+      "description": "가족관계등록부 등의 기록사항 등에 관한 증명신청서 제출 및 수령을 위임할 때 사용하는 위임장",
+      "required_fields": [
+        "agent_name",
+        "agent_resident_registration_number",
+        "agent_address",
+        "delegator_name",
+        "delegator_address",
+        "delegator_phone",
+        "delegation_date"
+      ],
+      "optional_fields": [
+        "delegator_resident_registration_number",
+        "delegation_scope"
+      ],
+      "default_delegation_scope": "가족관계의 등록 등에 관한 법률 제14조 및 가족관계의 등록 등에 관한 규칙 제19조에 따른 등록부 등의 기록사항 등에 관한 증명신청서 제출 및 수령 등에 관한 일체의 행위",
+      "submission_documents": [
+        "위임인의 신분증명서 사본"
+      ],
+      "office_fields": [
+        "접수공무원의 수임인 신분확인"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "위임인 서명 또는 날인"
+      ]
+    },
+
+    "family_relation_proxy_authorization_vietnam": {
+      "form_name": "등록사항별 증명서 발급 위임장_베트남",
+      "source_file": "등록사항별 증명서 발급 위임장_베트남.pdf",
+      "form_type": "authorization",
+      "inherits": "family_relation_proxy_authorization",
+      "description": "주베트남대한민국 대사관에서 사용하는 등록사항별 증명서 발급 위임장"
+    },
+
+    "english_family_relation_certificate_application_vietnam": {
+      "form_name": "가족관계에 관한 영문증명서 발급 신청서_베트남",
+      "source_file": "가족관계에 관한 영문증명서 발급 신청서_베트남.pdf",
+      "form_type": "english_certificate_application",
+      "description": "가족관계에 관한 영문증명서 발급을 신청하는 베트남 공관용 서식",
+      "required_fields": [
+        "passport_info_usage_consent",
+        "target_name_ko",
+        "target_registered_domicile",
+        "target_resident_registration_number",
+        "issue_count",
+        "applicant_name_ko",
+        "applicant_resident_registration_number_or_birth_date",
+        "applicant_address_in_residence_country",
+        "applicant_relationship_to_target",
+        "applicant_contact",
+        "request_reason"
+      ],
+      "optional_fields": [
+        "romanization_consent_for_family_without_passport",
+        "family_member_romanized_names",
+        "foreign_family_member_passport_romanized_name",
+        "resident_registration_number_disclosure",
+        "disclosure_reason",
+        "supporting_documents",
+        "apostille_transmission_consent",
+        "delegator_name",
+        "delegator_resident_registration_number"
+      ],
+      "conditional_fields": [
+        {
+          "field_id": "child_passport_copy",
+          "condition": "부모가 자녀의 영문 가족관계증명서를 신청하는 경우"
+        },
+        {
+          "field_id": "foreign_spouse_passport_copy",
+          "condition": "배우자가 외국인인 경우"
+        },
+        {
+          "field_id": "family_member_romanized_names",
+          "condition": "가족구성원이 여권을 발급받은 사실이 없고 담당자 로마자 표기에 동의하지 않는 경우"
+        },
+        {
+          "field_id": "proxy_authorization",
+          "condition": "대리인이 신청하거나 수령하는 경우"
+        }
+      ],
+      "office_fields": [
+        "접수번호",
+        "접수일자",
+        "납부수수료액"
+      ],
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 서명 또는 날인",
+        "외교부 여권정보 활용 동의",
+        "증명서 발급정보 전송 동의"
+      ]
+    },
+
+    "family_relation_mail_delivery_application_newyork": {
+      "form_name": "주뉴욕대한민국총영사관_가족관계증명서 우편수령 신청서",
+      "source_file": "주뉴욕대한민국총영사관_가족관계증명서 우편수령 신청서.pdf",
+      "form_type": "mail_delivery_application",
+      "description": "주뉴욕대한민국총영사관 가족관계증명서 우편수령 신청서",
+      "required_fields": [
+        "applicant_name",
+        "application_date"
+      ],
+      "fixed_statement": "우편을 통한 가족관계등록부 수령을 신청하며, 직접 수령하지 않음으로써 발생하는 분실 또는 지연 등의 문제를 신청인이 감수한다.",
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 서명"
+      ]
+    },
+
+    "family_relation_mail_delivery_application_anchorage": {
+      "form_name": "미국_주앵커리지대한민국출장소_가족관계등록부우편수령신청서",
+      "source_file": "미국_주앵커리지대한민국출장소_가족관계등록부우편수령신청서.pdf",
+      "form_type": "mail_delivery_application",
+      "description": "주앵커리지대한민국 출장소 가족관계등록부 우편수령 신청서",
+      "required_fields": [
+        "applicant_name",
+        "application_date"
+      ],
+      "fixed_statement": "우편을 통한 가족관계등록부 수령을 신청하며, 직접 수령하지 않음으로써 발생하는 분실 또는 지연 등의 문제를 신청인이 감수한다.",
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 서명"
+      ]
+    }
+  },
+
+  "common_judge_rules": [
+    "사용자가 말하지 않은 성명, 주민등록번호, 생년월일, 등록기준지, 주소, 연락처, 청구사유, 소명자료를 임의 생성하지 않는다.",
+    "접수번호, 접수일자, 납부수수료액, 접수공무원 확인란 등 기관 작성란은 AI가 작성하지 않는다.",
+    "신청일, 작성일, 신청인 서명, 위임인 서명, 주민등록번호 공개신청 여부, 증명서 발급정보 전송 동의는 사용자 확인 대상으로 남긴다.",
+    "대리인이 신청하거나 수령하는 경우 family_relation_proxy_authorization 또는 공관별 위임장을 추가한다.",
+    "영문 가족관계증명서를 신청하는 경우 english_family_relation_certificate_application_vietnam 계열 서식을 사용한다.",
+    "우편수령을 신청하는 경우 해당 공관의 mail_delivery_application 계열 서식을 추가한다.",
+    "공관별 예외가 있는 경우 family_relation_form_policy.json의 exception_mission_forms를 우선 적용한다."
+  ]
+}
