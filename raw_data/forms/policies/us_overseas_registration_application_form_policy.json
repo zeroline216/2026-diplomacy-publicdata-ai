@@ -1,0 +1,250 @@
+#예시
+{
+  "policy_id": "us_overseas_registration_application_form_policy",
+  "country": "미국",
+  "country_code": "US",
+  "category": "재외국민등록",
+  "service_title": "재외국민등록 신청",
+
+  "default_forms": [
+    {
+      "form_id": "us_overseas_korean_registration_application",
+      "form_name": "재외국민등록신청서",
+      "form_profile_id": "us_default_overseas_registration_application",
+      "form_source_file": "미국_재외국민등록신청.pdf",
+      "form_source_mission": "미국 공통 기본 서식",
+      "schema_file": "us_overseas_korean_registration_application.schema.json",
+      "form_selection_rule": "default_form",
+      "description": "공관별 별도 신청양식이 없는 미국 내 공관은 이 기본 서식을 사용한다."
+    }
+  ],
+
+  "exception_mission_forms": {
+    "주호놀룰루대한민국 총영사관": {
+      "required_forms": [
+        {
+          "form_id": "us_overseas_korean_registration_application",
+          "form_name": "재외국민등록신청서",
+          "form_profile_id": "us_honolulu_overseas_registration_application",
+          "form_source_file": "미국_재외국민등록신청_주호놀룰루대한민국 총영사관.pdf",
+          "schema_file": "us_overseas_korean_registration_application.schema.json",
+          "form_selection_rule": "exception_form",
+          "description": "주호놀룰루대한민국 총영사관 전용 재외국민등록신청서 사용"
+        }
+      ]
+    },
+
+    "주시애틀대한민국 총영사관": {
+      "required_forms": [
+        {
+          "form_id": "us_overseas_korean_registration_application",
+          "form_name": "재외국민등록신청서",
+          "form_profile_id": "us_seattle_overseas_registration_application",
+          "form_source_file": "미국_재외국민등록신청_주시애틀대한민국 총영사관.pdf",
+          "schema_file": "us_overseas_korean_registration_application.schema.json",
+          "form_selection_rule": "exception_form",
+          "description": "주시애틀대한민국 총영사관 전용 재외국민등록신청서 사용"
+        }
+      ]
+    },
+
+    "주보스턴대한민국 총영사관": {
+      "required_forms": [
+        {
+          "form_id": "us_overseas_korean_registration_application",
+          "form_name": "재외국민등록신청서",
+          "form_profile_id": "us_boston_overseas_registration_application",
+          "form_source_file": "미국_재외국민등록신청_주보스턴대한민국 총영사관.pdf",
+          "schema_file": "us_overseas_korean_registration_application.schema.json",
+          "form_selection_rule": "exception_form",
+          "description": "주보스턴대한민국 총영사관 전용 재외국민등록신청서 사용"
+        }
+      ]
+    },
+
+    "주뉴욕대한민국총영사관": {
+      "required_forms": [
+        {
+          "form_id": "us_overseas_korean_registration_application",
+          "form_name": "재외국민등록신청서",
+          "form_profile_id": "us_ny_overseas_registration_application",
+          "form_source_file": "미국_재외국민등록신청_주뉴욕대한민국총영사관.pdf",
+          "schema_file": "us_overseas_korean_registration_application.schema.json",
+          "form_selection_rule": "exception_form_plus_additional_forms",
+          "description": "주뉴욕대한민국총영사관 전용 재외국민등록신청서 사용"
+        },
+        {
+          "form_id": "us_overseas_registration_certificate_copy_application",
+          "form_name": "재외국민등록부등본 교부신청서",
+          "form_profile_id": "us_ny_registration_certificate_copy_application",
+          "form_source_file": "미국_재외국민등록부등본 교부신청서_주뉴욕대한민국총영사관.pdf",
+          "schema_file": "us_overseas_registration_certificate_copy_application.schema.json",
+          "form_selection_rule": "additional_required_form",
+          "description": "주뉴욕대한민국총영사관은 재외국민등록신청서와 함께 재외국민등록부등본 교부신청서를 제출한다."
+        },
+        {
+          "form_id": "us_power_of_attorney",
+          "form_name": "위임장",
+          "form_profile_id": "us_ny_power_of_attorney",
+          "form_source_file": "미국_위임장_주뉴욕대한민국총영사관.pdf",
+          "schema_file": "us_power_of_attorney.schema.json",
+          "form_selection_rule": "additional_required_form",
+          "description": "주뉴욕대한민국총영사관은 위임장을 함께 제출한다."
+        }
+      ]
+    }
+  },
+
+  "mission_aliases": {
+    "뉴욕": "주뉴욕대한민국총영사관",
+    "주뉴욕": "주뉴욕대한민국총영사관",
+    "주뉴욕총영사관": "주뉴욕대한민국총영사관",
+    "주뉴욕대한민국 총영사관": "주뉴욕대한민국총영사관",
+
+    "시애틀": "주시애틀대한민국 총영사관",
+    "워싱턴주": "주시애틀대한민국 총영사관",
+    "주시애틀": "주시애틀대한민국 총영사관",
+    "주시애틀총영사관": "주시애틀대한민국 총영사관",
+    "주시애틀대한민국총영사관": "주시애틀대한민국 총영사관",
+
+    "보스턴": "주보스턴대한민국 총영사관",
+    "매사추세츠": "주보스턴대한민국 총영사관",
+    "주보스턴": "주보스턴대한민국 총영사관",
+    "주보스턴총영사관": "주보스턴대한민국 총영사관",
+    "주보스턴대한민국총영사관": "주보스턴대한민국 총영사관",
+
+    "호놀룰루": "주호놀룰루대한민국 총영사관",
+    "하와이": "주호놀룰루대한민국 총영사관",
+    "주호놀룰루": "주호놀룰루대한민국 총영사관",
+    "주호놀룰루총영사관": "주호놀룰루대한민국 총영사관",
+    "주호놀룰루대한민국총영사관": "주호놀룰루대한민국 총영사관"
+  },
+
+  "selection_logic": {
+    "step_1": "사용자 입력 또는 주/도시-공관 매핑 결과로 resolved_mission을 정한다.",
+    "step_2": "resolved_mission이 mission_aliases에 있으면 표준 공관명으로 정규화한다.",
+    "step_3": "정규화된 resolved_mission이 exception_mission_forms에 있으면 해당 공관의 required_forms 전체를 사용한다.",
+    "step_4": "주뉴욕대한민국총영사관이면 재외국민등록신청서, 재외국민등록부등본 교부신청서, 위임장 3개를 모두 required_forms에 포함한다.",
+    "step_5": "주호놀룰루, 주시애틀, 주보스턴이면 각 공관 전용 재외국민등록신청서를 사용한다.",
+    "step_6": "exception_mission_forms에 없으면 default_forms인 미국_재외국민등록신청.pdf를 사용한다."
+  },
+
+  "agent_output_required_keys": [
+    "country",
+    "country_code",
+    "resolved_mission",
+    "category",
+    "service_title",
+    "required_forms"
+  ],
+
+  "agent_output_example_default": {
+    "country": "미국",
+    "country_code": "US",
+    "resolved_mission": "주로스앤젤레스대한민국 총영사관",
+    "category": "재외국민등록",
+    "service_title": "재외국민등록 신청",
+    "required_forms": [
+      {
+        "form_id": "us_overseas_korean_registration_application",
+        "form_name": "재외국민등록신청서",
+        "form_profile_id": "us_default_overseas_registration_application",
+        "form_source_file": "미국_재외국민등록신청.pdf",
+        "form_selection_rule": "default_form"
+      }
+    ]
+  },
+
+  "agent_output_example_exception": {
+    "country": "미국",
+    "country_code": "US",
+    "resolved_mission": "주시애틀대한민국 총영사관",
+    "category": "재외국민등록",
+    "service_title": "재외국민등록 신청",
+    "required_forms": [
+      {
+        "form_id": "us_overseas_korean_registration_application",
+        "form_name": "재외국민등록신청서",
+        "form_profile_id": "us_seattle_overseas_registration_application",
+        "form_source_file": "미국_재외국민등록신청_주시애틀대한민국 총영사관.pdf",
+        "form_selection_rule": "exception_form"
+      }
+    ]
+  },
+
+  "agent_output_example_new_york": {
+    "country": "미국",
+    "country_code": "US",
+    "resolved_mission": "주뉴욕대한민국총영사관",
+    "category": "재외국민등록",
+    "service_title": "재외국민등록 신청",
+    "required_forms": [
+      {
+        "form_id": "us_overseas_korean_registration_application",
+        "form_name": "재외국민등록신청서",
+        "form_profile_id": "us_ny_overseas_registration_application",
+        "form_source_file": "미국_재외국민등록신청_주뉴욕대한민국총영사관.pdf",
+        "form_selection_rule": "exception_form_plus_additional_forms"
+      },
+      {
+        "form_id": "us_overseas_registration_certificate_copy_application",
+        "form_name": "재외국민등록부등본 교부신청서",
+        "form_profile_id": "us_ny_registration_certificate_copy_application",
+        "form_source_file": "미국_재외국민등록부등본 교부신청서_주뉴욕대한민국총영사관.pdf",
+        "form_selection_rule": "additional_required_form"
+      },
+      {
+        "form_id": "us_power_of_attorney",
+        "form_name": "위임장",
+        "form_profile_id": "us_ny_power_of_attorney",
+        "form_source_file": "미국_위임장_주뉴욕대한민국총영사관.pdf",
+        "form_selection_rule": "additional_required_form"
+      }
+    ]
+  },
+
+  "profile_field_notes": {
+    "us_default_overseas_registration_application": {
+      "uses_current_standard_form": true,
+      "extra_fields": []
+    },
+    "us_honolulu_overseas_registration_application": {
+      "uses_current_standard_form": false,
+      "extra_fields": [
+        "domestic_contact_name",
+        "domestic_contact_relation",
+        "domestic_contact_phone"
+      ],
+      "note": "주호놀룰루 양식에는 국내 지인 및 연락처 항목이 포함된다."
+    },
+    "us_seattle_overseas_registration_application": {
+      "uses_current_standard_form": false,
+      "extra_fields": ["birth_date", "gender", "expected_return_date"],
+      "note": "주시애틀 양식은 구형 재외국민등록신청서 형식이다."
+    },
+    "us_boston_overseas_registration_application": {
+      "uses_current_standard_form": false,
+      "extra_fields": ["birth_date", "gender", "expected_return_date"],
+      "note": "주보스턴 양식은 구형 재외국민등록신청서 형식이다."
+    },
+    "us_ny_overseas_registration_application": {
+      "uses_current_standard_form": false,
+      "extra_required_forms": [
+        "us_overseas_registration_certificate_copy_application",
+        "us_power_of_attorney"
+      ],
+      "note": "주뉴욕대한민국총영사관은 재외국민등록신청서, 재외국민등록부등본 교부신청서, 위임장 3개를 함께 제출한다."
+    }
+  },
+
+  "judge_checks": [
+    "resolved_mission이 주뉴욕대한민국총영사관이면 required_forms에 재외국민등록신청서, 재외국민등록부등본 교부신청서, 위임장 3개가 모두 포함되어 있는지 확인한다.",
+    "resolved_mission이 주호놀룰루, 주시애틀, 주보스턴이면 각 공관 전용 form_profile_id와 form_source_file을 사용했는지 확인한다.",
+    "resolved_mission이 exception_mission_forms에 포함되어 있지 않으면 default_forms를 사용했는지 확인한다.",
+    "사용자 입력의 공관명, 주명, 도시명이 mission_aliases에 있으면 표준 공관명으로 정규화되었는지 확인한다.",
+    "form_source_file이 실제 raw 폴더에 존재하는 원본 서식 파일명과 일치하는지 확인한다.",
+    "서식 필드 검증은 각 form_id에 연결된 schema_file을 기준으로 수행한다.",
+    "기관 작성란과 확인란은 AI가 작성하지 않았는지 확인한다.",
+    "사용자가 말하지 않은 여권번호, 주소, 입국일, 용도, 위임받은 사람 정보 등을 임의 생성하지 않았는지 확인한다."
+  ]
+}
