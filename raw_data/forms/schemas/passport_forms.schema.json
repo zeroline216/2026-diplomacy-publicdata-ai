@@ -1,0 +1,393 @@
+{
+  "schema_id": "passport_forms",
+  "category": "여권",
+  "raw_form_dir": "forms/raw/passport/",
+  "description": "재외공관 여권 민원 공통 서식 구조 정의. 국가별로 분리하지 않고 forms/raw/passport/ 폴더의 공통 여권 서식을 불러온다.",
+
+  "forms": {
+    "passport_issue_application": {
+      "form_name": "여권발급신청서",
+      "source_file": "여권발급신청서.pdf",
+      "form_type": "application",
+      "description": "여권 신규발급, 재발급, 긴급여권, 여행증명서 등 여권 발급 신청 기본 서식",
+      "required_fields": [
+        "passport_type",
+        "passport_pages",
+        "passport_period",
+        "name_ko",
+        "resident_registration_number",
+        "applicant_phone",
+        "emergency_contact_name",
+        "emergency_contact_relation",
+        "emergency_contact_phone"
+      ],
+      "optional_fields": [
+        "romanized_last_name",
+        "romanized_first_name",
+        "registered_domicile",
+        "spouse_romanized_last_name",
+        "braille_passport",
+        "mail_delivery_service"
+      ],
+      "office_fields": [
+        "접수번호",
+        "특이사항",
+        "심사란",
+        "접수자",
+        "심사자",
+        "발급자",
+        "영수확인"
+      ],
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 또는 대리인 서명",
+        "행정정보 공동이용 동의"
+      ]
+    },
+
+    "passport_issue_application_legacy": {
+      "form_name": "여권발급신청서(구양식)",
+      "source_file": "여권발급신청서(구양식).pdf",
+      "form_type": "application",
+      "inherits": "passport_issue_application",
+      "description": "일부 공관에서 관리하는 구양식 여권발급신청서"
+    },
+
+    "legal_representative_consent": {
+      "form_name": "법정대리인 동의서",
+      "source_file": "법정대리인 동의서.pdf",
+      "form_type": "consent",
+      "description": "18세 미만 미성년자의 여권 발급 신청 또는 여권 분실 신고 시 법정대리인이 동의하는 서식",
+      "required_fields": [
+        "minor_name",
+        "minor_resident_registration_number",
+        "minor_address",
+        "consent_type",
+        "legal_representative_1_name",
+        "legal_representative_1_resident_registration_number",
+        "legal_representative_1_address",
+        "legal_representative_1_relationship"
+      ],
+      "optional_fields": [
+        "legal_representative_2_name",
+        "legal_representative_2_resident_registration_number",
+        "legal_representative_2_address",
+        "legal_representative_2_relationship"
+      ],
+      "allowed_consent_type": [
+        "여권 발급 신청에 대한 동의",
+        "여권 분실 신고에 대한 동의"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "법정대리인 서명 또는 날인"
+      ]
+    },
+
+    "passport_loss_report": {
+      "form_name": "여권분실신고서",
+      "source_file": "여권분실신고서.pdf",
+      "form_type": "report",
+      "description": "여권 분실 신고 시 사용하는 서식",
+      "required_fields": [
+        "reporter_name_ko",
+        "reporter_resident_registration_number",
+        "reporter_address",
+        "reporter_phone",
+        "reporter_mobile_phone",
+        "passport_number",
+        "passport_issue_date",
+        "passport_expiry_date",
+        "loss_date",
+        "loss_place",
+        "loss_reason"
+      ],
+      "conditional_fields": [
+        {
+          "field_id": "proxy_name_ko",
+          "condition": "대리 신고인 경우"
+        },
+        {
+          "field_id": "proxy_resident_registration_number",
+          "condition": "대리 신고인 경우"
+        },
+        {
+          "field_id": "proxy_relationship",
+          "condition": "대리 신고인 경우"
+        },
+        {
+          "field_id": "legal_representative_consent",
+          "condition": "18세 미만인 사람이 여권 분실 신고를 하는 경우"
+        }
+      ],
+      "submission_documents": [
+        {
+          "name": "법정대리인 동의서",
+          "condition": "18세 미만인 사람이 여권 분실 신고를 하는 경우"
+        },
+        {
+          "name": "신고인의 신분증 사본",
+          "condition": "대리 신고인 경우"
+        },
+        {
+          "name": "위임장",
+          "condition": "대리 신고인 경우"
+        },
+        {
+          "name": "대리관계 및 사유를 증명할 수 있는 서류",
+          "condition": "대리 신고인 경우"
+        }
+      ],
+      "office_fields": [
+        "접수번호",
+        "접수일자",
+        "처리기간"
+      ],
+      "user_confirmation_fields": [
+        "신고일",
+        "신고인 또는 대리인 서명",
+        "행정정보 공동이용 동의"
+      ]
+    },
+
+    "mail_delivery_application": {
+      "form_name": "우편수령 신청서",
+      "source_file": "우편수령 신청서.pdf",
+      "form_type": "application",
+      "description": "여권을 우편으로 수령하려는 경우 사용하는 신청서",
+      "required_fields": [
+        "applicant_name",
+        "applicant_birth_date",
+        "applicant_address",
+        "applicant_phone"
+      ],
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 서명 또는 날인"
+      ]
+    },
+
+    "passport_record_change_application": {
+      "form_name": "여권 기재사항 변경신청서",
+      "source_file": "여권 기재사항 변경신청서.pdf",
+      "form_type": "application",
+      "description": "사증란 추가 또는 구여권번호 기재 등 여권 기재사항 변경 신청 시 사용하는 서식",
+      "required_fields": [
+        "application_type",
+        "name_ko",
+        "resident_registration_number",
+        "passport_number",
+        "passport_issue_date",
+        "passport_expiry_period",
+        "address",
+        "phone_number"
+      ],
+      "conditional_fields": [
+        {
+          "field_id": "old_passport_number",
+          "condition": "구여권번호 기재를 신청하는 경우"
+        }
+      ],
+      "allowed_application_type": [
+        "사증란 추가",
+        "구여권번호 기재"
+      ],
+      "office_fields": [
+        "접수번호",
+        "특이사항",
+        "심사란",
+        "접수자",
+        "심사자",
+        "발급자",
+        "영수확인"
+      ],
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 서명"
+      ]
+    },
+
+    "romanized_name_change_application": {
+      "form_name": "여권 로마자성명 변경 신청서",
+      "source_file": "여권 로마자성명 변경 신청서.pdf",
+      "form_type": "application",
+      "description": "여권 로마자성명 변경 신청 시 사용하는 서식",
+      "required_fields": [
+        "current_passport_number",
+        "current_passport_issue_date",
+        "name_ko",
+        "current_passport_expiry_date",
+        "current_romanized_name",
+        "new_romanized_name",
+        "change_reason_detail"
+      ],
+      "submission_documents": [
+        "로마자성명 변경사유를 증명하는 서류"
+      ],
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 서명 또는 날인",
+        "행정정보 공동이용 동의"
+      ]
+    },
+
+    "english_name_change_application": {
+      "form_name": "여권 영문성명 변경 신청서",
+      "source_file": "여권 영문성명 변경 신청서.pdf",
+      "form_type": "application",
+      "description": "여권 영문성명 변경 신청 시 사용하는 서식",
+      "required_fields": [
+        "current_passport_number",
+        "current_passport_issue_date",
+        "name_ko",
+        "current_passport_expiry_date",
+        "current_english_name",
+        "new_english_name",
+        "change_reason_detail"
+      ],
+      "submission_documents": [
+        "영문성명 변경사유를 증명하는 서류"
+      ],
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 서명 또는 날인",
+        "행정정보 공동이용 동의"
+      ]
+    },
+
+    "proxy_authorization": {
+      "form_name": "대리수령 위임장",
+      "source_file": "대리수령 위임장.pdf",
+      "form_type": "authorization",
+      "description": "여권 발급 신청, 여권 수령, 여권 분실 신고 등 여권 관련 사무를 위임할 때 사용하는 서식. 공관 목록에 단순히 위임장이라고 적힌 경우 이 서식으로 정규화한다.",
+      "required_fields": [
+        "agent_name",
+        "agent_birth_date",
+        "agent_address",
+        "agent_phone",
+        "relationship_to_delegator",
+        "delegator_name",
+        "delegator_birth_date",
+        "delegator_address",
+        "delegation_scope"
+      ],
+      "allowed_delegation_scope": [
+        "여권 발급 신청",
+        "여권 수령",
+        "여권 분실 신고",
+        "기타"
+      ],
+      "submission_documents": [
+        "위임인의 신분증 사본",
+        "위임인과의 관계를 증명할 수 있는 서류"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "위임인 서명 또는 날인"
+      ]
+    },
+
+    "passport_issue_proxy_consent": {
+      "form_name": "여권발급 위임장 및 동의서",
+      "source_file": "여권발급 위임장 및 동의서.pdf",
+      "form_type": "authorization",
+      "description": "여권 발급 대리신청, 대리수령, 우편수령, 미성년자 발급동의 등을 함께 처리하는 서식",
+      "required_fields": [
+        "delegation_type",
+        "writer_name",
+        "writer_phone"
+      ],
+      "conditional_fields": [
+        {
+          "field_id": "agent_name",
+          "condition": "대리신청 또는 대리수령인 경우"
+        },
+        {
+          "field_id": "mailing_address",
+          "condition": "우편수령인 경우"
+        },
+        {
+          "field_id": "minor_name",
+          "condition": "미성년자 발급동의인 경우"
+        },
+        {
+          "field_id": "legal_representative_name",
+          "condition": "미성년자 발급동의인 경우"
+        }
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "작성자 서명 또는 인",
+        "법정대리인 서명 또는 인"
+      ]
+    },
+
+    "residence_permit_non_submission_statement": {
+      "form_name": "여권발급용 주재국 체류허가서 미제출 사유서",
+      "source_file": "여권발급용 주재국 체류허가서 미제출 사유서.pdf",
+      "form_type": "statement",
+      "description": "주재국 체류허가서를 제출하지 못하는 경우 작성하는 사유서",
+      "required_fields": [
+        "name",
+        "birth_date",
+        "confirmation_statement"
+      ],
+      "user_confirmation_fields": [
+        "작성일자",
+        "작성자 성명",
+        "작성자 서명"
+      ]
+    },
+
+    "braille_passport_application": {
+      "form_name": "점자여권 발급신청서",
+      "source_file": "점자여권 발급신청서.pdf",
+      "form_type": "application",
+      "description": "점자여권 발급을 신청하는 경우 사용하는 서식",
+      "required_fields": [
+        "applicant_name",
+        "birth_date",
+        "visual_disability_grade"
+      ],
+      "submission_documents": [
+        "장애인등록증 또는 복지카드 사본",
+        "장애인증명서"
+      ],
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 서명 또는 날인"
+      ]
+    },
+
+    "epassport_required_documents_checklist": {
+      "form_name": "전자여권 구비서류",
+      "source_file": "전자여권 구비서류.hwp",
+      "form_type": "checklist",
+      "description": "전자여권 신청 시 구비서류 안내 문서. 신청서가 아니라 checklist로 관리한다.",
+      "checklist_items": [
+        "여권발급신청서",
+        "구여권 원본 및 사본",
+        "여권용 사진",
+        "체류자격별 추가서류",
+        "미성년자 또는 병역미필자 추가서류",
+        "여권분실신고서 또는 여권재발급사유서",
+        "여권 기재사항 변경신청서"
+      ]
+    }
+  },
+
+  "common_judge_rules": [
+    "사용자가 말하지 않은 개인정보, 여권번호, 주소, 분실 일자, 분실 장소, 분실 사유, 법정대리인 정보를 임의 생성하지 않는다.",
+    "접수번호, 접수일자, 접수일시, 처리기간, 심사란, 접수자, 심사자, 발급자 등 기관 작성란은 AI가 작성하지 않는다.",
+    "신청일, 신고일, 작성일, 서명, 행정정보 공동이용 동의는 사용자 확인 대상으로 남긴다.",
+    "일반 여권 발급 또는 재발급이면 passport_issue_application을 기본 서식으로 사용한다.",
+    "18세 미만 미성년자 여권 발급 또는 여권 분실 신고인 경우 legal_representative_consent를 추가한다.",
+    "여권 분실 상황이면 passport_loss_report를 추가한다.",
+    "우편 수령을 원하는 경우 mail_delivery_application을 추가한다.",
+    "사증란 추가 또는 구여권번호 기재를 원하는 경우 passport_record_change_application을 사용한다.",
+    "영문성명 변경을 원하는 경우 english_name_change_application을 사용한다.",
+    "로마자성명 변경을 원하는 경우 romanized_name_change_application을 사용한다.",
+    "단순히 위임장이라고 적힌 경우 proxy_authorization으로 정규화한다.",
+    "전자여권 구비서류는 신청서가 아니라 checklist로 처리한다."
+  ]
+}
