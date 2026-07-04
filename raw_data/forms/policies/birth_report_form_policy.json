@@ -1,0 +1,259 @@
+{
+  "policy_id": "birth_report_form_policy",
+  "category": "출생신고",
+  "schema_file": "birth_report_forms.schema.json",
+  "raw_form_dir": "forms/raw/birth_report/",
+  "description": "재외공관별 출생신고 민원 서식 선택 정책. 국가별 schema를 만들지 않고 forms/raw/birth_report/ 폴더에서 필요한 서식을 불러온다.",
+
+  "default_forms": [
+    {
+      "form_id": "birth_report",
+      "form_name": "출생신고서",
+      "form_source_file": "출생신고서.pdf",
+      "form_path": "forms/raw/birth_report/출생신고서.pdf",
+      "condition": "기본 출생신고",
+      "form_selection_rule": "default_form"
+    }
+  ],
+
+  "default_rule": "exception_mission_forms에 없는 공관은 기본적으로 출생신고서만 안내한다. 단, 사용자가 전자적 송부, 출생정리, 캘리포니아 출생기록증명서, 동일인증명서 등 추가 상황을 말하면 intent_to_form_rules 또는 공관별 조건에 따라 추가 서식을 required_forms에 포함한다.",
+
+  "exception_mission_forms": {
+    "주나고야대한민국 총영사관": {
+      "required_forms": [
+        "birth_report",
+        "jp_nagoya_electronic_transmission_application"
+      ],
+      "checklist_note": "출생신고서와 일본_주나고야대한민국총영사관_전자적송부신청서를 사용한다."
+    },
+
+    "주요코하마대한민국 총영사관": {
+      "required_forms": [
+        "birth_report",
+        "birth_cleanup_application"
+      ],
+      "cross_category_required_forms": [
+        "jp_yokohama_overseas_registration_application"
+      ],
+      "checklist_note": "출생신고서, 출생정리신청서, 일본_주요코하마대한민국_재외국민등록신청서를 함께 사용한다."
+    },
+
+    "주베트남대한민국 대사관": {
+      "required_forms": [
+        "birth_report",
+        "electronic_transmission_application"
+      ],
+      "checklist_note": "출생신고서와 전자적송부신청서를 사용한다."
+    },
+
+    "주뉴욕대한민국총영사관": {
+      "required_forms": [
+        "birth_report",
+        "us_newyork_electronic_transmission_application"
+      ],
+      "checklist_note": "출생신고서와 미국_주뉴욕총영사관_전자적송부신청서를 사용한다."
+    },
+
+    "주로스앤젤레스대한민국 총영사관": {
+      "required_forms": [
+        "birth_report"
+      ],
+      "conditional_forms": [
+        {
+          "condition_id": "california_birth",
+          "condition": "출생지가 캘리포니아주인 경우",
+          "forms": [
+            "california_birth_record_certificate_translation"
+          ]
+        }
+      ],
+      "checklist_note": "기본적으로 출생신고서를 사용한다. 출생지가 캘리포니아주인 경우 미국_주로스앤젤레스대한민국 총영사관_캘리포니아_출생기록증명서를 추가한다."
+    },
+
+    "주시애틀대한민국 총영사관": {
+      "required_forms": [
+        "birth_report",
+        "us_seattle_electronic_transmission_application"
+      ],
+      "checklist_note": "출생신고서와 미국_주시애틀대한민국 총영사관_전자적송부신청서를 사용한다."
+    },
+
+    "주시카고대한민국 총영사관": {
+      "required_forms": [
+        "birth_report",
+        "electronic_transmission_application_2"
+      ],
+      "checklist_note": "출생신고서와 전자적송부신청서_2를 사용한다."
+    },
+
+    "주애틀랜타대한민국 총영사관": {
+      "required_forms": [
+        "birth_report",
+        "electronic_transmission_application_2",
+        "identity_verification_certificate"
+      ],
+      "checklist_note": "출생신고서, 전자적송부신청서_2, 미국_동일인증명서를 사용한다."
+    },
+
+    "주앵커리지대한민국 출장소": {
+      "required_forms": [
+        "birth_report",
+        "us_anchorage_electronic_transmission_application"
+      ],
+      "checklist_note": "출생신고서와 미국_주앵커리지대한민국 출장소전자적송부신청서를 사용한다."
+    },
+
+    "주호놀룰루대한민국 총영사관": {
+      "required_forms": [
+        "birth_report",
+        "us_honolulu_electronic_transmission_application"
+      ],
+      "checklist_note": "출생신고서와 미국_주호놀룰루대한민국 총영사관_전자적송부신청서를 사용한다."
+    },
+
+    "주휴스턴대한민국 총영사관": {
+      "required_forms": [
+        "birth_report",
+        "us_houston_electronic_transmission_application"
+      ],
+      "checklist_note": "출생신고서와 미국_주휴스턴대한민국 총영사관_전자적송부신청서를 사용한다."
+    },
+
+    "주몬트리올대한민국 총영사관": {
+      "required_forms": [
+        "birth_report"
+      ],
+      "cross_category_required_forms": [
+        "family_relation_certificate_application_2"
+      ],
+      "checklist_note": "출생신고서와 가족관계 등록사항별 증명서 교부 등 신청서_2를 사용한다."
+    }
+  },
+
+  "mission_aliases": {
+    "나고야": "주나고야대한민국 총영사관",
+    "주나고야": "주나고야대한민국 총영사관",
+    "주나고야총영사관": "주나고야대한민국 총영사관",
+    "주나고야대한민국총영사관": "주나고야대한민국 총영사관",
+
+    "요코하마": "주요코하마대한민국 총영사관",
+    "주요코하마": "주요코하마대한민국 총영사관",
+    "주요코하마총영사관": "주요코하마대한민국 총영사관",
+    "주요코하마대한민국총영사관": "주요코하마대한민국 총영사관",
+
+    "베트남": "주베트남대한민국 대사관",
+    "하노이": "주베트남대한민국 대사관",
+    "주베트남": "주베트남대한민국 대사관",
+    "주베트남대사관": "주베트남대한민국 대사관",
+    "주베트남대한민국대사관": "주베트남대한민국 대사관",
+
+    "뉴욕": "주뉴욕대한민국총영사관",
+    "주뉴욕": "주뉴욕대한민국총영사관",
+    "주뉴욕총영사관": "주뉴욕대한민국총영사관",
+    "주뉴욕대한민국 총영사관": "주뉴욕대한민국총영사관",
+
+    "로스앤젤레스": "주로스앤젤레스대한민국 총영사관",
+    "LA": "주로스앤젤레스대한민국 총영사관",
+    "엘에이": "주로스앤젤레스대한민국 총영사관",
+    "주LA": "주로스앤젤레스대한민국 총영사관",
+    "주로스앤젤레스": "주로스앤젤레스대한민국 총영사관",
+    "주로스앤젤레스총영사관": "주로스앤젤레스대한민국 총영사관",
+
+    "시애틀": "주시애틀대한민국 총영사관",
+    "주시애틀": "주시애틀대한민국 총영사관",
+    "주시애틀총영사관": "주시애틀대한민국 총영사관",
+    "주시애틀대한민국총영사관": "주시애틀대한민국 총영사관",
+
+    "시카고": "주시카고대한민국 총영사관",
+    "주시카고": "주시카고대한민국 총영사관",
+    "주시카고총영사관": "주시카고대한민국 총영사관",
+    "주시카고대한민국총영사관": "주시카고대한민국 총영사관",
+
+    "애틀랜타": "주애틀랜타대한민국 총영사관",
+    "아틀란타": "주애틀랜타대한민국 총영사관",
+    "주애틀랜타": "주애틀랜타대한민국 총영사관",
+    "주애틀랜타총영사관": "주애틀랜타대한민국 총영사관",
+    "주애틀랜타 대한민국 총영사관": "주애틀랜타대한민국 총영사관",
+
+    "앵커리지": "주앵커리지대한민국 출장소",
+    "주앵커리지": "주앵커리지대한민국 출장소",
+    "주앵커리지출장소": "주앵커리지대한민국 출장소",
+    "주앵커리지대한민국출장소": "주앵커리지대한민국 출장소",
+
+    "호놀룰루": "주호놀룰루대한민국 총영사관",
+    "하와이": "주호놀룰루대한민국 총영사관",
+    "주호놀룰루": "주호놀룰루대한민국 총영사관",
+    "주호놀룰루총영사관": "주호놀룰루대한민국 총영사관",
+    "주호놀룰루대한민국총영사관": "주호놀룰루대한민국 총영사관",
+
+    "휴스턴": "주휴스턴대한민국 총영사관",
+    "주휴스턴": "주휴스턴대한민국 총영사관",
+    "주휴스턴총영사관": "주휴스턴대한민국 총영사관",
+    "주휴스턴대한민국총영사관": "주휴스턴대한민국 총영사관",
+
+    "몬트리올": "주몬트리올대한민국 총영사관",
+    "몽트리올": "주몬트리올대한민국 총영사관",
+    "퀘벡": "주몬트리올대한민국 총영사관",
+    "주몬트리올": "주몬트리올대한민국 총영사관",
+    "주몬트리올총영사관": "주몬트리올대한민국 총영사관",
+    "주몬트리올대한민국총영사관": "주몬트리올대한민국 총영사관"
+  },
+
+  "intent_to_form_rules": {
+    "birth_report": [
+      "birth_report"
+    ],
+    "birth_report_with_electronic_transmission": [
+      "birth_report",
+      "electronic_transmission_application"
+    ],
+    "birth_cleanup": [
+      "birth_report",
+      "birth_cleanup_application"
+    ],
+    "california_birth_record": [
+      "birth_report",
+      "california_birth_record_certificate_translation"
+    ],
+    "identity_verification": [
+      "identity_verification_certificate"
+    ]
+  },
+
+  "selection_logic": {
+    "step_1": "사용자 입력에서 국가, 도시, 공관명, 출생신고 민원 의도를 추출한다.",
+    "step_2": "공관명 또는 도시명이 mission_aliases에 있으면 표준 공관명으로 정규화한다.",
+    "step_3": "정규화된 공관명이 exception_mission_forms에 있으면 해당 공관의 required_forms를 사용한다.",
+    "step_4": "정규화된 공관명이 exception_mission_forms에 없으면 default_forms를 사용한다.",
+    "step_5": "conditional_forms가 있는 공관은 사용자의 지역 조건 또는 상황 조건을 확인해 추가 서식을 포함한다.",
+    "step_6": "cross_category_required_forms가 있는 공관은 birth_report_forms.schema.json의 external_form_refs에서 참조한다.",
+    "step_7": "required_forms의 각 form_id는 birth_report_forms.schema.json의 forms에 존재해야 한다.",
+    "step_8": "각 form_id의 source_file은 forms/raw/birth_report/ 안에서 불러온다."
+  },
+
+  "agent_output_required_keys": [
+    "country",
+    "resolved_mission",
+    "category",
+    "service_title",
+    "birth_report_intent",
+    "required_forms",
+    "cross_category_required_forms",
+    "missing_fields"
+  ],
+
+  "judge_checks": [
+    "required_forms의 form_id가 birth_report_forms.schema.json에 정의되어 있는지 확인한다.",
+    "required_forms의 form_source_file이 forms/raw/birth_report/ 안에 존재하는지 확인한다.",
+    "exception_mission_forms에 있는 공관은 해당 공관의 required_forms 전체가 포함되었는지 확인한다.",
+    "exception_mission_forms에 없는 공관은 기본적으로 출생신고서가 선택되었는지 확인한다.",
+    "전자적송부신청서가 필요한 공관이면 해당 공관 전용 전자적송부신청서 또는 공통 전자적송부신청서가 포함되었는지 확인한다.",
+    "주요코하마대한민국 총영사관이면 출생신고서, 출생정리신청서, 재외국민등록신청서 참조가 포함되었는지 확인한다.",
+    "주로스앤젤레스대한민국 총영사관에서 출생지가 캘리포니아주이면 캘리포니아 출생기록증명서가 포함되었는지 확인한다.",
+    "주애틀랜타대한민국 총영사관이면 미국_동일인증명서가 포함되었는지 확인한다.",
+    "주몬트리올대한민국 총영사관이면 가족관계 등록사항별 증명서 교부 등 신청서_2 참조가 포함되었는지 확인한다.",
+    "cross_category_required_forms의 form_id가 external_form_refs에 정의되어 있는지 확인한다.",
+    "기관 작성란은 AI가 작성하지 않았는지 확인한다.",
+    "사용자가 말하지 않은 출생자 성명, 출생일시, 출생장소, 부모 정보, 등록기준지, 신고인 정보를 임의 생성하지 않았는지 확인한다."
+  ]
+}
