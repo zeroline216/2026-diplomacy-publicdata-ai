@@ -1,0 +1,401 @@
+{
+  "policy_id": "notarial_form_policy",
+  "category": "공증",
+  "schema_file": "notarial_forms.schema.json",
+  "raw_form_dir": "forms/raw/notarial/",
+  "description": "재외공관별 공증, 위임장, 인감, 서명인증 관련 서식 선택 정책. 국가별 schema를 만들지 않고 forms/raw/notarial/ 폴더에서 필요한 서식을 불러온다.",
+
+  "default_forms": [
+    {
+      "form_id": "notarial_request",
+      "form_name": "공증촉탁서",
+      "form_source_file": "공증촉탁서.pdf",
+      "form_path": "forms/raw/notarial/공증촉탁서.pdf",
+      "condition": "기본 공증 또는 사서증서 인증 촉탁",
+      "form_selection_rule": "default_form"
+    }
+  ],
+
+  "default_rule": "exception_mission_forms에 없는 공관은 기본적으로 공증촉탁서를 사용한다. 단, 사용자가 일반위임장, 상속포기서, 시민권자 위임장, 동일인증명서, 인감증명서 발급 위임, 인감 변경신고 등 구체적인 서식을 요청하면 intent_to_form_rules에 따라 추가 서식을 required_forms에 포함한다.",
+
+  "exception_mission_forms": {
+    "주몬트리올대한민국 총영사관": {
+      "available_forms": [
+        "notarial_request",
+        "canada_visit_general_power_of_attorney",
+        "mail_general_power_of_attorney"
+      ],
+      "checklist_note": "공증촉탁서, 캐나다_방문_일반위임장, 우편_일반위임장을 관리한다."
+    },
+
+    "주로스앤젤레스대한민국 총영사관": {
+      "available_forms": [
+        "inheritance_renunciation_statement",
+        "us_general_power_of_attorney",
+        "notarial_request"
+      ],
+      "checklist_note": "미국_상속포기서, 미국_일반위임장, 공증촉탁서를 관리한다."
+    },
+
+    "주보스턴대한민국 총영사관": {
+      "available_forms": [
+        "general_power_of_attorney",
+        "us_citizen_power_of_attorney",
+        "us_citizen_identity_certificate"
+      ],
+      "checklist_note": "일반위임장, 미국_시민권자위임장, 미국_시민권자동일인증명서를 관리한다."
+    },
+
+    "주샌프란시스코대한민국 총영사관": {
+      "available_forms": [
+        "us_general_power_of_attorney"
+      ],
+      "checklist_note": "미국_일반위임장을 관리한다."
+    },
+
+    "주시애틀대한민국 총영사관": {
+      "available_forms": [
+        "us_general_power_of_attorney"
+      ],
+      "checklist_note": "미국_일반위임장을 관리한다."
+    },
+
+    "주시카고대한민국 총영사관": {
+      "available_forms": [
+        "us_general_power_of_attorney",
+        "inheritance_renunciation_statement",
+        "notarial_request"
+      ],
+      "checklist_note": "미국_일반위임장, 미국_상속포기서, 공증촉탁서를 관리한다."
+    },
+
+    "주앵커리지대한민국 출장소": {
+      "available_forms": [
+        "notarial_request",
+        "us_general_power_of_attorney"
+      ],
+      "checklist_note": "공증촉탁서와 미국_일반위임장을 관리한다."
+    },
+
+    "주휴스턴대한민국 총영사관": {
+      "available_forms": [
+        "us_general_power_of_attorney",
+        "signature_certificate",
+        "inheritance_renunciation_statement",
+        "us_citizen_power_of_attorney",
+        "us_citizen_residence_statement",
+        "us_citizen_identity_certificate",
+        "us_citizen_signature_statement"
+      ],
+      "checklist_note": "미국_일반위임장, 서명인증서, 미국_상속포기서, 미국_시민권자위임장, 미국_시민권자의 거주사실 진술서, 미국_시민권자동일인증명서, 미국_시민권자의 서명 진술서를 관리한다."
+    },
+
+    "주호치민대한민국 총영사관": {
+      "available_forms": [
+        "notarial_request_vietnam",
+        "general_power_of_attorney_2"
+      ],
+      "checklist_note": "베트남_공증촉탁서와 일반위임장2를 관리한다."
+    },
+
+    "주니가타대한민국 총영사관": {
+      "available_forms": [
+        "notarial_request_japan_niigata",
+        "japan_general_power_of_attorney"
+      ],
+      "checklist_note": "일본_주니가타대한민국 총영사관_공증촉탁서와 일본_일반위임장을 관리한다."
+    },
+
+    "주삿포로대한민국 총영사관": {
+      "available_forms": [
+        "notarial_request_japan"
+      ],
+      "checklist_note": "일본_공증촉탁서를 관리한다."
+    },
+
+    "주요코하마대한민국 총영사관": {
+      "available_forms": [
+        "notarial_request_japan_yokohama",
+        "japan_general_power_of_attorney"
+      ],
+      "checklist_note": "일본_주요코하마대한민국 총영사관_공증촉탁서양식과 일본_일반위임장을 관리한다."
+    },
+
+    "주일본대한민국 대사관": {
+      "available_forms": [
+        "japan_general_power_of_attorney",
+        "overseas_departure_report",
+        "resident_register_copy_request_proxy"
+      ],
+      "checklist_note": "일본_일반위임장, 재외국민 출국,출국포기신고서, 주민등록표 열람 또는 등ㆍ초본 교부 신청서 위임용을 관리한다."
+    },
+
+    "주광저우대한민국 총영사관": {
+      "available_forms": [
+        "china_general_power_of_attorney",
+        "notarial_request_china"
+      ],
+      "checklist_note": "중국_일반위임장과 중국_공증촉탁서를 관리한다."
+    },
+
+    "주중국대한민국 대사관": {
+      "available_forms": [
+        "notarial_request",
+        "china_general_power_of_attorney",
+        "seal_certificate_proxy_application",
+        "seal_change_report"
+      ],
+      "checklist_note": "공증촉탁서, 중국_일반위임장, 인감증명서발급위임장, 인감(변경)신고서를 관리한다."
+    }
+  },
+
+  "mission_aliases": {
+    "몬트리올": "주몬트리올대한민국 총영사관",
+    "몽트리올": "주몬트리올대한민국 총영사관",
+    "퀘벡": "주몬트리올대한민국 총영사관",
+    "주몬트리올": "주몬트리올대한민국 총영사관",
+    "주몬트리올총영사관": "주몬트리올대한민국 총영사관",
+
+    "로스앤젤레스": "주로스앤젤레스대한민국 총영사관",
+    "LA": "주로스앤젤레스대한민국 총영사관",
+    "엘에이": "주로스앤젤레스대한민국 총영사관",
+    "주LA": "주로스앤젤레스대한민국 총영사관",
+    "주로스앤젤레스": "주로스앤젤레스대한민국 총영사관",
+    "주로스앤젤레스총영사관": "주로스앤젤레스대한민국 총영사관",
+
+    "보스턴": "주보스턴대한민국 총영사관",
+    "주보스턴": "주보스턴대한민국 총영사관",
+    "주보스턴총영사관": "주보스턴대한민국 총영사관",
+
+    "샌프란시스코": "주샌프란시스코대한민국 총영사관",
+    "SF": "주샌프란시스코대한민국 총영사관",
+    "주샌프란시스코": "주샌프란시스코대한민국 총영사관",
+    "주샌프란시스코총영사관": "주샌프란시스코대한민국 총영사관",
+
+    "시애틀": "주시애틀대한민국 총영사관",
+    "주시애틀": "주시애틀대한민국 총영사관",
+    "주시애틀총영사관": "주시애틀대한민국 총영사관",
+
+    "시카고": "주시카고대한민국 총영사관",
+    "주시카고": "주시카고대한민국 총영사관",
+    "주시카고총영사관": "주시카고대한민국 총영사관",
+
+    "앵커리지": "주앵커리지대한민국 출장소",
+    "주앵커리지": "주앵커리지대한민국 출장소",
+    "주앵커리지출장소": "주앵커리지대한민국 출장소",
+
+    "휴스턴": "주휴스턴대한민국 총영사관",
+    "주휴스턴": "주휴스턴대한민국 총영사관",
+    "주휴스턴총영사관": "주휴스턴대한민국 총영사관",
+
+    "호치민": "주호치민대한민국 총영사관",
+    "호찌민": "주호치민대한민국 총영사관",
+    "주호치민": "주호치민대한민국 총영사관",
+    "주호치민총영사관": "주호치민대한민국 총영사관",
+
+    "니가타": "주니가타대한민국 총영사관",
+    "니카타": "주니가타대한민국 총영사관",
+    "주니가타": "주니가타대한민국 총영사관",
+    "주니카타": "주니가타대한민국 총영사관",
+    "주니가타총영사관": "주니가타대한민국 총영사관",
+
+    "삿포로": "주삿포로대한민국 총영사관",
+    "주삿포로": "주삿포로대한민국 총영사관",
+    "주삿포로총영사관": "주삿포로대한민국 총영사관",
+
+    "요코하마": "주요코하마대한민국 총영사관",
+    "주요코하마": "주요코하마대한민국 총영사관",
+    "주요코하마총영사관": "주요코하마대한민국 총영사관",
+
+    "일본": "주일본대한민국 대사관",
+    "도쿄": "주일본대한민국 대사관",
+    "동경": "주일본대한민국 대사관",
+    "주일본": "주일본대한민국 대사관",
+    "주일본대사관": "주일본대한민국 대사관",
+    "주일본대한민국대사관": "주일본대한민국 대사관",
+
+    "광저우": "주광저우대한민국 총영사관",
+    "광주": "주광저우대한민국 총영사관",
+    "주광저우": "주광저우대한민국 총영사관",
+    "주광저우총영사관": "주광저우대한민국 총영사관",
+
+    "중국": "주중국대한민국 대사관",
+    "베이징": "주중국대한민국 대사관",
+    "북경": "주중국대한민국 대사관",
+    "주중국": "주중국대한민국 대사관",
+    "주중국대사관": "주중국대한민국 대사관",
+    "주중국대한민국대사관": "주중국대한민국 대사관"
+  },
+
+  "intent_to_form_rules": {
+    "notarial_request": [
+      "notarial_request"
+    ],
+    "general_power_of_attorney": [
+      "general_power_of_attorney"
+    ],
+    "us_general_power_of_attorney": [
+      "us_general_power_of_attorney"
+    ],
+    "japan_general_power_of_attorney": [
+      "japan_general_power_of_attorney"
+    ],
+    "china_general_power_of_attorney": [
+      "china_general_power_of_attorney"
+    ],
+    "inheritance_renunciation": [
+      "inheritance_renunciation_statement"
+    ],
+    "signature_certificate": [
+      "signature_certificate"
+    ],
+    "us_citizen_power_of_attorney": [
+      "us_citizen_power_of_attorney"
+    ],
+    "us_citizen_identity_certificate": [
+      "us_citizen_identity_certificate"
+    ],
+    "us_citizen_residence_statement": [
+      "us_citizen_residence_statement"
+    ],
+    "us_citizen_signature_statement": [
+      "us_citizen_signature_statement"
+    ],
+    "seal_certificate_proxy": [
+      "seal_certificate_proxy_application"
+    ],
+    "seal_change_report": [
+      "seal_change_report"
+    ],
+    "overseas_departure_report": [
+      "overseas_departure_report"
+    ],
+    "resident_register_copy_request_proxy": [
+      "resident_register_copy_request_proxy"
+    ]
+  },
+
+  "selection_logic": {
+    "step_1": "사용자 입력에서 국가, 도시, 공관명, 공증 또는 위임 민원 의도를 추출한다.",
+    "step_2": "공관명 또는 도시명이 mission_aliases에 있으면 표준 공관명으로 정규화한다.",
+    "step_3": "정규화된 공관명이 exception_mission_forms에 있으면 해당 공관의 available_forms 안에서 사용자 상황에 맞는 서식을 고른다.",
+    "step_4": "정규화된 공관명이 exception_mission_forms에 없으면 default_forms를 기본 안내한다.",
+    "step_5": "사용자 상황이 일반위임장, 상속포기서, 시민권자 위임장, 동일인증명서, 인감증명서 발급 위임, 인감 변경신고 등으로 확인되면 intent_to_form_rules에 따라 required_forms를 구성한다.",
+    "step_6": "required_forms의 각 form_id는 notarial_forms.schema.json의 forms에 존재해야 한다.",
+    "step_7": "각 form_id의 source_file은 forms/raw/notarial/ 안에서 불러온다.",
+    "step_8": "공관별 available_forms에 등록되지 않은 서식을 임의로 생성하지 않는다."
+  },
+
+  "agent_output_required_keys": [
+    "country",
+    "resolved_mission",
+    "category",
+    "service_title",
+    "notarial_intent",
+    "required_forms",
+    "missing_fields"
+  ],
+
+  "agent_output_example_default": {
+    "country": "중국",
+    "resolved_mission": "주상하이대한민국 총영사관",
+    "category": "공증",
+    "service_title": "공증 촉탁",
+    "notarial_intent": "notarial_request",
+    "required_forms": [
+      {
+        "form_id": "notarial_request",
+        "form_name": "공증촉탁서",
+        "form_source_file": "공증촉탁서.pdf",
+        "form_path": "forms/raw/notarial/공증촉탁서.pdf",
+        "form_selection_rule": "default_form"
+      }
+    ]
+  },
+
+  "agent_output_example_montreal_visit_power": {
+    "country": "캐나다",
+    "resolved_mission": "주몬트리올대한민국 총영사관",
+    "category": "공증",
+    "service_title": "방문 일반위임장 작성",
+    "notarial_intent": "general_power_of_attorney",
+    "required_forms": [
+      {
+        "form_id": "canada_visit_general_power_of_attorney",
+        "form_name": "캐나다_방문_일반위임장",
+        "form_source_file": "캐나다_방문_일반위임장.doc",
+        "form_path": "forms/raw/notarial/캐나다_방문_일반위임장.doc",
+        "form_selection_rule": "mission_available_form"
+      }
+    ]
+  },
+
+  "agent_output_example_la_inheritance": {
+    "country": "미국",
+    "resolved_mission": "주로스앤젤레스대한민국 총영사관",
+    "category": "공증",
+    "service_title": "상속포기서 인증",
+    "notarial_intent": "inheritance_renunciation",
+    "required_forms": [
+      {
+        "form_id": "inheritance_renunciation_statement",
+        "form_name": "미국_상속포기서",
+        "form_source_file": "미국_상속포기서.pdf",
+        "form_path": "forms/raw/notarial/미국_상속포기서.pdf",
+        "form_selection_rule": "mission_available_form"
+      }
+    ]
+  },
+
+  "agent_output_example_houston_citizen_identity": {
+    "country": "미국",
+    "resolved_mission": "주휴스턴대한민국 총영사관",
+    "category": "공증",
+    "service_title": "미국 시민권자 동일인증명",
+    "notarial_intent": "us_citizen_identity_certificate",
+    "required_forms": [
+      {
+        "form_id": "us_citizen_identity_certificate",
+        "form_name": "미국_시민권자동일인증명서",
+        "form_source_file": "미국_시민권자동일인증명서.doc",
+        "form_path": "forms/raw/notarial/미국_시민권자동일인증명서.doc",
+        "form_selection_rule": "mission_available_form"
+      }
+    ]
+  },
+
+  "agent_output_example_china_seal": {
+    "country": "중국",
+    "resolved_mission": "주중국대한민국 대사관",
+    "category": "공증",
+    "service_title": "인감증명서 발급 위임",
+    "notarial_intent": "seal_certificate_proxy",
+    "required_forms": [
+      {
+        "form_id": "seal_certificate_proxy_application",
+        "form_name": "인감증명서발급위임장",
+        "form_source_file": "인감증명서발급위임장.pdf",
+        "form_path": "forms/raw/notarial/인감증명서발급위임장.pdf",
+        "form_selection_rule": "mission_available_form"
+      }
+    ]
+  },
+
+  "judge_checks": [
+    "required_forms의 form_id가 notarial_forms.schema.json에 정의되어 있는지 확인한다.",
+    "required_forms의 form_source_file이 forms/raw/notarial/ 안에 존재하는지 확인한다.",
+    "exception_mission_forms에 있는 공관은 해당 공관의 available_forms 안에서 서식이 선택되었는지 확인한다.",
+    "exception_mission_forms에 없는 공관은 기본적으로 공증촉탁서가 선택되었는지 확인한다.",
+    "일반위임장 요청이면 해당 공관의 일반위임장 계열 서식이 선택되었는지 확인한다.",
+    "미국 공관에서 미국_일반위임장이 지정된 경우 us_general_power_of_attorney가 선택되었는지 확인한다.",
+    "일본 공관에서 일본_일반위임장이 지정된 경우 japan_general_power_of_attorney가 선택되었는지 확인한다.",
+    "중국 공관에서 중국_일반위임장이 지정된 경우 china_general_power_of_attorney가 선택되었는지 확인한다.",
+    "상속포기서 요청이면 inheritance_renunciation_statement가 포함되었는지 확인한다.",
+    "미국 시민권자 위임, 동일인증명, 거주사실 진술, 서명 진술이면 해당 us_citizen 계열 서식이 포함되었는지 확인한다.",
+    "인감증명서 발급 위임이면 seal_certificate_proxy_application이 포함되었는지 확인한다.",
+    "인감 신고 또는 변경신고이면 seal_change_report가 포함되었는지 확인한다.",
+    "주민등록표 열람 또는 등·초본 교부 위임이면 resident_register_copy_request_proxy가 포함되었는지 확인한다.",
+    "기관 작성란은 AI가 작성하지 않았는지 확인한다.",
+    "사용자가 말하지 않은 성명, 생년월일, 주민등록번호, 주소, 위임 범위, 상속 관련 정보를 임의 생성하지 않았는지 확인한다."
+  ]
+}
