@@ -1,0 +1,466 @@
+{
+  "schema_id": "notarial_forms",
+  "category": "공증",
+  "raw_form_dir": "forms/raw/notarial/",
+  "description": "재외공관 공증, 사서증서 인증, 위임장, 인감, 서명인증 관련 통합 서식 구조 정의. 국가별 schema를 만들지 않고 forms/raw/notarial/ 폴더의 서식을 공관별 policy에서 불러온다.",
+
+  "forms": {
+    "notarial_request": {
+      "form_name": "공증촉탁서",
+      "source_file": "공증촉탁서.pdf",
+      "form_type": "notarial_request",
+      "description": "공증 또는 사서증서 인증을 촉탁할 때 사용하는 기본 공증촉탁서",
+      "required_fields": [
+        "applicant_name",
+        "applicant_birth_date_or_resident_registration_number",
+        "applicant_address",
+        "applicant_contact",
+        "notarial_request_type",
+        "document_title",
+        "document_purpose",
+        "requested_copy_count"
+      ],
+      "optional_fields": [
+        "applicant_passport_number",
+        "applicant_email",
+        "target_country",
+        "submission_agency",
+        "document_language",
+        "agent_name",
+        "agent_contact"
+      ],
+      "conditional_fields": [
+        {
+          "field_id": "proxy_authorization",
+          "condition": "대리인이 공증을 촉탁하는 경우"
+        },
+        {
+          "field_id": "original_document_info",
+          "condition": "원본문서 확인 또는 사본 인증이 필요한 경우"
+        },
+        {
+          "field_id": "translation_info",
+          "condition": "번역문 인증 또는 번역 확인이 필요한 경우"
+        }
+      ],
+      "allowed_notarial_request_type": [
+        "사서증서 인증",
+        "위임장 인증",
+        "서명 인증",
+        "번역문 인증",
+        "사본 인증",
+        "기타 공증"
+      ],
+      "office_fields": [
+        "접수번호",
+        "접수일자",
+        "수수료",
+        "담당자",
+        "공증 담당 확인란"
+      ],
+      "user_confirmation_fields": [
+        "촉탁일",
+        "촉탁인 서명 또는 날인",
+        "대리인 서명 또는 날인"
+      ]
+    },
+
+    "notarial_request_vietnam": {
+      "form_name": "베트남_공증촉탁서",
+      "source_file": "베트남_공증촉탁서.hwp",
+      "form_type": "notarial_request",
+      "inherits": "notarial_request",
+      "description": "주호치민대한민국 총영사관 등 베트남 공관에서 사용하는 공증촉탁서"
+    },
+
+    "notarial_request_japan": {
+      "form_name": "일본_공증촉탁서",
+      "source_file": "일본_공증촉탁서.pdf",
+      "form_type": "notarial_request",
+      "inherits": "notarial_request",
+      "description": "일본 공관에서 사용하는 공증촉탁서"
+    },
+
+    "notarial_request_japan_niigata": {
+      "form_name": "일본_주니가타대한민국 총영사관_공증촉탁서",
+      "source_file": "일본_주니가타대한민국 총영사관_공증촉탁서.pdf",
+      "form_type": "notarial_request",
+      "inherits": "notarial_request",
+      "description": "주니가타대한민국 총영사관 전용 공증촉탁서"
+    },
+
+    "notarial_request_japan_yokohama": {
+      "form_name": "일본_주요코하마대한민국 총영사관_공증촉탁서양식",
+      "source_file": "일본_주요코하마대한민국 총영사관_공증촉탁서양식.pdf",
+      "form_type": "notarial_request",
+      "inherits": "notarial_request",
+      "description": "주요코하마대한민국 총영사관 전용 공증촉탁서 양식"
+    },
+
+    "notarial_request_china": {
+      "form_name": "중국_공증촉탁서",
+      "source_file": "중국_공증촉탁서.pdf",
+      "form_type": "notarial_request",
+      "inherits": "notarial_request",
+      "description": "중국 공관에서 사용하는 공증촉탁서"
+    },
+
+    "general_power_of_attorney": {
+      "form_name": "일반위임장",
+      "source_file": "일반위임장.doc",
+      "form_type": "power_of_attorney",
+      "description": "일반적인 대리권 수여를 위해 사용하는 기본 위임장",
+      "required_fields": [
+        "delegator_name",
+        "delegator_birth_date_or_resident_registration_number",
+        "delegator_address",
+        "delegator_contact",
+        "agent_name",
+        "agent_birth_date_or_resident_registration_number",
+        "agent_address",
+        "agent_contact",
+        "relationship_to_delegator",
+        "delegation_scope"
+      ],
+      "optional_fields": [
+        "delegator_passport_number",
+        "agent_passport_number",
+        "target_agency",
+        "use_purpose",
+        "validity_period"
+      ],
+      "allowed_delegation_scope": [
+        "일반 행정업무",
+        "부동산 관련 업무",
+        "은행 또는 금융 업무",
+        "차량 관련 업무",
+        "가족관계 또는 주민등록 관련 업무",
+        "공증 또는 인증 신청",
+        "기타"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "위임인 서명 또는 날인",
+        "수임인 서명 또는 날인"
+      ]
+    },
+
+    "general_power_of_attorney_2": {
+      "form_name": "일반위임장2",
+      "source_file": "일반위임장2.hwp",
+      "form_type": "power_of_attorney",
+      "inherits": "general_power_of_attorney",
+      "description": "일부 공관에서 사용하는 대체형 일반위임장"
+    },
+
+    "us_general_power_of_attorney": {
+      "form_name": "미국_일반위임장",
+      "source_file": "미국_일반위임장.pdf",
+      "form_type": "power_of_attorney",
+      "inherits": "general_power_of_attorney",
+      "description": "미국 공관에서 사용하는 일반위임장"
+    },
+
+    "japan_general_power_of_attorney": {
+      "form_name": "일본_일반위임장",
+      "source_file": "일본_일반위임장.pdf",
+      "form_type": "power_of_attorney",
+      "inherits": "general_power_of_attorney",
+      "description": "일본 공관에서 사용하는 일반위임장"
+    },
+
+    "china_general_power_of_attorney": {
+      "form_name": "중국_일반위임장",
+      "source_file": "중국_일반위임장.pdf",
+      "form_type": "power_of_attorney",
+      "inherits": "general_power_of_attorney",
+      "description": "중국 공관에서 사용하는 일반위임장"
+    },
+
+    "canada_visit_general_power_of_attorney": {
+      "form_name": "캐나다_방문_일반위임장",
+      "source_file": "캐나다_방문_일반위임장.doc",
+      "form_type": "power_of_attorney",
+      "inherits": "general_power_of_attorney",
+      "description": "주몬트리올대한민국 총영사관에서 방문 접수 시 사용하는 일반위임장"
+    },
+
+    "mail_general_power_of_attorney": {
+      "form_name": "우편_일반위임장",
+      "source_file": "우편_일반위임장.doc",
+      "form_type": "power_of_attorney",
+      "inherits": "general_power_of_attorney",
+      "description": "우편 접수 또는 우편 처리 시 사용하는 일반위임장"
+    },
+
+    "us_citizen_power_of_attorney": {
+      "form_name": "미국_시민권자위임장",
+      "source_file": "미국_시민권자위임장.doc",
+      "form_type": "power_of_attorney",
+      "inherits": "general_power_of_attorney",
+      "description": "미국 시민권자가 대한민국 관련 업무를 위임할 때 사용하는 위임장",
+      "additional_required_fields": [
+        "us_citizenship_status",
+        "certificate_of_naturalization_number"
+      ]
+    },
+
+    "inheritance_renunciation_statement": {
+      "form_name": "미국_상속포기서",
+      "source_file": "미국_상속포기서.pdf",
+      "form_type": "inheritance_renunciation",
+      "description": "상속 포기 의사를 진술하거나 인증받기 위해 사용하는 서식",
+      "required_fields": [
+        "decedent_name",
+        "decedent_birth_date",
+        "decedent_death_date",
+        "heir_name",
+        "heir_birth_date_or_resident_registration_number",
+        "relationship_to_decedent",
+        "heir_address",
+        "renunciation_statement"
+      ],
+      "optional_fields": [
+        "decedent_registered_domicile",
+        "inheritance_property_info",
+        "case_number",
+        "court_name"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "상속포기인 서명 또는 날인"
+      ]
+    },
+
+    "signature_certificate": {
+      "form_name": "서명인증서",
+      "source_file": "서명인증서.pdf",
+      "form_type": "signature_certificate",
+      "description": "신청인의 서명 사실을 확인하거나 인증할 때 사용하는 서식",
+      "required_fields": [
+        "applicant_name",
+        "applicant_birth_date_or_resident_registration_number",
+        "applicant_address",
+        "applicant_contact",
+        "signature_purpose"
+      ],
+      "optional_fields": [
+        "passport_number",
+        "target_agency",
+        "document_title"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "신청인 서명"
+      ],
+      "office_fields": [
+        "담당자 확인란",
+        "공관 확인란"
+      ]
+    },
+
+    "us_citizen_identity_certificate": {
+      "form_name": "미국_시민권자동일인증명서",
+      "source_file": "미국_시민권자동일인증명서.doc",
+      "form_type": "identity_verification",
+      "description": "미국 시민권자의 한국 내 인적사항과 미국 내 인적사항이 동일인임을 확인하는 서식",
+      "required_fields": [
+        "name_ko",
+        "name_en",
+        "birth_date",
+        "korean_record_address",
+        "us_address",
+        "phone_number",
+        "passport_number",
+        "certificate_of_naturalization_number"
+      ],
+      "optional_fields": [
+        "korean_record_name",
+        "us_record_name",
+        "previous_name"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "신청인 성명",
+        "신청인 서명"
+      ]
+    },
+
+    "us_citizen_residence_statement": {
+      "form_name": "미국_시민권자의 거주사실 진술서",
+      "source_file": "미국_시민권자의 거주사실 진술서.pdf",
+      "form_type": "residence_statement",
+      "description": "미국 시민권자의 거주 사실을 진술하는 서식",
+      "required_fields": [
+        "applicant_name",
+        "applicant_birth_date",
+        "current_address",
+        "residence_period",
+        "statement_content"
+      ],
+      "optional_fields": [
+        "passport_number",
+        "certificate_of_naturalization_number",
+        "contact"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "신청인 서명"
+      ]
+    },
+
+    "us_citizen_signature_statement": {
+      "form_name": "미국_시민권자의 서명 진술서",
+      "source_file": "미국_시민권자의 서명 진술서.pdf",
+      "form_type": "signature_statement",
+      "description": "미국 시민권자의 서명 사실을 진술하는 서식",
+      "required_fields": [
+        "applicant_name",
+        "applicant_birth_date",
+        "signature_statement_content"
+      ],
+      "optional_fields": [
+        "passport_number",
+        "certificate_of_naturalization_number",
+        "address",
+        "contact"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "신청인 서명"
+      ]
+    },
+
+    "seal_certificate_proxy_application": {
+      "form_name": "인감증명서발급위임장",
+      "source_file": "인감증명서발급위임장.pdf",
+      "form_type": "seal_certificate_proxy",
+      "description": "인감증명서 발급을 대리인에게 위임할 때 사용하는 서식",
+      "required_fields": [
+        "delegator_name",
+        "delegator_resident_registration_number",
+        "delegator_address",
+        "agent_name",
+        "agent_resident_registration_number",
+        "agent_address",
+        "relationship_to_delegator",
+        "use_purpose",
+        "requested_copy_count"
+      ],
+      "optional_fields": [
+        "delegator_contact",
+        "agent_contact",
+        "submission_agency"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "위임자 서명 또는 날인"
+      ]
+    },
+
+    "seal_change_report": {
+      "form_name": "인감(변경)신고서",
+      "source_file": "인감(변경)신고서.pdf",
+      "form_type": "seal_change_report",
+      "description": "인감 신고 또는 인감 변경 신고 시 사용하는 서식",
+      "required_fields": [
+        "applicant_name",
+        "resident_registration_number",
+        "address",
+        "seal_report_type",
+        "seal_impression"
+      ],
+      "allowed_seal_report_type": [
+        "인감 신고",
+        "인감 변경 신고"
+      ],
+      "optional_fields": [
+        "contact",
+        "proxy_name",
+        "proxy_relationship"
+      ],
+      "user_confirmation_fields": [
+        "신고일",
+        "신고인 서명 또는 날인"
+      ],
+      "office_fields": [
+        "접수번호",
+        "담당자 확인란"
+      ]
+    },
+
+    "overseas_departure_report": {
+      "form_name": "재외국민 출국,출국포기신고서",
+      "source_file": "재외국민 출국,출국포기신고서.hwp",
+      "form_type": "overseas_departure_report",
+      "description": "재외국민 출국 또는 출국포기를 신고할 때 사용하는 서식",
+      "required_fields": [
+        "applicant_name",
+        "birth_date_or_resident_registration_number",
+        "address",
+        "contact",
+        "report_type",
+        "departure_or_cancellation_reason"
+      ],
+      "allowed_report_type": [
+        "출국 신고",
+        "출국포기 신고"
+      ],
+      "user_confirmation_fields": [
+        "신고일",
+        "신고인 서명 또는 날인"
+      ]
+    },
+
+    "resident_register_copy_request_proxy": {
+      "form_name": "주민등록표 열람 또는 등ㆍ초본 교부 신청서 (위임용)",
+      "source_file": "주민등록표 열람 또는 등ㆍ초본 교부 신청서 (위임용).hwp",
+      "form_type": "resident_register_copy_request_proxy",
+      "description": "주민등록표 열람 또는 등·초본 교부를 위임받아 신청할 때 사용하는 서식",
+      "required_fields": [
+        "target_name",
+        "target_resident_registration_number",
+        "target_address",
+        "applicant_name",
+        "applicant_resident_registration_number",
+        "applicant_address",
+        "relationship_to_target",
+        "request_type",
+        "use_purpose"
+      ],
+      "allowed_request_type": [
+        "주민등록표 열람",
+        "주민등록표 등본 교부",
+        "주민등록표 초본 교부"
+      ],
+      "conditional_fields": [
+        {
+          "field_id": "proxy_authorization",
+          "condition": "위임 신청인 경우"
+        }
+      ],
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 서명 또는 날인",
+        "위임인 서명 또는 날인"
+      ]
+    }
+  },
+
+  "common_judge_rules": [
+    "사용자가 말하지 않은 성명, 생년월일, 주민등록번호, 여권번호, 주소, 연락처, 위임 범위, 상속 관련 정보를 임의 생성하지 않는다.",
+    "접수번호, 수수료, 담당자, 공관 확인란 등 기관 작성란은 AI가 작성하지 않는다.",
+    "신청일, 작성일, 촉탁일, 신고일, 서명 또는 날인은 사용자 확인 대상으로 남긴다.",
+    "공증 또는 사서증서 인증이면 notarial_request 계열 서식을 사용한다.",
+    "일반 위임이면 general_power_of_attorney 계열 서식을 사용한다.",
+    "미국 공관에서 일반위임장이 지정된 경우 us_general_power_of_attorney를 우선 사용한다.",
+    "일본 공관에서 일반위임장이 지정된 경우 japan_general_power_of_attorney를 우선 사용한다.",
+    "중국 공관에서 일반위임장이 지정된 경우 china_general_power_of_attorney를 우선 사용한다.",
+    "상속포기 민원이면 inheritance_renunciation_statement를 사용한다.",
+    "미국 시민권자 관련 위임 또는 동일인증명은 us_citizen 계열 서식을 사용한다.",
+    "인감증명서 발급 위임이면 seal_certificate_proxy_application을 사용한다.",
+    "인감 신고 또는 변경이면 seal_change_report를 사용한다.",
+    "주민등록표 열람 또는 등·초본 교부 위임이면 resident_register_copy_request_proxy를 사용한다.",
+    "공관별 예외가 있는 경우 notarial_form_policy.json의 exception_mission_forms를 우선 적용한다."
+  ]
+}
