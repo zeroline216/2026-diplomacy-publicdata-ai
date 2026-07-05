@@ -1,0 +1,439 @@
+{
+  "policy_id": "military_form_policy",
+  "category": "병역",
+  "schema_file": "military_forms.schema.json",
+  "raw_form_dir": "forms/raw/military/",
+  "description": "재외공관별 병역의무자 국외여행 기간연장 허가 및 관련 확인서 서식 선택 정책. 국가별 schema를 만들지 않고 forms/raw/military/ 폴더에서 필요한 서식을 불러온다.",
+
+  "default_forms": [
+    {
+      "form_id": "military_overseas_travel_extension_application",
+      "form_name": "병역의무자국외여행(기간연장)허가(취소)신청서",
+      "form_source_file": "국외여행기간연장허가신청서.hwp",
+      "form_path": "forms/raw/military/국외여행기간연장허가신청서.hwp",
+      "condition": "기본 병역의무자 국외여행 기간연장 허가 신청",
+      "form_selection_rule": "default_form"
+    }
+  ],
+
+  "default_rule": "exception_mission_forms에 없는 공관은 기본적으로 병역의무자국외여행(기간연장)허가(취소)신청서를 사용한다. 단, 사용자가 유학, 가족동거, 영주권, 복수국적, 대리신청, 동일인 확인 등 구체적인 사유를 말하면 intent_to_form_rules에 따라 관련 서식을 추가한다.",
+
+  "exception_mission_forms": {
+    "주광저우대한민국 총영사관": {
+      "required_forms": [
+        "military_overseas_travel_extension_application"
+      ],
+      "checklist_note": "국외여행기간연장허가신청서를 사용한다."
+    },
+
+    "주중국대한민국 대사관": {
+      "required_forms": [
+        "military_overseas_travel_extension_application",
+        "overseas_education_fact_confirmation_consent",
+        "school_enrollment_confirmation"
+      ],
+      "checklist_note": "병역의무자국외여행(기간연장)허가(취소)신청서, 국외학력에 관한 사실확인서·증명서 발급 동의서, 재학사실 확인서를 사용한다."
+    },
+
+    "주니가타대한민국 총영사관": {
+      "required_forms": [
+        "military_overseas_travel_extension_application",
+        "family_residence_confirmation",
+        "school_enrollment_confirmation",
+        "identity_verification_confirmation",
+        "personal_information_consent",
+        "second_generation_overseas_korean_confirmation_application"
+      ],
+      "checklist_note": "병역의무자국외여행(기간연장)허가(취소)신청서, 가족거주사실확인서, 재학사실 확인서, 동일인확인서, 개인정보 제공 동의서, 재외국민2세 확인신청서를 사용한다."
+    },
+
+    "주센다이대한민국 총영사관": {
+      "required_forms": [
+        "military_overseas_travel_extension_application",
+        "family_residence_confirmation"
+      ],
+      "checklist_note": "병역의무자국외여행(기간연장)허가(취소)신청서와 가족 거주사실 확인서를 사용한다."
+    },
+
+    "주요코하마대한민국 총영사관": {
+      "required_forms": [
+        "military_overseas_travel_extension_application",
+        "family_residence_confirmation",
+        "identity_verification_confirmation",
+        "personal_information_consent",
+        "overseas_education_fact_confirmation_consent",
+        "school_enrollment_confirmation"
+      ],
+      "checklist_note": "병역의무자국외여행(기간연장)허가(취소)신청서, 가족 거주사실 확인서, 동일인 증명서, 개인정보 제공 동의서, 국외학력에 관한 사실확인서·증명서 발급 동의서, 재학사실 확인서를 사용한다."
+    },
+
+    "주일본대한민국 총영사관": {
+      "required_forms": [
+        "military_overseas_travel_extension_application",
+        "school_enrollment_confirmation"
+      ],
+      "checklist_note": "병역의무자국외여행(기간연장)허가(취소)신청서와 재학사실확인서를 사용한다."
+    },
+
+    "주후쿠오카대한민국 총영사관": {
+      "required_forms": [
+        "school_enrollment_confirmation",
+        "military_overseas_travel_extension_application",
+        "identity_verification_confirmation",
+        "personal_information_consent",
+        "overseas_education_fact_confirmation_consent",
+        "family_residence_confirmation"
+      ],
+      "checklist_note": "재학사실 확인서, 병역의무자국외여행(기간연장)허가(취소)신청서, 동일인 확인서, 개인정보제공 동의서, 국외학력에 관한 사실확인서·증명서 발급 동의서, 가족 거주사실 확인서를 사용한다."
+    },
+
+    "주호치민대한민국 총영사관": {
+      "required_forms": [
+        "military_overseas_travel_extension_application",
+        "family_residence_confirmation"
+      ],
+      "checklist_note": "병역의무자국외여행(기간연장)허가(취소)신청서와 가족 거주사실 확인서를 사용한다."
+    },
+
+    "주몬트리올대한민국 총영사관": {
+      "required_forms": [
+        "military_overseas_travel_extension_application",
+        "personal_information_consent",
+        "family_residence_confirmation",
+        "school_enrollment_confirmation",
+        "school_enrollment_statement"
+      ],
+      "checklist_note": "병역의무자국외여행(기간연장)허가(취소)신청서, 개인정보제공 동의서, 가족 거주사실 확인서, 재학사실확인서, 재학사실진술서를 사용한다."
+    },
+
+    "주로스앤젤레스대한민국 총영사관": {
+      "required_forms": [
+        "family_residence_confirmation",
+        "personal_information_consent",
+        "overseas_travel_permission_proxy_authorization",
+        "military_overseas_travel_extension_application",
+        "overseas_education_fact_confirmation_consent",
+        "school_enrollment_statement",
+        "school_enrollment_confirmation",
+        "violation_sanction_confirmation"
+      ],
+      "checklist_note": "가족거주사실확인서, 개인정보 제공 동의서, 국외여행허가 위임장, 병역의무자국외여행(기간연장)허가(취소)신청서, 국외학력에 관한 사실확인서·증명서 발급 동의서, 재학사실진술서, 재학사실확인서, 허가의무 위반 시 제재사항 확인서를 사용한다."
+    },
+
+    "주보스턴대한민국 총영사관": {
+      "required_forms": [
+        "military_overseas_travel_extension_application",
+        "school_enrollment_confirmation",
+        "overseas_education_fact_confirmation_consent"
+      ],
+      "checklist_note": "병역의무자국외여행(기간연장)허가(취소)신청서, 재학사실확인서, 국외학력에 관한 사실확인서·증명서 발급 동의서를 사용한다."
+    },
+
+    "주샌프란시스코대한민국 총영사관": {
+      "required_forms": [
+        "military_overseas_travel_extension_application",
+        "personal_information_consent",
+        "overseas_education_fact_confirmation_consent",
+        "school_enrollment_confirmation"
+      ],
+      "checklist_note": "병역의무자국외여행(기간연장)허가(취소)신청서, 개인정보 제공 동의서, 국외학력에 관한 사실확인서·증명서 발급 동의서, 재학사실확인서를 사용한다."
+    },
+
+    "주시애틀대한민국 총영사관": {
+      "required_forms": [
+        "military_overseas_travel_extension_application",
+        "family_residence_confirmation",
+        "overseas_education_fact_confirmation_consent",
+        "school_enrollment_confirmation"
+      ],
+      "checklist_note": "병역의무자국외여행(기간연장)허가(취소)신청서, 가족거주사실확인서, 국외학력에 관한 사실확인서·증명서 발급 동의서, 재학사실확인서를 사용한다."
+    },
+
+    "주시카고대한민국 총영사관": {
+      "required_forms": [
+        "personal_information_consent",
+        "overseas_education_fact_confirmation_consent",
+        "identity_verification_confirmation",
+        "family_residence_confirmation",
+        "military_overseas_travel_extension_application"
+      ],
+      "checklist_note": "개인정보 제공 동의서, 국외학력에 관한 사실확인서·증명서 발급 동의서, 동일인 확인서, 가족거주사실확인서, 병역의무자국외여행(기간연장)허가(취소)신청서를 사용한다."
+    },
+
+    "주애틀랜타대한민국 총영사관": {
+      "required_forms": [
+        "military_overseas_travel_extension_application_student",
+        "military_overseas_travel_extension_application_dual_national",
+        "military_overseas_travel_extension_application_permanent_resident",
+        "military_overseas_travel_extension_application"
+      ],
+      "checklist_note": "병역의무자 국외여행(기간연장)허가 신청서-유학생, 복수국적자, 영주권자 전용 신청서와 기본 신청서를 관리한다."
+    },
+
+    "주앵커리지대한민국 출장소": {
+      "required_forms": [
+        "military_overseas_travel_extension_application",
+        "family_residence_confirmation",
+        "personal_information_consent",
+        "overseas_education_fact_confirmation_consent",
+        "school_enrollment_confirmation"
+      ],
+      "checklist_note": "병역의무자국외여행(기간연장)허가(취소)신청서, 가족거주사실확인서, 개인정보 제공 동의서, 국외학력에 관한 사실확인서·증명서 발급 동의서, 재학사실확인서를 사용한다."
+    },
+
+    "주하갓냐대한민국 출장소": {
+      "required_forms": [
+        "violation_sanction_confirmation",
+        "military_overseas_travel_extension_application",
+        "family_residence_confirmation",
+        "overseas_travel_permission_proxy_authorization"
+      ],
+      "checklist_note": "허가의무 위반 시 제재사항 확인서, 병역의무자국외여행(기간연장)허가(취소)신청서, 가족거주사실확인서, 국외여행허가 위임장을 사용한다."
+    },
+
+    "주휴스턴대한민국 총영사관": {
+      "required_forms": [
+        "family_residence_confirmation",
+        "personal_information_consent",
+        "identity_verification_confirmation",
+        "military_overseas_travel_extension_application"
+      ],
+      "checklist_note": "가족 거주사실 확인서, 개인정보 제공 동의서, 동일인 확인서, 병역의무자국외여행(기간연장)허가(취소)신청서를 사용한다."
+    }
+  },
+
+  "mission_aliases": {
+    "광저우": "주광저우대한민국 총영사관",
+    "광주": "주광저우대한민국 총영사관",
+    "주광저우": "주광저우대한민국 총영사관",
+    "주광저우총영사관": "주광저우대한민국 총영사관",
+
+    "중국": "주중국대한민국 대사관",
+    "베이징": "주중국대한민국 대사관",
+    "북경": "주중국대한민국 대사관",
+    "주중국": "주중국대한민국 대사관",
+    "주중국대사관": "주중국대한민국 대사관",
+
+    "니가타": "주니가타대한민국 총영사관",
+    "니카타": "주니가타대한민국 총영사관",
+    "주니가타": "주니가타대한민국 총영사관",
+    "주니카타": "주니가타대한민국 총영사관",
+
+    "센다이": "주센다이대한민국 총영사관",
+    "주센다이": "주센다이대한민국 총영사관",
+    "주센다이총영사관": "주센다이대한민국 총영사관",
+
+    "요코하마": "주요코하마대한민국 총영사관",
+    "주요코하마": "주요코하마대한민국 총영사관",
+
+    "일본": "주일본대한민국 총영사관",
+    "도쿄": "주일본대한민국 총영사관",
+    "동경": "주일본대한민국 총영사관",
+    "주일본": "주일본대한민국 총영사관",
+
+    "후쿠오카": "주후쿠오카대한민국 총영사관",
+    "주후쿠오카": "주후쿠오카대한민국 총영사관",
+
+    "호치민": "주호치민대한민국 총영사관",
+    "호찌민": "주호치민대한민국 총영사관",
+    "주호치민": "주호치민대한민국 총영사관",
+
+    "몬트리올": "주몬트리올대한민국 총영사관",
+    "몽트리올": "주몬트리올대한민국 총영사관",
+    "퀘벡": "주몬트리올대한민국 총영사관",
+    "주몬트리올": "주몬트리올대한민국 총영사관",
+
+    "로스앤젤레스": "주로스앤젤레스대한민국 총영사관",
+    "LA": "주로스앤젤레스대한민국 총영사관",
+    "엘에이": "주로스앤젤레스대한민국 총영사관",
+    "주LA": "주로스앤젤레스대한민국 총영사관",
+
+    "보스턴": "주보스턴대한민국 총영사관",
+    "주보스턴": "주보스턴대한민국 총영사관",
+
+    "샌프란시스코": "주샌프란시스코대한민국 총영사관",
+    "SF": "주샌프란시스코대한민국 총영사관",
+    "주샌프란시스코": "주샌프란시스코대한민국 총영사관",
+
+    "시애틀": "주시애틀대한민국 총영사관",
+    "주시애틀": "주시애틀대한민국 총영사관",
+
+    "시카고": "주시카고대한민국 총영사관",
+    "주시카고": "주시카고대한민국 총영사관",
+
+    "애틀랜타": "주애틀랜타대한민국 총영사관",
+    "아틀란타": "주애틀랜타대한민국 총영사관",
+    "주애틀랜타": "주애틀랜타대한민국 총영사관",
+    "주애틀랜타 대한민국 총영사관": "주애틀랜타대한민국 총영사관",
+
+    "앵커리지": "주앵커리지대한민국 출장소",
+    "주앵커리지": "주앵커리지대한민국 출장소",
+
+    "하갓냐": "주하갓냐대한민국 출장소",
+    "아가냐": "주하갓냐대한민국 출장소",
+    "괌": "주하갓냐대한민국 출장소",
+    "주하갓냐": "주하갓냐대한민국 출장소",
+
+    "휴스턴": "주휴스턴대한민국 총영사관",
+    "주휴스턴": "주휴스턴대한민국 총영사관"
+  },
+
+  "intent_to_form_rules": {
+    "military_overseas_travel_extension": [
+      "military_overseas_travel_extension_application"
+    ],
+    "student_extension": [
+      "military_overseas_travel_extension_application",
+      "school_enrollment_confirmation",
+      "overseas_education_fact_confirmation_consent"
+    ],
+    "student_extension_atlanta": [
+      "military_overseas_travel_extension_application_student"
+    ],
+    "dual_national_extension": [
+      "military_overseas_travel_extension_application_dual_national"
+    ],
+    "permanent_resident_extension": [
+      "military_overseas_travel_extension_application_permanent_resident"
+    ],
+    "family_residence_extension": [
+      "military_overseas_travel_extension_application",
+      "family_residence_confirmation"
+    ],
+    "proxy_application": [
+      "overseas_travel_permission_proxy_authorization"
+    ],
+    "identity_verification": [
+      "identity_verification_confirmation"
+    ],
+    "second_generation_overseas_korean": [
+      "second_generation_overseas_korean_confirmation_application"
+    ],
+    "sanction_confirmation": [
+      "violation_sanction_confirmation"
+    ]
+  },
+
+  "selection_logic": {
+    "step_1": "사용자 입력에서 국가, 도시, 공관명, 병역 민원 의도와 신청 사유를 추출한다.",
+    "step_2": "공관명 또는 도시명이 mission_aliases에 있으면 표준 공관명으로 정규화한다.",
+    "step_3": "정규화된 공관명이 exception_mission_forms에 있으면 해당 공관의 required_forms 전체를 우선 사용한다.",
+    "step_4": "정규화된 공관명이 exception_mission_forms에 없으면 default_forms를 사용한다.",
+    "step_5": "사용자가 유학, 가족동거, 영주권, 복수국적, 대리신청, 동일인 확인, 재외국민2세 확인 등을 말하면 intent_to_form_rules에 따라 필요한 서식을 추가한다.",
+    "step_6": "required_forms의 각 form_id는 military_forms.schema.json의 forms에 존재해야 한다.",
+    "step_7": "각 form_id의 source_file은 forms/raw/military/ 안에서 불러온다.",
+    "step_8": "동일인확인서, 동일인 확인서, 동일인 증명서는 identity_verification_confirmation으로 정규화한다.",
+    "step_9": "개인정보제공 동의서와 개인정보 제공 동의서는 personal_information_consent로 정규화한다."
+  },
+
+  "agent_output_required_keys": [
+    "country",
+    "resolved_mission",
+    "category",
+    "service_title",
+    "military_intent",
+    "required_forms",
+    "missing_fields"
+  ],
+
+  "agent_output_example_default": {
+    "country": "중국",
+    "resolved_mission": "주광저우대한민국 총영사관",
+    "category": "병역",
+    "service_title": "병역의무자 국외여행 기간연장 허가 신청",
+    "military_intent": "military_overseas_travel_extension",
+    "required_forms": [
+      {
+        "form_id": "military_overseas_travel_extension_application",
+        "form_name": "병역의무자국외여행(기간연장)허가(취소)신청서",
+        "form_source_file": "국외여행기간연장허가신청서.hwp",
+        "form_path": "forms/raw/military/국외여행기간연장허가신청서.hwp",
+        "form_selection_rule": "mission_required_form"
+      }
+    ]
+  },
+
+  "agent_output_example_la_student": {
+    "country": "미국",
+    "resolved_mission": "주로스앤젤레스대한민국 총영사관",
+    "category": "병역",
+    "service_title": "유학생 국외여행 기간연장 허가 신청",
+    "military_intent": "student_extension",
+    "required_forms": [
+      {
+        "form_id": "military_overseas_travel_extension_application",
+        "form_name": "병역의무자국외여행(기간연장)허가(취소)신청서",
+        "form_source_file": "국외여행기간연장허가신청서.hwp",
+        "form_path": "forms/raw/military/국외여행기간연장허가신청서.hwp",
+        "form_selection_rule": "mission_required_form"
+      },
+      {
+        "form_id": "school_enrollment_statement",
+        "form_name": "재학사실진술서",
+        "form_source_file": "재학사실진술서.pdf",
+        "form_path": "forms/raw/military/재학사실진술서.pdf",
+        "form_selection_rule": "mission_required_form"
+      },
+      {
+        "form_id": "school_enrollment_confirmation",
+        "form_name": "재학사실 확인서",
+        "form_source_file": "재학사실 확인서.hwp",
+        "form_path": "forms/raw/military/재학사실 확인서.hwp",
+        "form_selection_rule": "mission_required_form"
+      }
+    ]
+  },
+
+  "agent_output_example_atlanta_student": {
+    "country": "미국",
+    "resolved_mission": "주애틀랜타대한민국 총영사관",
+    "category": "병역",
+    "service_title": "유학생 국외여행 기간연장 허가 신청",
+    "military_intent": "student_extension_atlanta",
+    "required_forms": [
+      {
+        "form_id": "military_overseas_travel_extension_application_student",
+        "form_name": "병역의무자 국외여행(기간연장)허가 신청서-유학생",
+        "form_source_file": "병역의무자 국외여행(기간연장)허가 신청서-유학생.pdf",
+        "form_path": "forms/raw/military/병역의무자 국외여행(기간연장)허가 신청서-유학생.pdf",
+        "form_selection_rule": "mission_required_form"
+      }
+    ]
+  },
+
+  "agent_output_example_niigata_second_generation": {
+    "country": "일본",
+    "resolved_mission": "주니가타대한민국 총영사관",
+    "category": "병역",
+    "service_title": "재외국민2세 확인 신청",
+    "military_intent": "second_generation_overseas_korean",
+    "required_forms": [
+      {
+        "form_id": "second_generation_overseas_korean_confirmation_application",
+        "form_name": "재외국민2세 확인신청서",
+        "form_source_file": "재외국민2세 확인신청서.pdf",
+        "form_path": "forms/raw/military/재외국민2세 확인신청서.pdf",
+        "form_selection_rule": "mission_required_form"
+      }
+    ]
+  },
+
+  "judge_checks": [
+    "required_forms의 form_id가 military_forms.schema.json에 정의되어 있는지 확인한다.",
+    "required_forms의 form_source_file이 forms/raw/military/ 안에 존재하는지 확인한다.",
+    "exception_mission_forms에 있는 공관은 해당 공관의 required_forms 전체가 포함되었는지 확인한다.",
+    "exception_mission_forms에 없는 공관은 기본적으로 military_overseas_travel_extension_application이 선택되었는지 확인한다.",
+    "유학생 신청이면 재학사실 확인서 또는 유학생 전용 신청서가 포함되었는지 확인한다.",
+    "복수국적자 신청이면 복수국적자 전용 신청서가 포함되었는지 확인한다.",
+    "영주권자 신청이면 영주권자 전용 신청서가 포함되었는지 확인한다.",
+    "가족동거 또는 가족거주 사유이면 가족거주사실확인서가 포함되었는지 확인한다.",
+    "국외학력 확인이 필요한 공관이면 국외학력에 관한 사실확인서,증명서 발급 동의서가 포함되었는지 확인한다.",
+    "동일인 확인이 필요한 공관이면 동일인확인서가 포함되었는지 확인한다.",
+    "개인정보 제공 동의가 필요한 공관이면 개인정보 제공 동의서가 포함되었는지 확인한다.",
+    "대리 신청이면 국외여행허가 위임장이 포함되었는지 확인한다.",
+    "허가의무 위반 시 제재사항 확인이 필요한 공관이면 해당 확인서가 포함되었는지 확인한다.",
+    "재외국민2세 확인 신청이면 재외국민2세 확인신청서가 포함되었는지 확인한다.",
+    "기관 작성란은 AI가 작성하지 않았는지 확인한다.",
+    "사용자가 말하지 않은 주민등록번호, 여권번호, 학교명, 재학기간, 가족 거주정보, 영주권 정보, 복수국적 정보를 임의 생성하지 않았는지 확인한다."
+  ]
+}
