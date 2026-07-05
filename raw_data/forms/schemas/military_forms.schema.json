@@ -1,0 +1,368 @@
+{
+  "schema_id": "military_forms",
+  "category": "병역",
+  "raw_form_dir": "forms/raw/military/",
+  "description": "재외공관 병역의무자 국외여행 기간연장 허가, 재학·가족거주·국외학력·동일인 확인 등 병역 민원 통합 서식 구조 정의",
+
+  "forms": {
+    "military_overseas_travel_extension_application": {
+      "form_name": "병역의무자국외여행(기간연장)허가(취소)신청서",
+      "source_file": "국외여행기간연장허가신청서.hwp",
+      "form_type": "application",
+      "description": "병역의무자가 국외여행 기간연장 허가 또는 허가취소를 신청할 때 사용하는 기본 서식",
+      "required_fields": [
+        "applicant_name",
+        "applicant_resident_registration_number",
+        "applicant_address",
+        "applicant_phone",
+        "passport_number",
+        "current_country",
+        "current_address_abroad",
+        "current_contact_abroad",
+        "travel_purpose",
+        "requested_extension_period",
+        "application_reason"
+      ],
+      "optional_fields": [
+        "email",
+        "school_name",
+        "school_address",
+        "major",
+        "expected_graduation_date",
+        "family_residence_country",
+        "permanent_residence_status",
+        "dual_nationality_status",
+        "agent_name",
+        "agent_contact"
+      ],
+      "conditional_fields": [
+        {
+          "field_id": "school_information",
+          "condition": "유학 또는 재학 사유로 신청하는 경우"
+        },
+        {
+          "field_id": "family_residence_information",
+          "condition": "가족과 국외에 거주하는 사유로 신청하는 경우"
+        },
+        {
+          "field_id": "permanent_residence_information",
+          "condition": "영주권자 사유로 신청하는 경우"
+        },
+        {
+          "field_id": "dual_nationality_information",
+          "condition": "복수국적자 사유로 신청하는 경우"
+        },
+        {
+          "field_id": "proxy_authorization",
+          "condition": "대리인이 신청하는 경우"
+        }
+      ],
+      "allowed_travel_purpose": [
+        "유학",
+        "가족동거",
+        "영주권",
+        "복수국적",
+        "취업",
+        "기타"
+      ],
+      "office_fields": [
+        "접수번호",
+        "접수일자",
+        "처리기간",
+        "담당자",
+        "공관 확인란"
+      ],
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 서명 또는 날인"
+      ]
+    },
+
+    "military_overseas_travel_extension_application_student": {
+      "form_name": "병역의무자 국외여행(기간연장)허가 신청서-유학생",
+      "source_file": "병역의무자 국외여행(기간연장)허가 신청서-유학생.pdf",
+      "form_type": "application",
+      "inherits": "military_overseas_travel_extension_application",
+      "description": "유학생 사유로 국외여행 기간연장 허가를 신청할 때 사용하는 전용 서식",
+      "additional_required_fields": [
+        "school_name",
+        "school_country",
+        "school_address",
+        "major",
+        "degree_program",
+        "current_grade_or_year",
+        "expected_graduation_date"
+      ]
+    },
+
+    "military_overseas_travel_extension_application_dual_national": {
+      "form_name": "병역의무자 국외여행(기간연장)허가 신청서-복수국적자",
+      "source_file": "병역의무자 국외여행(기간연장)허가 신청서-복수국적자.pdf",
+      "form_type": "application",
+      "inherits": "military_overseas_travel_extension_application",
+      "description": "복수국적자 사유로 국외여행 기간연장 허가를 신청할 때 사용하는 전용 서식",
+      "additional_required_fields": [
+        "other_nationality",
+        "other_passport_number",
+        "birth_country",
+        "dual_nationality_acquisition_reason"
+      ]
+    },
+
+    "military_overseas_travel_extension_application_permanent_resident": {
+      "form_name": "병역의무자 국외여행(기간연장)허가 신청서-영주권자",
+      "source_file": "병역의무자 국외여행(기간연장)허가 신청서-영주권자.pdf",
+      "form_type": "application",
+      "inherits": "military_overseas_travel_extension_application",
+      "description": "영주권자 사유로 국외여행 기간연장 허가를 신청할 때 사용하는 전용 서식",
+      "additional_required_fields": [
+        "permanent_residence_country",
+        "permanent_residence_card_number",
+        "permanent_residence_acquisition_date",
+        "current_residence_address"
+      ]
+    },
+
+    "family_residence_confirmation": {
+      "form_name": "가족거주사실확인서",
+      "source_file": "가족거주사실확인서.pdf",
+      "form_type": "confirmation",
+      "description": "병역의무자가 가족과 함께 국외에 거주하고 있음을 확인하는 서식",
+      "required_fields": [
+        "applicant_name",
+        "applicant_birth_date_or_resident_registration_number",
+        "current_country",
+        "current_address_abroad",
+        "family_member_name",
+        "family_member_relationship",
+        "family_member_residence_address",
+        "residence_period"
+      ],
+      "optional_fields": [
+        "family_member_contact",
+        "supporting_document_info"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "확인자 서명 또는 날인",
+        "신청인 서명 또는 날인"
+      ]
+    },
+
+    "school_enrollment_confirmation": {
+      "form_name": "재학사실 확인서",
+      "source_file": "재학사실 확인서.hwp",
+      "form_type": "confirmation",
+      "description": "병역의무자가 국외 학교에 재학 중임을 확인하는 서식",
+      "required_fields": [
+        "student_name",
+        "student_birth_date_or_resident_registration_number",
+        "school_name",
+        "school_country",
+        "school_address",
+        "degree_program",
+        "major",
+        "enrollment_date",
+        "expected_graduation_date"
+      ],
+      "optional_fields": [
+        "current_grade_or_year",
+        "school_contact",
+        "school_official_name",
+        "school_official_title"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "학교 또는 확인자 서명",
+        "신청인 서명 또는 날인"
+      ]
+    },
+
+    "school_enrollment_statement": {
+      "form_name": "재학사실진술서",
+      "source_file": "재학사실진술서.pdf",
+      "form_type": "statement",
+      "description": "재학사실을 신청인이 직접 진술하는 서식",
+      "required_fields": [
+        "student_name",
+        "student_birth_date_or_resident_registration_number",
+        "school_name",
+        "school_country",
+        "school_address",
+        "major",
+        "enrollment_period",
+        "statement_content"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "진술인 서명 또는 날인"
+      ]
+    },
+
+    "overseas_education_fact_confirmation_consent": {
+      "form_name": "국외학력에 관한 사실확인서,증명서 발급 동의서",
+      "source_file": "국외학력에 관한 사실확인서,증명서 발급 동의서.hwp",
+      "form_type": "consent",
+      "description": "국외학력 사실 확인 또는 증명서 발급을 위한 동의 서식",
+      "required_fields": [
+        "applicant_name",
+        "applicant_birth_date_or_resident_registration_number",
+        "school_name",
+        "school_country",
+        "school_address",
+        "degree_program",
+        "major",
+        "consent_scope"
+      ],
+      "optional_fields": [
+        "student_number",
+        "enrollment_period",
+        "expected_graduation_date"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "동의인 서명 또는 날인"
+      ]
+    },
+
+    "identity_verification_confirmation": {
+      "form_name": "동일인확인서",
+      "source_file": "동일인확인서.pdf",
+      "form_type": "identity_verification",
+      "description": "성명 표기 차이, 국문·영문 성명 차이 등으로 동일인 확인이 필요한 경우 사용하는 서식",
+      "required_fields": [
+        "name_ko",
+        "name_en",
+        "birth_date",
+        "passport_number",
+        "current_address",
+        "identity_difference_reason",
+        "confirmation_statement"
+      ],
+      "optional_fields": [
+        "previous_name",
+        "other_document_name",
+        "supporting_document_info"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "신청인 서명 또는 날인"
+      ]
+    },
+
+    "personal_information_consent": {
+      "form_name": "개인정보 제공 동의서",
+      "source_file": "개인정보 제공 동의서.pdf",
+      "form_type": "consent",
+      "description": "병역 민원 처리와 관련하여 개인정보 제공 및 활용에 동의하는 서식",
+      "required_fields": [
+        "applicant_name",
+        "applicant_birth_date_or_resident_registration_number",
+        "consent_items",
+        "consent_purpose",
+        "retention_period"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "동의인 서명 또는 날인"
+      ]
+    },
+
+    "overseas_travel_permission_proxy_authorization": {
+      "form_name": "국외여행허가 위임장",
+      "source_file": "국외여행허가 위임장.pdf",
+      "form_type": "authorization",
+      "description": "병역의무자의 국외여행 허가 또는 기간연장 신청을 대리인에게 위임할 때 사용하는 서식",
+      "required_fields": [
+        "delegator_name",
+        "delegator_birth_date_or_resident_registration_number",
+        "delegator_address",
+        "delegator_contact",
+        "agent_name",
+        "agent_birth_date_or_resident_registration_number",
+        "agent_address",
+        "agent_contact",
+        "relationship_to_delegator",
+        "delegation_scope"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "위임인 서명 또는 날인"
+      ]
+    },
+
+    "violation_sanction_confirmation": {
+      "form_name": "허가의무 위반 시 제재사항 확인서",
+      "source_file": "허가의무 위반 시 제재사항 확인서.pdf",
+      "form_type": "confirmation",
+      "description": "병역의무자가 국외여행 허가의무 위반 시 제재사항을 확인하는 서식",
+      "required_fields": [
+        "applicant_name",
+        "applicant_birth_date_or_resident_registration_number",
+        "confirmation_statement"
+      ],
+      "user_confirmation_fields": [
+        "작성일",
+        "신청인 서명 또는 날인"
+      ]
+    },
+
+    "second_generation_overseas_korean_confirmation_application": {
+      "form_name": "재외국민2세 확인신청서",
+      "source_file": "재외국민2세 확인신청서.pdf",
+      "form_type": "application",
+      "description": "재외국민2세 확인을 신청할 때 사용하는 서식",
+      "required_fields": [
+        "applicant_name",
+        "applicant_birth_date_or_resident_registration_number",
+        "birth_country",
+        "current_country",
+        "current_address_abroad",
+        "parents_residence_history",
+        "applicant_residence_history"
+      ],
+      "optional_fields": [
+        "passport_number",
+        "family_relation_info",
+        "school_history"
+      ],
+      "user_confirmation_fields": [
+        "신청일",
+        "신청인 서명 또는 날인"
+      ]
+    }
+  },
+
+  "form_aliases": {
+    "병역의무자국외여행(기간연장)허가(취소)신청서": "military_overseas_travel_extension_application",
+    "국외여행기간연장허가신청서": "military_overseas_travel_extension_application",
+    "가족 거주사실 확인서": "family_residence_confirmation",
+    "가족거주사실확인서": "family_residence_confirmation",
+    "재학사실확인서": "school_enrollment_confirmation",
+    "재학사실 확인서": "school_enrollment_confirmation",
+    "동일인 확인서": "identity_verification_confirmation",
+    "동일인확인서": "identity_verification_confirmation",
+    "동일인 증명서": "identity_verification_confirmation",
+    "개인정보제공 동의서": "personal_information_consent",
+    "개인정보 제공 동의서": "personal_information_consent"
+  },
+
+  "common_judge_rules": [
+    "사용자가 말하지 않은 성명, 주민등록번호, 여권번호, 주소, 학교명, 재학기간, 가족 거주정보, 영주권 정보, 복수국적 정보를 임의 생성하지 않는다.",
+    "접수번호, 접수일자, 처리기간, 담당자, 공관 확인란 등 기관 작성란은 AI가 작성하지 않는다.",
+    "신청일, 작성일, 서명 또는 날인은 사용자 확인 대상으로 남긴다.",
+    "기본 국외여행 기간연장 허가 신청은 military_overseas_travel_extension_application을 사용한다.",
+    "유학생 전용 신청이면 military_overseas_travel_extension_application_student를 사용할 수 있다.",
+    "복수국적자 전용 신청이면 military_overseas_travel_extension_application_dual_national을 사용할 수 있다.",
+    "영주권자 전용 신청이면 military_overseas_travel_extension_application_permanent_resident를 사용할 수 있다.",
+    "가족동거 또는 가족거주 사유이면 family_residence_confirmation을 추가한다.",
+    "유학 또는 재학 사유이면 school_enrollment_confirmation 또는 school_enrollment_statement를 추가한다.",
+    "국외학력 확인이 필요한 경우 overseas_education_fact_confirmation_consent를 추가한다.",
+    "성명 표기 차이 등 동일인 확인이 필요한 경우 identity_verification_confirmation을 추가한다.",
+    "개인정보 제공 동의가 필요한 공관은 personal_information_consent를 추가한다.",
+    "대리 신청이면 overseas_travel_permission_proxy_authorization을 추가한다.",
+    "허가의무 위반 제재사항 확인이 필요한 공관은 violation_sanction_confirmation을 추가한다.",
+    "재외국민2세 확인이 필요한 경우 second_generation_overseas_korean_confirmation_application을 추가한다.",
+    "공관별 예외가 있는 경우 military_form_policy.json의 exception_mission_forms를 우선 적용한다."
+  ]
+}
