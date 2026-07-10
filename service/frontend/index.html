@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>재외공관 민원 도우미</title>
+    <link rel="stylesheet" href="/static/styles.css?v=6" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <p class="eyebrow">2026 Diplomacy AI</p>
+          <h1>재외공관 민원 도우미</h1>
+          <p class="subtitle">민원 분류, 공관 안내, 서식 추천을 한 화면에서 확인합니다.</p>
+        </div>
+
+        <div class="panel">
+          <h2>빠른 질문</h2>
+          <button class="preset" data-query="미국 시애틀에서 여권을 잃어버렸고 다음 주에 한국에 가야 해. 뭘 준비해야 해?">시애틀 여권 분실</button>
+          <button class="preset" data-query="캐나다 몬트리올에서 90일 넘게 체류할 예정인데 재외국민등록 해야 해?">몬트리올 재외국민등록</button>
+          <button class="preset" data-query="중국 시안에서 가족관계등록부 증명서 교부 신청 수수료 알려줘.">시안 가족관계증명</button>
+          <button class="preset" data-query="공항에서 총소리가 들렸어. 총기난사 테러면 어떻게 해야 해?">공항 테러 대응</button>
+        </div>
+
+        <div class="panel status-panel">
+          <h2>데이터 상태</h2>
+          <dl id="meta-list">
+            <div><dt>상태</dt><dd>불러오는 중</dd></div>
+          </dl>
+        </div>
+      </aside>
+
+      <main class="chat-layout">
+        <section class="chat-window" id="chat-window">
+          <div class="message assistant welcome">
+            <div class="bubble">
+              <p class="message-role">Assistant</p>
+              <p>질문을 입력하면 민원 유형을 분류하고, 관련 공관 정보와 서식까지 함께 정리해드립니다.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="composer">
+          <form id="chat-form">
+            <label class="sr-only" for="query-input">질문 입력</label>
+            <textarea id="query-input" rows="3" placeholder="예: 일본 오사카에서 여권 재발급을 온라인으로 신청하고 싶어."></textarea>
+            <div class="composer-actions">
+              <p id="form-status">백엔드와 연결 대기 중</p>
+              <button type="submit" id="send-button">질문 보내기</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <template id="user-message-template">
+      <div class="message user">
+        <div class="bubble">
+          <p class="message-role">User</p>
+          <p class="message-text"></p>
+        </div>
+      </div>
+    </template>
+
+    <template id="assistant-message-template">
+      <div class="message assistant">
+        <div class="bubble">
+          <p class="message-role">Assistant</p>
+          <div class="message-text"></div>
+        </div>
+      </div>
+    </template>
+
+    <script src="/static/app.js?v=6" defer></script>
+  </body>
+</html>

@@ -141,6 +141,8 @@
 
     "주시애틀대한민국 총영사관": {
       "available_forms": [
+        "passport_issue_application",
+        "passport_loss_report",
         "proxy_authorization",
         "legal_representative_consent",
         "passport_record_change_application",
@@ -149,7 +151,7 @@
         "passport_issue_proxy_consent",
         "passport_fact_certificate_application_2"
       ],
-      "checklist_note": "대리수령 위임장, 법정대리인 동의서, 여권 기재사항 변경신청서, 영문성명 변경 신청서, 우편수령 신청서, 여권발급 위임장 및 동의서, 여권사실증명서_2를 관리한다."
+      "checklist_note": "여권발급신청서, 여권분실신고서, 대리수령 위임장, 법정대리인 동의서, 여권 기재사항 변경신청서, 영문성명 변경 신청서, 우편수령 신청서, 여권발급 위임장 및 동의서, 여권사실증명서_2를 관리한다."
     },
 
     "주시카고대한민국 총영사관": {
